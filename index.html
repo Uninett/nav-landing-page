@@ -1,0 +1,634 @@
+<!doctype html>
+
+<html>
+    <head>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+        <meta charset="utf-8" />
+
+        <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css">
+        <link href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+        <script src="http://netdna.bootstrapcdn.com/bootstrap/3.1.0/js/bootstrap.min.js"></script>
+        <style>
+
+            body {
+                background:#f2f2f2;
+                color:#333;
+                font-family:'Open Sans', sans-serif;
+                font-size:18px;
+                padding-top:67px;
+                font-weight:300;
+            }
+
+
+            .page-header {
+                border-bottom:1px solid #CCC;
+            }
+
+            .hero {
+                height:450px;
+                background-size: 100%;
+                background-size: cover;
+                -webkit-background-size: cover;
+                -moz-background-size: cover;
+                -o-background-size: cover;
+                background-size: cover;
+                background-position: center center;
+                background-image:url('./image/bg1.jpg');
+                color:white;
+            }
+
+            .nav-wrapper {
+                /*background: #f8ae2a;*/
+                /*background:#ED583A;*/
+                /*background:#ED6550; /* RED  */
+                background:#ee3243; /* unired */
+                border-bottom:1px solid #1D2730;
+                color:white;
+            }
+
+            .menu {
+                padding-top:10px;
+                padding-bottom:10px;
+            }
+            .nav {
+                text-align:right;
+                margin-top:10px;
+            }
+
+            .nav li a {display:inline; color:white;}
+            .nav li a:hover {text-decoration:none; color:#1D2730; background:none;}
+            .nav li {
+                display:inline;
+                font-size:18px;
+                font-weight:400;
+                padding-left:10px;
+
+            }
+
+            .intro {
+                text-align:left;
+                background:rgba(0,0,0,0.5);
+                padding-top:135px;
+                padding-bottom:141px;
+                border-bottom:1px solid #1D2730;
+            }
+
+            .lead {
+                font-size:78px;
+                font-weight:300;
+            }
+
+            .sub {
+                font-weight:300;
+                font-size:25px;
+
+            }
+
+            .content {
+                margin-top:80px;
+                margin-bottom:120px;
+            }
+
+            .content p {
+                /*letter-spacing: .05em;
+                line-height: 32px;*/
+            }
+
+            .content li {
+                list-style-type: none;
+                margin-bottom:10px;
+            }
+
+            .content li .fa {
+                margin-right:10px;
+                color:#D5E7E8;
+            }
+
+            .mini-hero-heading {
+                /*background:#A04525;*/
+                padding:10px;
+                text-align:center;
+                font-size:28px;
+                font-weight:300;
+            }
+
+            .what-is {
+                /*background:#574928;*/
+                /*background:#BA7660;*/
+                padding:10px;
+                font-weight:300;
+                font-size:23px;
+            }
+
+            .card .fa {
+                margin-top:20px;
+            }
+
+            .about {
+                margin-top:50px;
+                background:#D1DBE0;
+                color:#333;
+                padding-top:50px;
+                padding-bottom:100px;
+            }
+
+            .super-heading {
+                font-size:50px;
+            }
+
+
+            .about-checklist {
+                line-height:40px;
+            }
+
+
+            .image-caption {
+                margin-top:10px;
+                text-align:center;
+                font-size:16px;
+            }
+
+            .download-alt {
+                background:#D1DBE0;
+                padding:0;
+            }
+
+            .download-alt-content {
+                background:#D1DBE0;
+                text-align:center;
+                padding:20px;
+                padding-bottom:30px;
+            }
+
+            .left {margin-right:15px;}
+            .middle {margin-left:15px; margin-right:15px;}
+            .right {margin-left:15px;}
+
+            .download-alt-content p {
+                height:110px;
+                display:block;
+            }
+
+
+            /* Carousel overrides */
+            .carousel-indicators li {
+                border:1px solid #ee3243;
+            }
+
+            .carousel-indicators .active {
+                background-color:#ee3243;
+            }
+
+            .item img {
+                width:555px;
+                height:302px;
+            }
+
+            video {
+              width: 100%    !important;
+              height: auto   !important;
+            }
+
+            #who img {
+                width:100%;
+                margin-bottom:10px;
+            }
+
+            #who .title {
+                font-weight:600;
+                font-size:25px;
+            }
+
+            #who .location {
+                font-weight:400;
+                font-size:14px;
+                margin-bottom:10px;
+            }
+
+            #who .desc {
+                min-height:155px;
+                margin-bottom:10px;
+            }
+
+            #who i {
+                margin-bottom:10px;
+            }
+
+            footer#footer {
+            }
+
+            footer#footer .container {
+                padding-top:60px;
+                min-height:600px;
+            }
+
+            footer#footer img {
+                margin-bottom:15px;
+            }
+
+            footer#footer h2 {
+                font-weight:300;
+                font-size:34px;
+            }
+
+            footer#footer i {
+                margin-right:5px;
+            }
+
+            .channels {
+                margin-bottom:30px;
+            }
+
+            .address {
+                margin-top:10px;
+                font-size:14px;
+            }
+
+            .author {
+                margin-bottom:20px;
+                font-size:16px;
+            }
+
+            footer#footer .page-header {
+                margin-bottom:30px;
+            }
+            footer#footer a {
+            }
+            .lol {
+                background:;
+                text-align:center;
+                padding:0 10em;
+                margin-bottom:-50px;
+                margin-top:30px;
+                font-size:27px;
+                font-weight:300;
+            }
+
+        </style>
+    </head>
+    <body>
+        <nav class="nav-wrapper navbar navbar-fixed-top navbar-collapse" role="navigation">
+            <div class="container menu">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse-1">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                <a class="brand" href="#"><img src="./image/nav-logo.svg" width="100px" alt="" /></a>
+                <div class="navbar-right" id="#navbar-collapse-1">
+                        <ul class="nav navbar-nav">
+                            <li><a href="#download">Download</a></li>
+                            <li><a href="#tour">Tour</a></li>
+                            <li><a href="http://blog.nav.uninett.no/">Blog</a></li>
+                            <li><a href="http://nav.uninett.no">Doumentation</a></li>
+                        </ul>
+                </div>
+            </div>
+        </nav>
+        <div class="hero">
+            <div class="intro">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <p class="lead">Monitor your network with ease.</p>
+                            <p class="sub">Scandinavian design at its finest. This free software will make administration feel like flying.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container content">
+            <div class="row">
+                <div class="card col-md-6">
+                    <div class="row">
+                        <div class="col-md-2">
+                            <span class="fa-stack fa-3x">
+                                <i class="fa fa-square-o fa-stack-2x"></i>
+                                <i class="fa fa-bell-o fa-stack-1x"></i>
+                            </span>
+                        </div>
+                        <div class="col-md-9 col-md-offset-1">
+                            <h3>Alerts</h3>
+                            <p>If something goes down in your network, NAV will alert you on your own status page and even send you an SMS.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="card col-md-6">
+                    <div class="row">
+                        <div class="col-md-2">
+                            <span class="fa-stack fa-3x">
+                                <i class="fa fa-square-o fa-stack-2x"></i>
+                                <i class="fa fa-pagelines fa-stack-1x"></i>
+                            </span>
+                        </div>
+                        <div class="col-md-9 col-md-offset-1">
+                            <h3>Topology</h3>
+                            <p>When devices are added to the NAV database, your whole network can be visualized in several interactive maps.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="card col-md-6">
+                    <div class="row">
+                        <div class="col-md-2">
+                            <span class="fa-stack fa-3x">
+                                <i class="fa fa-square-o fa-stack-2x"></i>
+                                <i class="fa fa-dashboard fa-stack-1x"></i>
+                            </span>
+                        </div>
+                        <div class="col-md-9 col-md-offset-1">
+                            <h3>Statistics</h3>
+                            <p>NAV shows you VLAN graphs, link loads and can generate reports on a lot of equipment.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="card col-md-6">
+                    <div class="row">
+                        <div class="col-md-2">
+                            <span class="fa-stack fa-3x">
+                                <i class="fa fa-square-o fa-stack-2x"></i>
+                                <i class="fa fa-cogs fa-stack-1x"></i>
+                            </span>
+                        </div>
+                        <div class="col-md-9 col-md-offset-1">
+                            <h3>Management</h3>
+                            <p>You can use NAV to configure network equiment over SNMP, such as switch ports.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="about">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <h1 class="super-heading">About NAV</h1>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-6">
+                        <p>NAV (Network Administration Visualized) is a free software program to monitor networks, developed by <a href="https://uninett.no/en">UNINETT</a>
+                        and used by universities and corporations all over Europe.</p>
+                        <div class="about-checklist">
+                            <i class="fa fa-check"></i> Free and Open Source<br />
+                            <i class="fa fa-check"></i> Used by universities and organizations all around the world<br />
+                            <i class="fa fa-check"></i> Customizeable dashboard<br />
+                            <i class="fa fa-check"></i> Extensive statistical overview<br />
+                            <i class="fa fa-check"></i> Full traceability of users and equipment<br />
+                        </div>
+                    </div>
+                     <div class="col-md-6">
+                        <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+                            <!-- Indicators -->
+                            <ol class="carousel-indicators">
+                            <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+                            <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+                            </ol>
+
+                            <!-- Wrapper for slides -->
+                            <div class="carousel-inner">
+                                <div class="item active">
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <img class="" src="./image/nav1.png" alt="...">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                  <div class="row">
+                                        <div class="col-md-6">
+                                            <img class="" src="./image/nav2.png" alt="...">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <p class="image-caption">Screenshots of NAV</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="download" class="container content">
+            <div class="row">
+                <div class="col-md-12">
+                    <h1 class="super-heading">Download</h1>
+                    <p>NAV is freely available under the GNU GPLv2 license and can run on any UNIX machine that supports Apache and Python*</p>
+                    <p style="margin-bottom:30px;">The latest version is NAV <span id="version"></span>. Choose between our installation alternatives.</p>
+                    <div class="row">
+                        <div class="col-md-4">
+                            <div class="donwload-alt left">
+                                <div class="download-alt-content ">
+                                    <h3>Quick start</h3>
+                                    <p>This is a pre-packaged Virtual Appliance in OVF format. Typically used for evaluation/testing.</p>
+                                    <a href="" id="dl-quick" class="btn btn-primary"><i class="glyphicon glyphicon-download-alt"></i> Download</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="download-alt middle">
+                                <div class="download-alt-content">
+                                    <h3>Debian package</h3>
+                                    <p>This package takes care of all dependencies and is currently the most comprehensive. Requires Debian.</p>
+                                    <a href="" id="dl-deb" class="btn btn-primary"><i class="glyphicon glyphicon-download-alt"></i> Download</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="download-alt right">
+                                <div class="download-alt-content">
+                                    <h3>Source code</h3>
+                                    <p>You can also build NAV from source. If you want NAV for a production environment, this is the way to go.</p>
+                                    <a href="" id="dl-src" class="btn btn-primary"><i class="glyphicon glyphicon-download-alt"></i> Download</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12" style="margin-top:30px;">
+                            <p style="text-align:center;">(*) Having trouble deciding or installing? Read more about installing NAV on our <a href="#">wiki.</a></p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <div id="tour" class="container content">
+            <div class="row">
+                <div class="col-md-12">
+                    <h1 class="super-heading">Take a tour</h1>
+                    <figure>
+                        <iframe src="http://player.vimeo.com/video/81591839?title=0&amp;byline=0&amp;portrait=0" width="400" height="225" frameborder="0"></iframe>
+                    </figure>
+                </div>
+            </div>
+        </div>
+    <section style="background:white;" class="clearfix">
+        <div id="who" class="container content">
+            <div class="row">
+                <div class="col-md-12">
+                    <h1 class="super-heading">Who uses NAV?</h1>
+                </div>
+            </div>
+            <div class="row" style="margin-bottom:30px">
+                <div class="col-md-12">
+                    <p>Read about some of our users, or view the <a href="#">list</a> of known NAV users.</p>
+                </div>
+            </div>
+            <div class="row" style="margin-bottom:30px">
+                <div class="col-md-4">
+                    <div class="title">NTNU</div>
+                    <div class="location">Trondheim, Norway</div>
+                    <i class="fa fa-angle-right"></i> <b>Network devices</b> 1600<br />
+                    <div class="desc">
+                         <blockquote>
+                      <p>We just love this software. I can watch TV and be a netadmin at the same time!</p>
+                      <footer>Ola Nordmann,<cite title="Source Title">NTNU</cite></footer>
+                    </blockquote>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="title">ALICE HTL</div>
+                    <div class="location">CERN, Geneva</div>
+                    <i class="fa fa-angle-right"></i> <b>Network devices</b> 370<br />
+                    <div class="desc">
+                        <blockquote>
+                      <p>When I was young, we had to configure our switch ports with hay and potatoes. Now I can do it from my computer.</p>
+                      <footer>Achmed Bolai Schroeder, <cite title="Source Title">CERN</cite></footer>
+                    </blockquote>
+                    </div>  
+                </div>
+                <div class="col-md-4">
+                    <div class="title">UNIMORE</div>
+                    <div class="location">Modena, Italy</div>
+                    <i class="fa fa-angle-right"></i> <b>Network devices</b> 1300<br />
+                    <div class="desc">
+                        <blockquote>
+                      <p>I am so glad I found this thing. Beautiful stuff to make my day easier. Everyone should use NAV!</p>
+                      <footer>Xiao Mao Pao Ping, <cite title="Source Title">Unimore Modena</cite></footer>
+                    </blockquote>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer id="footer" class="clearfix">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <!-- <div class="page-header">
+                        <h2>Authors</h2>
+                    </div> -->
+                    <div class="author">
+                    <img src="./image/uninett-logo-grey.svg" width="150px" alt="" /><br />
+                        UNINETT has worked on NAV since 2001 and has been in charge of the development since 2006.<br /><br />
+                    </div>
+                    <div class="author">
+                        <img src="./image/logos/ntnu_bw.png" width="150px" alt="" /><br />
+                        NTNU is Norways largest science and technology university and started the development of NAV in 1999.<br />
+                    </div>
+                </div>
+                <div class="col-md-4">
+                   <!--  <div class="page-header">
+                        <h2>NAV is built with</h2>
+                    </div> -->
+                    <!-- <img class="" src="http://assets.tumblr.com/images/branding_page/img_logotype_grey_2x.png" width="100%" alt="PyCharm">
+                    <img class="" src="http://assets.tumblr.com/images/branding_page/img_logotype_grey_2x.png" width="100%" alt="PyCharm">
+                    <img class="" src="http://assets.tumblr.com/images/branding_page/img_logotype_grey_2x.png" width="100%" alt="PyCharm">
+                    <img class="" src="http://assets.tumblr.com/images/branding_page/img_logotype_grey_2x.png" width="100%" alt="PyCharm"> -->
+                    
+                </div>
+                <div class="col-md-4">
+                   <!--  <div class="page-header">
+                        <h2>Support</h2>
+                    </div> -->
+                    <div class="channels">
+                        <i class="fa fa-envelope-o"></i> <a href="https://postlister.uninett.no/sympa/subscribe/nav-users">NAV general user list</a> 
+                        <a href="#" class="pull-right">(archive)</a><br />
+                        <i class="fa fa-envelope-o"></i> <a href="https://postlister.uninett.no/sympa/subscribe/nav-dev">NAV development list</a>
+                        <a href="#" class="pull-right">(archive)</a><br /><br />
+                        <i class="fa fa-users"></i> #nav @ Freenode
+                    </div>
+                    <h4>Contact address</h4>
+                    <div class="address well">
+                        
+                        UNINETT<br />
+                        Att: The NAV project<br />
+                        Abels gate 5 - Teknobyen<br />
+                        NO-7465 Trondheim<br />
+                        NORWAY
+                    </div>
+                </div>
+            </div>
+            <div class="row lol" style="margin-bottom:20px;">
+                <div class="col-md-12">
+                    POWERED BY
+                </div>
+            </div>
+            <div class="row lol">
+                <div class="col-md-3">
+                    <img class="" src="http://assets.tumblr.com/images/branding_page/img_logotype_grey_2x.png" width="100%" alt="PyCharm">
+                </div>
+                <div class="col-md-3">
+                    <img class="" src="http://assets.tumblr.com/images/branding_page/img_logotype_grey_2x.png" width="100%" alt="PyCharm">
+                </div>
+                <div class="col-md-3">
+                    <img class="" src="http://assets.tumblr.com/images/branding_page/img_logotype_grey_2x.png" width="100%" alt="PyCharm">
+                </div>
+                <div class="col-md-3">
+                    <img class="" src="http://assets.tumblr.com/images/branding_page/img_logotype_grey_2x.png" width="100%" alt="PyCharm">
+                </div>
+            </div>
+        </div>
+    </footer>
+        <script>
+            $(function() {
+                
+                var json = '{"version" : "4.0.1","virtual_appliance" : "https://nav.uninett.no/static/appliance/stable/nav-wheezy-appliance.tar.gz","debian_package" : "https://nav.uninett.no/nav_on_debian","source" : "https://launchpad.net/nav/4.0/4.0b3/+download/nav-4.0b3.tar.gz"}';
+                var obj = JSON.parse(json);
+version
+                $('#version').text(obj['version']);
+                $('#dl-quick').attr('href', obj['virtual_appliance']);
+                $('#dl-deb').attr('href', obj['debian_package']);
+                $('#dl-src').attr('href', obj['source']);
+                
+                // Populate version number and download links
+                
+
+                // Fluid video
+                var $allVideos = $("iframe[src^='http://player.vimeo.com'], iframe[src^='http://www.youtube.com'], object, embed"),
+                $fluidEl = $("figure");
+                        
+                $allVideos.each(function() {
+                
+                  $(this)
+                    // jQuery .data does not work on object/embed elements
+                    .attr('data-aspectRatio', this.height / this.width)
+                    .removeAttr('height')
+                    .removeAttr('width');
+                
+                });
+                
+                $(window).resize(function() {
+                
+                  var newWidth = $fluidEl.width();
+                  $allVideos.each(function() {
+                  
+                    var $el = $(this);
+                    $el
+                        .width(newWidth)
+                        .height(newWidth * $el.attr('data-aspectRatio'));
+                  
+                  });
+                
+                }).resize();
+
+            });
+        </script>
+        
+    </body>
+</html>
