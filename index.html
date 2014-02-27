@@ -69,11 +69,52 @@
             }
 
             .intro {
+                background-size: 100%;
+                background-size: cover;
+                -webkit-background-size: cover;
+                -moz-background-size: cover;
+                -o-background-size: cover;
+                background-size: cover;
+                background-position: center center;
+                padding-top:130px;
                 text-align:left;
                 background:rgba(0,0,0,0.4);
-                padding-top:135px;
-                padding-bottom:141px;
+                /*padding-top:135px;
+                padding-bottom:141px;*/
+                height:100%;
                 border-bottom:1px solid #1D2730;
+            }
+
+            @media (max-width: 1200px) and (min-width: 990px) {
+              .lead {
+                font-size:64px !important;
+              }
+
+              .sub {
+                font-size:23px !important;
+              }
+            }
+
+            @media (max-width: 990px) and (min-width: 600px) {
+              .lead {
+                font-size:64px !important;
+              }
+
+              .sub {
+                font-size:16px !important;
+                
+              }
+            }
+
+            @media (max-width: 600px) {
+              .lead {
+                font-size:55px !important;
+              }
+
+              .sub {
+                font-size:16px !important;
+                
+              }
             }
 
             .lead {
@@ -280,7 +321,7 @@
                         <span class="icon-bar"></span>
                     </button>
                 <a class="brand" href="#"><img src="./image/nav-logo.svg" width="100px" alt="" /></a>
-                <div class="navbar-right" id="#navbar-collapse-1">
+                <div class="navbar-right" id="navbar-collapse-1">
                         <ul class="nav navbar-nav">
                             <li><a href="#download">Download</a></li>
                             <li><a href="#tour">Tour</a></li>
