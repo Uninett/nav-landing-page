@@ -23,9 +23,9 @@
             }
 
 
-            .page-header {
-                border-bottom:1px solid #CCC;
-            }
+
+            /* NAVIGATION
+            ------------------------------------------------------------------ */
 
             .nav-wrapper {
                 background:#ee3243; /* unired */
@@ -46,6 +46,10 @@
 
             /* Set white border on collapsed nav icon */
             .navbar-inverse .navbar-toggle, .navbar-inverse .navbar-toggle:hover, .navbar-inverse .navbar-toggle:focus { border-color:white; }
+
+
+            /* HERO PICTURE
+            ------------------------------------------------------------------ */
             
             /* Background image */
             .hero {
@@ -122,39 +126,16 @@
 
             }
 
-            /* Start content */
+            /* FEATURE SECTION
+            ------------------------------------------------------------------ */
 
-            .content {
-                margin-top:80px;
-                margin-bottom:120px;
-            }
-
-            .content li {
-                list-style-type: none;
-                margin-bottom:10px;
-            }
-
-            .content li .fa {
-                margin-right:10px;
-                color:#D5E7E8;
-            }
-
-            .mini-hero-heading {
-                padding:10px;
-                text-align:center;
-                font-size:28px;
-                font-weight:300;
-            }
-
-            .what-is {
-                padding:10px;
-                font-weight:300;
-                font-size:23px;
-            }
-
-            .card .fa {
+             .card .fa {
                 margin-top:20px;
             }
+
+
+            /* ABOUT SECTION
+            ------------------------------------------------------------------ */
 
             .about {
                 margin-top:50px;
@@ -164,21 +145,33 @@
                 padding-bottom:100px;
             }
 
-            .super-heading {
-                font-size:50px;
-            }
-
-
             .about-checklist {
                 line-height:40px;
             }
 
-
-            .image-caption {
+            .screenshots-caption {
                 margin-top:10px;
                 text-align:center;
                 font-size:16px;
             }
+
+            /* Carousel overrides */
+            .carousel-indicators li {
+                border:1px solid #ee3243;
+            }
+
+            .carousel-indicators .active {
+                background-color:#ee3243;
+            }
+
+            .item img {
+                width:555px;
+                height:302px;
+            }
+
+
+            /* DOWNLOAD SECTION
+            ------------------------------------------------------------------ */
 
             .download-alt {
                 background:#D1DBE0;
@@ -207,25 +200,17 @@
                 display:block;
             }
 
-
-            /* Carousel overrides */
-            .carousel-indicators li {
-                border:1px solid #ee3243;
-            }
-
-            .carousel-indicators .active {
-                background-color:#ee3243;
-            }
-
-            .item img {
-                width:555px;
-                height:302px;
-            }
+            /* TOUR SECTION
+            ------------------------------------------------------------------ */
 
             video {
               width: 100%    !important;
               height: auto   !important;
             }
+
+
+            /* USERS SECTION
+            ------------------------------------------------------------------ */
 
             #who img {
                 width:100%;
@@ -252,8 +237,9 @@
                 margin-bottom:10px;
             }
 
-            footer#footer {
-            }
+
+            /* FOOTER
+            ------------------------------------------------------------------ */
 
             footer#footer .container {
                 padding-top:60px;
@@ -273,16 +259,12 @@
                 margin-right:5px;
             }
 
-            .channels {
+            footer#footer .channels {
                 margin-bottom:30px;
             }
 
-            .address {
-                margin-top:10px;
-                font-size:14px;
-            }
 
-            .author {
+            footer#footer .author {
                 margin-bottom:20px;
                 font-size:16px;
             }
@@ -290,24 +272,24 @@
             footer#footer .page-header {
                 margin-bottom:30px;
             }
-            footer#footer a {
-            }
-            .lol {
-                background:;
-                text-align:center;
-                padding:0 10em;
-                margin-bottom:-50px;
-                margin-top:30px;
-                font-size:27px;
-                font-weight:300;
+
+
+
+            /* GLOBALS
+            ------------------------------------------------------------------ */
+
+            /* Heading for sections */
+            .super-heading {
+                font-size:50px;
             }
 
-            .logos {
-                text-align:left;
+            .content {
+                margin-top:80px;
+                margin-bottom:120px;
             }
 
-            .logos img {
-                width:150px;
+            .page-header {
+                border-bottom:1px solid #CCC;
             }
 
         </style>
@@ -453,7 +435,7 @@
                                 </div>
                             </div>
                         </div>
-                        <p class="image-caption">Screenshots of NAV</p>
+                        <p class="screenshots-caption">Screenshots of NAV</p>
                     </div>
                 </div>
             </div>
