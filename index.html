@@ -212,6 +212,10 @@
             /* USERS SECTION
             ------------------------------------------------------------------ */
 
+            section#users {
+                background:white;
+            }
+
             #who img {
                 width:100%;
                 margin-bottom:10px;
@@ -290,6 +294,18 @@
 
             .page-header {
                 border-bottom:1px solid #CCC;
+            }
+
+            .bottom-space {
+                margin-bottom:30px;
+            }
+
+            .top-space {
+                margin-top:30px;
+            }
+
+            .center-text {
+                text-align:center;
             }
 
         </style>
@@ -445,7 +461,7 @@
                 <div class="col-md-12">
                     <h1 class="super-heading">Download</h1>
                     <p>NAV is freely available under the GNU GPLv2 license and can run on any UNIX machine that supports Apache and Python*</p>
-                    <p style="margin-bottom:30px;">The latest version is NAV <span id="version"></span>. Choose between our installation alternatives.</p>
+                    <p class="bottom-space">The latest version is NAV <span id="version"></span>. Choose between our installation alternatives.</p>
                     <div class="row">
                         <div class="col-md-4">
                             <div class="donwload-alt left">
@@ -476,8 +492,8 @@
                         </div>
                     </div>
                     <div class="row">
-                        <div class="col-md-12" style="margin-top:30px;">
-                            <p style="text-align:center;">(*) Having trouble deciding or installing? Read more about installing NAV on our <a href="#">wiki.</a></p>
+                        <div class="col-md-12 top-space">
+                            <p class="center-text">(*) Having trouble deciding or installing? Read more about installing NAV on our <a href="#">wiki.</a></p>
                         </div>
                     </div>
                 </div>
@@ -494,19 +510,19 @@
                 </div>
             </div>
         </div>
-    <section style="background:white;" class="clearfix">
+    <section id="users" class="clearfix">
         <div id="who" class="container content">
             <div class="row">
                 <div class="col-md-12">
                     <h1 class="super-heading">Who uses NAV?</h1>
                 </div>
             </div>
-            <div class="row" style="margin-bottom:30px">
+            <div class="row bottom-space">
                 <div class="col-md-12">
                     <p>Read about some of our users, or view the <a href="#">list</a> of known NAV users.</p>
                 </div>
             </div>
-            <div class="row" style="margin-bottom:30px">
+            <div class="row bottom-space">
                 <div class="col-md-4">
                     <div class="title">NTNU</div>
                     <div class="location">Trondheim, Norway</div>
