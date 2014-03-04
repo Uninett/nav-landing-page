@@ -27,6 +27,27 @@
                 border-bottom:1px solid #CCC;
             }
 
+            .nav-wrapper {
+                background:#ee3243; /* unired */
+                border-bottom:1px solid #1D2730 !important;
+            }
+
+            .menu {
+                padding-top:10px;
+                padding-bottom:10px;
+            }
+            .menu .navbar-nav > li > a {color:white;}
+            .menu .navbar-nav > li > a:hover {text-decoration:none; color:#1D2730; background:none;}
+            .menu .navbar-nav > li {
+                font-size:18px;
+                font-weight:400;
+                padding-left:10px;
+            }
+
+            /* Set white border on collapsed nav icon */
+            .navbar-inverse .navbar-toggle, .navbar-inverse .navbar-toggle:hover, .navbar-inverse .navbar-toggle:focus { border-color:white; }
+            
+            /* Background image */
             .hero {
                 height:455px;
                 background-size: 100%;
@@ -40,35 +61,8 @@
                 color:white;
             }
 
-            .nav-wrapper {
-                /*background: #f8ae2a;*/
-                /*background:#ED583A;*/
-                /*background:#ED6550; /* RED  */
-                background:#ee3243; /* unired */
-                border-bottom:1px solid #1D2730;
-                color:white;
-            }
-
-            .menu {
-                padding-top:10px;
-                padding-bottom:10px;
-            }
-            .nav {
-                text-align:right;
-                margin-top:10px;
-            }
-
-            .nav li a {display:inline; color:white;}
-            .nav li a:hover {text-decoration:none; color:#1D2730; background:none;}
-            .nav li {
-                display:inline;
-                font-size:18px;
-                font-weight:400;
-                padding-left:10px;
-
-            }
-
-            .intro {
+            /* Overlay with text on hero */
+            .hero-text {
                 background-size: 100%;
                 background-size: cover;
                 -webkit-background-size: cover;
@@ -79,12 +73,11 @@
                 padding-top:130px;
                 text-align:left;
                 background:rgba(0,0,0,0.4);
-                /*padding-top:135px;
-                padding-bottom:141px;*/
                 height:100%;
                 border-bottom:1px solid #1D2730;
             }
 
+            /* Modifications on hero text */
             @media (max-width: 1200px) and (min-width: 990px) {
               .lead {
                 font-size:64px !important;
@@ -128,6 +121,8 @@
                 font-size:27px;
 
             }
+
+            /* Start content */
 
             .content {
                 margin-top:80px;
@@ -197,9 +192,15 @@
                 padding-bottom:30px;
             }
 
-            .left {margin-right:15px;}
-            .middle {margin-left:15px; margin-right:15px;}
-            .right {margin-left:15px;}
+            @media (min-width: 990px) {
+                .left {margin-right:15px;}
+                .middle {margin-left:15px; margin-right:15px;}
+                .right {margin-left:15px;}
+            }
+
+            @media (max-width:990px) {
+                .left, .middle, .right { margin-bottom:20px;}
+            }
 
             .download-alt-content p {
                 height:110px;
@@ -312,19 +313,22 @@
         </style>
     </head>
     <body>
-        <nav class="nav-wrapper navbar navbar-fixed-top navbar-collapse" role="navigation">
+        <nav class="nav-wrapper navbar-inverse navbar navbar-fixed-top" role="navigation">
             <div class="container menu">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse-1">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse-1">
                         <span class="sr-only">Toggle navigation</span>
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                     </button>
-                <a class="brand" href="#"><img src="./image/nav-logo.svg" width="100px" alt="" /></a>
-                <div class="navbar-right" id="navbar-collapse-1">
+                    <a class="brand" href="#"><img src="./image/nav-logo.svg" width="100px" alt="" /></a>
+                </div>
+
+                <div class="navbar-right navbar-collapse collapse" id="navbar-collapse-1">
                         <ul class="nav navbar-nav">
-                            <li><a href="#download">Download</a></li>
-                            <li><a href="#tour">Tour</a></li>
+                            <li><a class="jump-link" data-section="download" href="#">Download</a></li>
+                            <li><a class="jump-link" data-section="tour" href="#">Tour</a></li>
                             <li><a href="http://blog.nav.uninett.no/">Blog</a></li>
                             <li><a href="http://nav.uninett.no">Doumentation</a></li>
                         </ul>
@@ -332,7 +336,7 @@
             </div>
         </nav>
         <div class="hero">
-            <div class="intro">
+            <div class="hero-text">
                 <div class="container">
                     <div class="row">
                         <div class="col-md-12">
@@ -347,13 +351,13 @@
             <div class="row">
                 <div class="card col-md-6">
                     <div class="row">
-                        <div class="col-md-2">
+                        <div class="col-md-2 col-sm-2 col-xs-3">
                             <span class="fa-stack fa-3x">
                                 <i class="fa fa-square-o fa-stack-2x"></i>
                                 <i class="fa fa-bell-o fa-stack-1x"></i>
                             </span>
                         </div>
-                        <div class="col-md-9 col-md-offset-1">
+                        <div class="col-md-9 col-md-offset-1 col-sm-9 col-xs-8">
                             <h3>Alerts</h3>
                             <p>If something in the network goes down, NAV alerts you via your dashboard, and can even send you an SMS.</p>
                         </div>
@@ -361,13 +365,13 @@
                 </div>
                 <div class="card col-md-6">
                     <div class="row">
-                        <div class="col-md-2">
+                        <div class="col-md-2 col-sm-2 col-xs-3">
                             <span class="fa-stack fa-3x">
                                 <i class="fa fa-square-o fa-stack-2x"></i>
                                 <i class="fa fa-pagelines fa-stack-1x"></i>
                             </span>
                         </div>
-                        <div class="col-md-9 col-md-offset-1">
+                        <div class="col-md-9 col-md-offset-1 col-sm-9 col-xs-8">
                             <h3>Topology</h3>
                             <p>Devices added to the NAV database can be visualized in several interactive maps of your whole network.</p>
                         </div>
@@ -377,13 +381,13 @@
             <div class="row">
                 <div class="card col-md-6">
                     <div class="row">
-                        <div class="col-md-2">
+                        <div class="col-md-2 col-sm-2 col-xs-3">
                             <span class="fa-stack fa-3x">
                                 <i class="fa fa-square-o fa-stack-2x"></i>
                                 <i class="fa fa-dashboard fa-stack-1x"></i>
                             </span>
                         </div>
-                        <div class="col-md-9 col-md-offset-1">
+                        <div class="col-md-9 col-md-offset-1 col-sm-9 col-xs-8">
                             <h3>Statistics</h3>
                             <p>NAV gives you with VLAN graphs, link loads and customizable reports for your equipment.</p>
                         </div>
@@ -391,13 +395,13 @@
                 </div>
                 <div class="card col-md-6">
                     <div class="row">
-                        <div class="col-md-2">
+                        <div class="col-md-2 col-sm-2 col-xs-3">
                             <span class="fa-stack fa-3x">
                                 <i class="fa fa-square-o fa-stack-2x"></i>
                                 <i class="fa fa-cogs fa-stack-1x"></i>
                             </span>
                         </div>
-                        <div class="col-md-9 col-md-offset-1">
+                        <div class="col-md-9 col-md-offset-1 col-sm-9 col-xs-8">
                             <h3>Management</h3>
                             <p>Use NAV to monitor your inventory and configure network equipment over SNMP, such as switch ports.</p>
                         </div>
@@ -581,7 +585,7 @@
                 </div>
                 <div class="col-md-4">
                     <div class="page-header">
-                        <h2>Support</h2>
+                        <h2>Community</h2>
                     </div>
                     <div class="channels">
                         <i class="fa fa-envelope-o"></i> <a href="https://postlister.uninett.no/sympa/subscribe/nav-users">NAV general user list</a> 
@@ -637,10 +641,18 @@
     </footer>
         <script>
             $(function() {
+                var TOP_OFFSET_ADJUST = 65;
+                $('.jump-link').on('click', function () {
+                    var section = $(this).data('section');
+
+                    $('html, body').animate({scrollTop: $('#' + section).offset().top - TOP_OFFSET_ADJUST}, 250, function () {
+                        window.location.hash = '#!' + section;
+                    });
+                });
                 
                 var json = '{"version" : "4.0.1","virtual_appliance" : "https://nav.uninett.no/static/appliance/stable/nav-wheezy-appliance.tar.gz","debian_package" : "https://nav.uninett.no/nav_on_debian","source" : "https://launchpad.net/nav/4.0/4.0b3/+download/nav-4.0b3.tar.gz"}';
                 var obj = JSON.parse(json);
-version
+
                 $('#version').text(obj['version']);
                 $('#dl-quick').attr('href', obj['virtual_appliance']);
                 $('#dl-deb').attr('href', obj['debian_package']);
