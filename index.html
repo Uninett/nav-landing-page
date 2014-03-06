@@ -3,7 +3,7 @@
 <html>
     <head>
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta charset="utf-8" />
 
         <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600' rel='stylesheet' type='text/css'>
@@ -83,6 +83,9 @@
 
             /* Modifications on hero text */
             @media (max-width: 1200px) and (min-width: 990px) {
+
+
+
               .lead {
                 font-size:64px !important;
               }
@@ -93,23 +96,31 @@
             }
 
             @media (max-width: 990px) and (min-width: 600px) {
+
+                .hero-text {
+                    padding-top:80px;
+                }
               .lead {
-                font-size:64px !important;
+                font-size:70px !important;
               }
 
               .sub {
-                font-size:16px !important;
+                font-size:20px !important;
                 
               }
             }
 
             @media (max-width: 600px) {
+
+                .hero-text {
+                    padding-top:70px;
+                }
               .lead {
-                font-size:55px !important;
+                font-size:69px !important;
               }
 
               .sub {
-                font-size:16px !important;
+                font-size:20px !important;
                 
               }
             }
@@ -165,7 +176,7 @@
             }
 
             .item img {
-                width:555px;
+                width:100%;
                 height:302px;
             }
 
@@ -275,6 +286,10 @@
 
             footer#footer .page-header {
                 margin-bottom:30px;
+            }
+
+            footer#footer .powered-by img {
+                margin-right:20px;
             }
 
             footer#footer .photo-by {
@@ -444,35 +459,35 @@
                             <div class="carousel-inner">
                                 <div class="item active">
                                     <div class="row">
-                                        <div class="col-md-6">
+                                        <div class="col-md-12">
                                             <img class="" src="./image/nav1.png" alt="...">
                                         </div>
                                     </div>
                                 </div>
                                 <div class="item">
                                   <div class="row">
-                                        <div class="col-md-6">
+                                        <div class="col-md-12">
                                             <img class="" src="./image/nav4.png" alt="...">
                                         </div>
                                     </div>
                                 </div>
                                 <div class="item">
                                   <div class="row">
-                                        <div class="col-md-6">
+                                        <div class="col-md-12">
                                             <img class="" src="./image/nav3.png" alt="...">
                                         </div>
                                     </div>
                                 </div>
                                 <div class="item">
                                   <div class="row">
-                                        <div class="col-md-6">
+                                        <div class="col-md-12">
                                             <img class="" src="./image/nav2.png" alt="...">
                                         </div>
                                     </div>
                                 </div>
                                 <div class="item">
                                   <div class="row">
-                                        <div class="col-md-6">
+                                        <div class="col-md-12">
                                             <img class="" src="./image/nav5.png" alt="...">
                                         </div>
                                     </div>
@@ -620,61 +635,29 @@
                         <a href="#" class="pull-right">(archive)</a><br /><br />
                         <i class="fa fa-users"></i> #nav @ Freenode
                     </div>
-                    <!-- <div class="page-header">
-                        <h2>NAV is built with</h2>
-                    </div>
-                    <div class="logos">
-                        <img class="" src="http://assets.tumblr.com/images/branding_page/img_logotype_grey_2x.png" width="100%" alt="PyCharm">
-                    </div>
-                    <div class="logos">
-                        <img class="" src="http://assets.tumblr.com/images/branding_page/img_logotype_grey_2x.png" width="100%" alt="PyCharm">
-                    </div>
-                    <div class="logos"> 
-                        <img class="" src="http://assets.tumblr.com/images/branding_page/img_logotype_grey_2x.png" width="100%" alt="PyCharm">
-                    </div>
-                    <div class="logos">
-                        <img class="" src="http://assets.tumblr.com/images/branding_page/img_logotype_grey_2x.png" width="100%" alt="PyCharm">
-                    </div> -->
                 </div>
             </div>
             <div class="row">
-                <div class="col-md-6">
+                <div class="col-md-8">
                     <div class="page-header">
                         <h2>Powered by</h2>
                     </div>
                 </div>
             </div>
-            <div class="row bottom-space">
-                <div class="col-md-6">
-                    Logos goes here...
+            <div class="row bottom-space powered-by">
+                <div class="col-md-8">
+                    <img src="./image/logos/32-powered-by-python.png" alt="" />
+                    <img src="./image/logos/32-powered-by-django.png" alt="" />
+                    <img src="./image/logos/32-powered-by-pycharm.png" alt="" />
                 </div>
             </div>
             <div class="row">
                 <div class="col-md-6">
-                    <p class="photo-by">Cover photo by <a href="http://www.flickr.com/photos/jneilson23/">Jeff Nielson</a>.
+                    <p class="photo-by">Original cover photo by <a href="http://www.flickr.com/photos/jneilson23/">Jeff Nielson</a>.
                         License <a href="http://creativecommons.org/licenses/by/2.0/">CCA2.0G</a>.
                     </p>
                 </div>
             </div>
-            <!-- <div class="row lol" style="margin-bottom:20px;">
-                <div class="col-md-12">
-                    POWERED BY
-                </div>
-            </div>
-            <div class="row lol">
-                <div class="col-md-3">
-                    <img class="" src="http://assets.tumblr.com/images/branding_page/img_logotype_grey_2x.png" width="100%" alt="PyCharm">
-                </div>
-                <div class="col-md-3">
-                    <img class="" src="http://assets.tumblr.com/images/branding_page/img_logotype_grey_2x.png" width="100%" alt="PyCharm">
-                </div>
-                <div class="col-md-3">
-                    <img class="" src="http://assets.tumblr.com/images/branding_page/img_logotype_grey_2x.png" width="100%" alt="PyCharm">
-                </div>
-                <div class="col-md-3">
-                    <img class="" src="http://assets.tumblr.com/images/branding_page/img_logotype_grey_2x.png" width="100%" alt="PyCharm">
-                </div>
-            </div> -->
         </div>
     </footer>
         <script>
