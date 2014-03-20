@@ -177,7 +177,6 @@
 
             .item img {
                 width:100%;
-                height:302px;
             }
 
 
@@ -197,13 +196,13 @@
             }
 
             @media (min-width: 990px) {
-                .left {margin-right:15px;}
-                .middle {margin-left:15px; margin-right:15px;}
-                .right {margin-left:15px;}
+                .dl-left {margin-right:15px;}
+                .dl-middle {margin-left:15px; margin-right:15px;}
+                .dl-right {margin-left:15px;}
             }
 
             @media (max-width:990px) {
-                .left, .middle, .right { margin-bottom:20px;}
+                .dl-left, .dl-middle, .dl-right { margin-bottom:20px;}
             }
 
             .download-alt-content p {
@@ -499,7 +498,7 @@
                     <p class="bottom-space">The latest version is NAV <span id="version"></span>. Choose between our installation alternatives.</p>
                     <div class="row">
                         <div class="col-md-4">
-                            <div class="donwload-alt left">
+                            <div class="donwload-alt dl-left">
                                 <div class="download-alt-content ">
                                     <h3>Quick start</h3>
                                     <p>A pre-packaged Virtual Appliance in OVF format. Typically used for evaluation/testing.</p>
@@ -508,7 +507,7 @@
                             </div>
                         </div>
                         <div class="col-md-4">
-                            <div class="download-alt middle">
+                            <div class="download-alt dl-middle">
                                 <div class="download-alt-content">
                                     <h3>Debian package</h3>
                                     <p>Takes care of all dependencies and is currently the most comprehensive. Requires Debian.</p>
@@ -517,7 +516,7 @@
                             </div>
                         </div>
                         <div class="col-md-4">
-                            <div class="download-alt right">
+                            <div class="download-alt dl-right">
                                 <div class="download-alt-content">
                                     <h3>Source code</h3>
                                     <p>Build NAV from source. If you want NAV for a production environment, this is the way to go.</p>
