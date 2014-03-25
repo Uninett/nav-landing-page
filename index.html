@@ -63,6 +63,7 @@
                 background-position: center center;
                 background-image:url('./image/hero/22.png');
                 color:white;
+
             }
 
             /* Overlay with text on hero */
@@ -79,12 +80,30 @@
                 background:rgba(3,48,94,0.5);
                 height:100%;
                 border-bottom:1px solid #1D2730;
+
+            }
+
+            .quick-link-wrapper {
+                margin-top:96px;
+                text-align:center;
+            }
+
+            .quick-link-wrapper > ul {
+                margin:0 auto;
+                width:547px;
+                background:rgba(255,255,255,0.2);
+                color:white;
+            }
+
+            .quick-link-wrapper > ul > li {
+                display:inline-block;
+                padding:10px;
+                margin-right:30px;
+                font-size:23px;
             }
 
             /* Modifications on hero text */
             @media (max-width: 1200px) and (min-width: 990px) {
-
-
 
               .lead {
                 font-size:64px !important;
@@ -100,14 +119,15 @@
                 .hero-text {
                     padding-top:80px;
                 }
-              .lead {
-                font-size:70px !important;
-              }
 
-              .sub {
+                .lead {
+                font-size:70px !important;
+                }
+
+                .sub {
                 font-size:20px !important;
-                
-              }
+
+                }
             }
 
             @media (max-width: 600px) {
@@ -115,14 +135,15 @@
                 .hero-text {
                     padding-top:70px;
                 }
-              .lead {
-                font-size:69px !important;
-              }
 
-              .sub {
+                .lead {
+                font-size:69px !important;
+                }
+
+                .sub {
                 font-size:20px !important;
-                
-              }
+
+                }
             }
 
             .lead {
@@ -363,6 +384,16 @@
                         <div class="col-md-12">
                             <p class="lead">Monitor your network with ease.</p>
                             <p class="sub">Designed by Scandinavians, this free software makes network administration feel like flying.</p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12 quick-link-wrapper">
+                            <ul>
+                                <li><i class="fa fa-check"></i> Features</li>
+                                <li><i class="fa fa-download"></i> Download</li>
+                                <li><i class="fa fa-play"></i> Tour&nbsp;&nbsp;&nbsp;&nbsp;</li>
+                            </ul>
+                            </div>
                         </div>
                     </div>
                 </div>
