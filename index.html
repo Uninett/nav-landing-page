@@ -63,7 +63,6 @@
                 background-position: center center;
                 background-image:url('./image/hero/22.png');
                 color:white;
-
             }
 
             /* Overlay with text on hero */
@@ -75,17 +74,26 @@
                 -o-background-size: cover;
                 background-size: cover;
                 background-position: center center;
-                padding-top:130px;
+                /*padding-top:130px;*/
                 text-align:left;
                 background:rgba(3,48,94,0.5);
                 height:100%;
                 border-bottom:1px solid #1D2730;
+                position:relative;
+            }
 
+            .hero-typo {
+                position:absolute;
+                top:120px;
+                left:0;
             }
 
             .quick-link-wrapper {
-                margin-top:96px;
                 text-align:center;
+                position:absolute;
+                bottom:0;
+                left:0;
+                z-index:999;
             }
 
             .quick-link-wrapper > ul {
@@ -102,6 +110,15 @@
                 font-size:23px;
             }
 
+            .quick-link-wrapper > ul > li > a {
+                color:white;
+            }
+
+            .quick-link-wrapper > ul > li > a:hover {
+                text-decoration:none;
+                color:#EE8786;
+            }
+
             /* Modifications on hero text */
             @media (max-width: 1200px) and (min-width: 990px) {
 
@@ -116,8 +133,8 @@
 
             @media (max-width: 990px) and (min-width: 600px) {
 
-                .hero-text {
-                    padding-top:80px;
+                .hero-typo {
+                    top:60px !important;
                 }
 
                 .lead {
@@ -132,8 +149,8 @@
 
             @media (max-width: 600px) {
 
-                .hero-text {
-                    padding-top:70px;
+                .hero-typo {
+                    top:10px !important;
                 }
 
                 .lead {
@@ -382,16 +399,18 @@
                 <div class="container">
                     <div class="row">
                         <div class="col-md-12">
-                            <p class="lead">Monitor your network with ease.</p>
-                            <p class="sub">Designed by Scandinavians, this free software makes network administration feel like flying.</p>
+                            <div class="hero-typo">
+                                <p class="lead">Monitor your network with ease.</p>
+                                <p class="sub">Designed by Scandinavians, this free software makes network administration feel like flying.</p>
+                            </div>
                         </div>
                     </div>
-                    <div class="row">
-                        <div class="col-md-12 quick-link-wrapper">
+                    <div class="row hidden-xs">
+                        <div class="col-lg-12 col-md-12 col-sm-12 quick-link-wrapper">
                             <ul>
-                                <li><i class="fa fa-check"></i> Features</li>
-                                <li><i class="fa fa-download"></i> Download</li>
-                                <li><i class="fa fa-play"></i> Tour&nbsp;&nbsp;&nbsp;&nbsp;</li>
+                                <li><a class="jump-link" href="#" data-section="features"><i class="fa fa-check"></i> Features</a></li>
+                                <li><a class="jump-link" href="#" data-section="download"><i class="fa fa-download"></i> Download</a></li>
+                                <li><a class="jump-link" href="#" data-section="tour"><i class="fa fa-play"></i> Tour&nbsp;&nbsp;&nbsp;&nbsp;</a></li>
                             </ul>
                             </div>
                         </div>
@@ -399,7 +418,7 @@
                 </div>
             </div>
         </div>
-        <div class="container content">
+        <div id="features" class="container content">
             <div class="row">
                 <div class="card col-md-6">
                     <div class="row">
@@ -411,7 +430,7 @@
                         </div>
                         <div class="col-md-9 col-md-offset-1 col-sm-9 col-xs-8">
                             <h3>Alerts</h3>
-                            <p>If something in the network goes down, NAV alerts you via your dashboard, and can even send you an SMS.</p>
+                            <p>If something in the network goes down, NAV alerts you via your dashboard, email or SMS.</p>
                         </div>
                     </div>
                 </div>
@@ -425,7 +444,7 @@
                         </div>
                         <div class="col-md-9 col-md-offset-1 col-sm-9 col-xs-8">
                             <h3>Topology</h3>
-                            <p>Devices added to the NAV database can be visualized in several interactive maps of your whole network.</p>
+                            <p>Devices added to the NAV database can be visualized in several interactive network maps.</p>
                         </div>
                     </div>
                 </div>
@@ -455,7 +474,7 @@
                         </div>
                         <div class="col-md-9 col-md-offset-1 col-sm-9 col-xs-8">
                             <h3>Management</h3>
-                            <p>Use NAV to monitor your inventory and configure network equipment over SNMP, such as switch ports.</p>
+                            <p>Use NAV to monitor your inventory and configure network equipment, such as switches.</p>
                         </div>
                     </div>
                 </div>
@@ -593,6 +612,20 @@
                 </div>
             </div>
             <div class="row bottom-space">
+                <div class="col-md-6">
+                    <h3>Universities and organizations</h3>
+                    <p>
+                        94% of the universities and colleges in Norway uses NAV to monitor their network.
+                        NAV is used to monitor both the norwegian research network by UNINETT, and the scandinavian research network.
+
+                    </p>
+                    <ul>
+                        <li>NTNU <span class="location">Trondheim, Norway</span></li>
+                        <li>NTNU <span class="location">Trondheim, Norway</span></li>
+                    </ul>
+                </div>
+            </div>
+            <!-- <div class="row bottom-space">
                 <div class="col-md-4">
                     <div class="title">NTNU</div>
                     <div class="location">Trondheim, Norway</div>
@@ -626,7 +659,7 @@
                     </blockquote>
                     </div>
                 </div>
-            </div>
+            </div> -->
         </div>
     </section>
     <footer id="footer" class="clearfix">
@@ -639,13 +672,13 @@
                     <div class="row">
                         <div class="col-md-6">
                             <div class="author">
-                            <img src="./image/uninett-logo-grey.svg" width="150px" alt="" /><br />
+                            <a href="http://uninett.no/en"><img src="./image/uninett.svg" width="150px" alt="" /></a><br />
                                 UNINETT has worked on NAV since 2001 and has been in charge of the development since 2006.<br /><br />
                             </div>
                         </div>
                         <div class="col-md-6">
                             <div class="author">
-                                <img src="./image/logos/ntnu_bw.png" width="150px" alt="" /><br />
+                                <a href="http://ntnu.edu"><img src="./image/logos/ntnu_logo.png" width="150px" style="padding-top:6px; padding-bottom:6px;" alt="" /></a><br />
                                 NTNU, Norway’s largest science and technology university, created NAV in 1999.<br />
                             </div>
                         </div>
@@ -675,6 +708,7 @@
                 <div class="col-md-8">
                     <a href="http://python.org"><img src="./image/logos/32-powered-by-python.png" alt="" /></a>
                     <a href="http://djangoproject.com"><img src="./image/logos/32-powered-by-django.png" alt="" /></a>
+                    <a href="http://postgresql.org"><img src="./image/logos/32-powered-by-postgresql.png" alt="" /></a>
                     <a href="http://jetbrains.com/pycharm/"><img src="./image/logos/32-powered-by-pycharm.png" alt="" /></a>
                 </div>
             </div>
