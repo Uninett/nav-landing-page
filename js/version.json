@@ -1,6 +1,6 @@
 {
 	"version" : "4.0.1",
-	"virtual_appliance" : "https://nav.uninett.no/static/appliance/stable/nav-wheezy-appliance.tar.gz",
-	"debian_package" : "https://nav.uninett.no/nav_on_debian",
-	"source" : "https://launchpad.net/nav/4.0/4.0b3/+download/nav-4.0b3.tar.gz" 
+	"virtual_appliance" : "https://nav.uninett.no/static/appliance/stable/",
+	"debian_package" : "https://nav.uninett.no/wiki/nav_on_debian",
+	"source" : "https://launchpad.net/nav/4.0/4.0.1/+download/nav-4.0.1.tar.gz" 
 }
