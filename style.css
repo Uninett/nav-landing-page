@@ -22,8 +22,8 @@ body {
     padding-top:10px;
     padding-bottom:10px;
 }
-.menu .navbar-nav > li > a {color:white;}
-.menu .navbar-nav > li > a:hover {text-decoration:none; color:#1D2730; background:none;}
+.menu .navbar-nav > li > a { color:white; }
+.menu .navbar-nav > li > a:hover { text-decoration:none; color:#1D2730; background:none; }
 .menu .navbar-nav > li {
     font-size:18px;
     font-weight:400;
@@ -108,13 +108,13 @@ body {
 /* Modifications on hero text */
 @media (max-width: 1200px) and (min-width: 990px) {
 
-  .lead {
-    font-size:64px !important;
-  }
+    .lead {
+        font-size:64px !important;
+    }
 
-  .sub {
-    font-size:23px !important;
-  }
+    .sub {
+        font-size:23px !important;
+    }
 }
 
 @media (max-width: 990px) and (min-width: 600px) {
@@ -124,12 +124,11 @@ body {
     }
 
     .lead {
-    font-size:70px !important;
+        font-size:70px !important;
     }
 
     .sub {
-    font-size:20px !important;
-
+        font-size:20px !important;
     }
 }
 
@@ -141,12 +140,12 @@ body {
 
     .lead {
         text-align:center;
-    font-size:58px !important;
+        font-size:58px !important;
     }
 
     .sub {
         text-align: center;
-    font-size:19px !important;
+        font-size:19px !important;
 
     }
 
