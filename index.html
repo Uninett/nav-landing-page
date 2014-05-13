@@ -741,8 +741,7 @@
                     });
                 });
                 
-                var json = '{"version" : "4.0.1","virtual_appliance" : "https://nav.uninett.no/static/appliance/stable/nav-wheezy-appliance.tar.gz","debian_package" : "https://nav.uninett.no/nav_on_debian","source" : "https://launchpad.net/nav/4.0/4.0b3/+download/nav-4.0b3.tar.gz"}';
-                var obj = JSON.parse(json);
+                var obj = $.getJSON('js/version.json');
 
                 $('#version').text(obj['version']);
                 $('#dl-quick').attr('href', obj['virtual_appliance']);
