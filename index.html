@@ -741,12 +741,13 @@
                     });
                 });
                 
-                var obj = $.getJSON('js/version.json');
+                $.getJSON('js/version.json', function(obj) {
+                    $('#version').text(obj['version']);
+                    $('#dl-quick').attr('href', obj['virtual_appliance']);
+                    $('#dl-deb').attr('href', obj['debian_package']);
+                    $('#dl-src').attr('href', obj['source']);
+		});
 
-                $('#version').text(obj['version']);
-                $('#dl-quick').attr('href', obj['virtual_appliance']);
-                $('#dl-deb').attr('href', obj['debian_package']);
-                $('#dl-src').attr('href', obj['source']);
                 
                 // Populate version number and download links
                 
