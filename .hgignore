@@ -1,6 +1,5 @@
-.comments/*
 syntax:glob
-
+.comments/*
 *.egg-info
 *.pot
 *.py[co]
