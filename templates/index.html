@@ -1,0 +1,429 @@
+{% load staticfiles %}
+<!doctype html>
+<html>
+    <head>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta charset="utf-8" />
+
+        <link rel="icon" type="image/png" href="{% static "image/favicon.png" %}" />
+        <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,600' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css">
+        <link href="{% static "style.css" %}" rel="stylesheet">
+        <link href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+        <script src="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/js/bootstrap.min.js"></script>
+        <script>
+          (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+          (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+          m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+          })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+          ga('create', 'UA-47312122-2', 'uninett.no');
+          ga('send', 'pageview');
+        </script>
+    </head>
+    <body>
+        <nav class="nav-wrapper navbar-inverse navbar navbar-fixed-top" role="navigation">
+            <div class="container menu">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse-1">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="brand" href="#"><img src="{% static "image/nav-logo.svg"%}" width="100px" alt="" /></a>
+                </div>
+
+                <div class="navbar-right navbar-collapse collapse" id="navbar-collapse-1">
+                        <ul class="nav navbar-nav">
+                            <li><a class="jump-link" data-section="download" href="#">Download</a></li>
+                            <li><a class="jump-link" data-section="tour" href="#">Tour</a></li>
+                            <li><a href="http://blog.nav.uninett.no/">Blog</a></li>
+                            <li><a href="https://nav.uninett.no/doc/latest/">Documentation</a></li>
+                        </ul>
+                </div>
+            </div>
+        </nav>
+        <div class="hero">
+            <div class="hero-text">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="hero-typo">
+                                <p class="lead">Monitor your network with ease.</p>
+                                <p class="sub">Designed by Scandinavians, this free software makes network administration feel like flying.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row hidden-xs">
+                        <div class="col-lg-12 col-md-12 col-sm-12 quick-link-wrapper">
+                            <ul>
+                                <li><a class="jump-link" href="#" data-section="features"><i class="fa fa-check"></i> Features</a></li>
+                                <li><a class="jump-link" href="#" data-section="download"><i class="fa fa-download"></i> Download</a></li>
+                                <li><a class="jump-link" href="#" data-section="tour"><i class="fa fa-play"></i> Tour</a></li>
+                            </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="features" class="container content">
+            <div class="row">
+                <div class="card col-md-6">
+                    <div class="row">
+                        <div class="col-md-2 col-sm-2 col-xs-3">
+                            <span class="fa-stack fa-3x hidden-xs">
+                                <i class="fa fa-square-o fa-stack-2x"></i>
+                                <i class="fa fa-bell-o fa-stack-1x"></i>
+                            </span>
+                            <span class="fa-stack fa-2x hidden-sm hidden-md hidden-lg">
+                                <i class="fa fa-square-o fa-stack-2x"></i>
+                                <i class="fa fa-bell-o fa-stack-1x"></i>
+                            </span>
+                        </div>
+
+                        <div class="col-md-9 col-md-offset-1 col-sm-10 col-xs-9">
+                            <h3>Alerts</h3>
+                            <p>If something in the network goes down, NAV alerts you via your dashboard, email or SMS.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="card col-md-6">
+                    <div class="row">
+                        <div class="col-md-2 col-sm-2 col-xs-3">
+                            <span class="fa-stack fa-3x hidden-xs">
+                                <i class="fa fa-square-o fa-stack-2x"></i>
+                                <i class="fa fa-sitemap fa-stack-1x"></i>
+                            </span>
+                            <span class="fa-stack fa-2x hidden-sm hidden-md hidden-lg">
+                                <i class="fa fa-square-o fa-stack-2x"></i>
+                                <i class="fa fa-sitemap fa-stack-1x"></i>
+                            </span>
+                        </div>
+                        <div class="col-md-9 col-md-offset-1 col-sm-10 col-xs-9">
+                            <h3>Topology</h3>
+                            <p>Devices added to the NAV database can be visualized in several interactive network maps.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="card col-md-6">
+                    <div class="row">
+                        <div class="col-md-2 col-sm-2 col-xs-3">
+                            <span class="fa-stack fa-3x hidden-xs">
+                                <i class="fa fa-square-o fa-stack-2x"></i>
+                                <i class="fa fa-dashboard fa-stack-1x"></i>
+                            </span>
+                            <span class="fa-stack fa-2x hidden-sm hidden-md hidden-lg">
+                                <i class="fa fa-square-o fa-stack-2x"></i>
+                                <i class="fa fa-dashboard fa-stack-1x"></i>
+                            </span>
+                        </div>
+                        <div class="col-md-9 col-md-offset-1 col-sm-10 col-xs-9">
+                            <h3>Statistics</h3>
+                            <p>NAV gives you VLAN graphs, link loads and customizable reports for your equipment.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="card col-md-6">
+                    <div class="row">
+                        <div class="col-md-2 col-sm-2 col-xs-3">
+                            <span class="fa-stack fa-3x hidden-xs">
+                                <i class="fa fa-square-o fa-stack-2x"></i>
+                                <i class="fa fa-cogs fa-stack-1x"></i>
+                            </span>
+                            <span class="fa-stack fa-2x hidden-sm hidden-md hidden-lg">
+                                <i class="fa fa-square-o fa-stack-2x"></i>
+                                <i class="fa fa-cogs fa-stack-1x"></i>
+                            </span>
+                        </div>
+                        <div class="col-md-9 col-md-offset-1 col-sm-10 col-xs-9">
+                            <h3>Management</h3>
+                            <p>Use NAV to monitor your inventory and configure network equipment, such as switches.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="about">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <h1 class="super-heading">About NAV</h1>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-6">
+                        <p>NAV (Network Administration Visualized) is a free software program to monitor networks, developed by <a href="http://uninett.no/en/">UNINETT</a> and used by universities and corporations around the world.</p>
+                        <div class="about-checklist">
+                            <i class="fa fa-check"></i> Customizable dashboard<br />
+                            <i class="fa fa-check"></i> Extensive statistical overviews<br />
+                            <i class="fa fa-check"></i> Configuration on the fly<br />
+                            <i class="fa fa-check"></i> Full traceability of users and equipment<br />
+                            <i class="fa fa-check"></i> Device and vendor agnostic<br />
+                        </div>
+                    </div>
+                     <div class="col-md-6">
+                        <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+                            <!-- Indicators -->
+                            <ol class="carousel-indicators">
+                            <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+                            <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+                            <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+                            <li data-target="#carousel-example-generic" data-slide-to="3"></li>
+                            </ol>
+
+                            <!-- Wrapper for slides -->
+                            <div class="carousel-inner">
+                                <div class="item active">
+                                    <div class="row">
+                                        <div class="col-md-12">
+                                            <img class="" src="{% static "image/nav1.png" %}" alt="...">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                  <div class="row">
+                                        <div class="col-md-12">
+                                            <img class="" src="{% static "image/nav4.png" %}" alt="...">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                  <div class="row">
+                                        <div class="col-md-12">
+                                            <img class="" src="{% static "image/nav6.png" %}" alt="...">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                  <div class="row">
+                                        <div class="col-md-12">
+                                            <img class="" src="{% static "image/nav5.png" %}" alt="...">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <p class="screenshots-caption">Screenshots of NAV</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="download" class="container content">
+            <div class="row">
+                <div class="col-md-12">
+                    <h1 class="super-heading">Download</h1>
+                    <p>NAV is freely available under the GNU GPLv2 license and can run on any UNIX machine that supports Apache and Python*</p>
+                    <p class="bottom-space">The latest version is NAV <span id="version"></span>. Choose between our installation alternatives.</p>
+                    <div class="row">
+                        <div class="col-md-4">
+                            <div class="donwload-alt dl-left">
+                                <div class="download-alt-content ">
+                                    <h3>Quick start</h3>
+                                    <p>A pre-packaged Virtual Appliance in OVF format. Typically used for evaluation/testing.</p>
+                                    <a href="" id="dl-quick" class="btn btn-primary"><i class="glyphicon glyphicon-download-alt"></i> Download</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="download-alt dl-middle">
+                                <div class="download-alt-content">
+                                    <h3>Debian package</h3>
+                                    <p>Takes care of all dependencies and is currently the most comprehensive. Requires Debian.</p>
+                                    <a href="" id="dl-deb" class="btn btn-primary"><i class="glyphicon glyphicon-download-alt"></i> Download</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="download-alt dl-right">
+                                <div class="download-alt-content">
+                                    <h3>Source code</h3>
+                                    <p>Build NAV from source. If you want NAV for a production environment, this is the way to go.</p>
+                                    <a href="" id="dl-src" class="btn btn-primary"><i class="glyphicon glyphicon-download-alt"></i> Download</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12 top-space">
+                            <p class="center-text">(*) Having trouble deciding or installing? Read more about installing NAV on our <a href="https://nav.uninett.no/wiki/navdownload">wiki.</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="tour" class="container content">
+            <div class="row">
+                <div class="col-md-12">
+                    <h1 class="super-heading">Take a tour</h1>
+                    <figure>
+                        <iframe width="500" height="281" src="https://www.youtube.com/embed/eYYy1VLDm54?feature=oembed&amp;rel=0&amp;showinfo=0&amp;controls=1&amp;hd=1" frameborder="0" allowfullscreen=""></iframe>
+                    </figure>
+                </div>
+            </div>
+        </div>
+    <section id="users" class="clearfix">
+        <div id="who" class="container content">
+            <div class="row">
+                <div class="col-md-12">
+                    <h1 class="super-heading">Who uses NAV?</h1>
+                </div>
+            </div>
+            <div class="row bottom-space">
+                <div class="col-md-12">
+                    <p>Read about our selected users, or view the <a href="https://nav.uninett.no/wiki/navusers">list</a> of known NAV users.</p>
+                </div>
+            </div>
+            <div class="row bottom-space">
+                <div class="col-md-6">
+                    <h3>Universities and research institutions</h3>
+                    <p>
+                        The NAV user-base in Norway covers 94 percent of the
+                        universities in addition to several foreign educational
+                        institutions.
+                    </p>
+                    <ul>
+                        <li><a href="http://ntnu.edu">NTNU</a> <span class="location">Trondheim, Norway</span></li>
+                        <li><a href="http://www.msu.ru/en/">MSU</a> <span class="location">Moscow, Russia</span></li>
+                        <li><a href="http://met.no/English/">MET</a> <span class="location">Oslo, Norway</span></li>
+                    </ul>
+                </div>
+                <div class="col-md-6">
+                    <h3>Commercial enterprises</h3>
+                    <p>
+                        NAV is used by commercial actors from different
+                        industries, ranging from telecommunications to health
+                        care.
+                    </p>
+                    <ul>
+                        <li><a href="http://www.cah.cz/en/">Czech aeroholding</a> <span class="location">Prague, Czech</span></li>
+                        <li><a href="http://www.oilspace.com">OILspace Inc</a> <span class="location">United Kingdom</span></li>
+                        <li>
+                            <a href="http://tradlosetrondheim.no/index.php?option=com_content&amp;view=article&amp;id=8&amp;lang=en-GB">
+                                Wireless Trondheim
+                            </a>
+                            <span class="location">Trondheim, Norway</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer id="footer" class="clearfix">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8">
+                    <div class="page-header">
+                        <h2>Creators</h2>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="author">
+                            <a href="http://uninett.no/en"><img src="{% static "image/uninett.svg" %}" width="150px" alt="" /></a><br />
+                                UNINETT has worked on NAV since 2001 and has been in charge of the development since 2006.<br /><br />
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="author">
+                                <a href="http://ntnu.edu"><img src="{% static "image/logos/ntnu_logo.png" %}" width="150px" style="padding-top:6px; padding-bottom:6px;" alt="" /></a><br />
+                                NTNU, Norway’s largest science and technology university, created NAV in 1999.<br />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="page-header">
+                        <h2>Community</h2>
+                    </div>
+                    <div class="channels">
+                        <i class="fa fa-envelope-o"></i> <a href="https://postlister.uninett.no/sympa/subscribe/nav-users">NAV general user list</a> 
+                        <a href="https://postlister.uninett.no/sympa/arc/nav-users" class="pull-right">(archive)</a><br />
+                        <i class="fa fa-envelope-o"></i> <a href="https://postlister.uninett.no/sympa/subscribe/nav-dev">NAV development list</a>
+                        <a href="https://postlister.uninett.no/sympa/arc/nav-dev" class="pull-right">(archive)</a><br /><br />
+                        <i class="fa fa-users"></i> #nav @ Freenode
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-8">
+                    <div class="page-header">
+                        <h2>Powered by</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="row bottom-space powered-by">
+                <div class="col-md-8">
+                    <a href="http://python.org"><img src="{% static "image/logos/32-powered-by-python.png" %}" alt="" /></a>
+                    <a href="http://djangoproject.com"><img src="{% static "/image/logos/32-powered-by-django.png" %}" alt="" /></a>
+                    <a href="http://postgresql.org"><img src="{% static "image/logos/32-powered-by-postgresql.png" %}" alt="" /></a>
+                    <a href="http://jetbrains.com/pycharm/"><img src="{% static "image/logos/32-powered-by-pycharm.png" %}" alt="" /></a>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6">
+                    <p class="photo-by">Original cover photo by <a href="http://www.flickr.com/photos/jneilson23/">Jeff Nielson</a>.
+                        License <a href="http://creativecommons.org/licenses/by/2.0/">CCA2.0G</a>.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+        <script>
+            $(function() {
+
+
+                // Jump link configuration
+                var TOP_OFFSET_ADJUST = 100;
+                $('.jump-link').on('click', function () {
+                    var section = $(this).data('section');
+
+                    $('html, body').animate({scrollTop: $('#' + section).offset().top - TOP_OFFSET_ADJUST}, 250, function () {
+                        window.location.hash = '#!' + section;
+                    });
+                });
+                
+
+                // Populate version number and download links
+                $.getJSON('/static/js/version.json', function(obj) {
+                    $('#version').text(obj['version']);
+                    $('#dl-quick').attr('href', obj['virtual_appliance']);
+                    $('#dl-deb').attr('href', obj['debian_package']);
+                    $('#dl-src').attr('href', obj['source']);
+                });
+
+
+                // Fluid video
+                var $allVideos = $("iframe[src^='https://player.vimeo.com'], iframe[src^='https://www.youtube.com'], object, embed"),
+                $fluidEl = $("figure");
+                        
+                $allVideos.each(function() {
+                
+                  $(this)
+                    // jQuery .data does not work on object/embed elements
+                    .attr('data-aspectRatio', this.height / this.width)
+                    .removeAttr('height')
+                    .removeAttr('width');
+                
+                });
+                
+                $(window).resize(function() {
+                
+                  var newWidth = $fluidEl.width();
+                  $allVideos.each(function() {
+                  
+                    var $el = $(this);
+                    $el
+                        .width(newWidth)
+                        .height(newWidth * $el.attr('data-aspectRatio'));
+                  });
+                }).resize();
+            });
+        </script>
+        
+    </body>
+</html>
