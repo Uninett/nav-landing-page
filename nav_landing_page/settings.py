@@ -8,6 +8,8 @@ For the full list of settings and their values, see
 https://docs.djangoproject.com/en/1.6/ref/settings/
 """
 
+
+
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 import os
 BASE_DIR = os.path.dirname(os.path.dirname(__file__))
@@ -82,6 +84,30 @@ STATICFILES_FINDERS = (
     'django.contrib.staticfiles.finders.AppDirectoriesFinder',
 )
 
+from markdown_deux.conf.settings import MARKDOWN_DEUX_DEFAULT_STYLE
+MARKDOWN_DEUX_STYLES = {
+    "default": MARKDOWN_DEUX_DEFAULT_STYLE,
+    "trusted": {
+        "extras": {
+            "code-friendly": None,
+        },
+        "extras": {
+            "code-friendly": None,
+            "pyshell": None,
+            "demote-headers": 3,
+            "link-patterns": None,
+            # `class` attribute put on `pre` tags to enable using
+            # <http://code.google.com/p/google-code-prettify/> for syntax
+            # highlighting.
+            "html-classes": {"pre": "prettyprint"},
+            "cuddled-lists": None,
+            "footnotes": None,
+            "header-ids": None,
+        },
+        "safe_mode": "escape",
+    }
+}
+
 # Application definition
 
 INSTALLED_APPS = (
@@ -91,6 +117,10 @@ INSTALLED_APPS = (
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'south',
+    'chunks',
+    'markdown_deux',
+    'releases',
 )
 
 MIDDLEWARE_CLASSES = (

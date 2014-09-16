@@ -8,7 +8,8 @@ admin.autodiscover()
 urlpatterns = patterns('',
     
     url(r'^$', 'nav_landing_page.views.home', name='home'),
-    # url(r'^blog/', include('blog.urls')),
+    url(r'^releases/', include('releases.urls')),
+    url(r'^install-instructions/$', 'nav_landing_page.views.install_instructions', name='install_instructions'),
 
     url(r'^admin/', include(admin.site.urls)),
 )
