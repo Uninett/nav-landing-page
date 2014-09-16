@@ -1,0 +1,75 @@
+{% extends 'base.html' %}
+{% load staticfiles %}
+
+{% block content %}
+<section id="releases">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12">
+				<h1 class="super-heading">NAV release archive</h1>
+				<p>Browse through downloads for all available releases. You can also look at their respective <a href="{% url 'releases_docs'%}">documentation</a>.</p>
+			</div>
+		</div>
+		<div class="row" id="ovf">
+			<div class="col-md-6">
+				<h3 class="page-header">Source</h3>
+				{% if beta_releases %}
+					<div class="release-list">
+					<h4>Beta releases</h4>
+						<ul>
+							{% for release in beta_releases %}
+								<li>
+									<a href="{{ release.source_url }}">
+										<i class="fa fa-download"></i> <strong>{{ release.version }}</strong>, {{ release.release_date }}
+									</a>
+								</li>
+							{% endfor %}
+						</ul>
+					</div>
+				{% endif %}
+				<div class="release-list">
+					<h4>Stable releases</h4>
+					<ul>
+						{% for release in stable_releases %}
+							<li>
+								<a href="{{ release.source_url }}">
+									<i class="fa fa-download"></i> <strong>{{ release.version }}</strong>, {{ release.release_date }}
+								</a>
+							</li>
+						{% endfor %}
+					</ul>
+				</div>
+			</div>
+			<div class="col-md-6">
+				<h3 class="page-header">Virtual Appliance</h3>
+				{% if beta_releases %}
+					<div class="release-list">
+						<h4>Beta releases</h4>
+						<ul>
+							{% for release in beta_releases %}
+								{% if release.beta_ovf_url %}
+									<li>
+										<a href="{{ release.beta_ovf_url }}">
+											<i class="fa fa-download"></i> <strong>{{ release.version }}</strong>, {{ release.release_date }}
+										</a>
+									</li>
+								{% endif%}
+							{% endfor %}
+						</ul>
+					</div>
+				{% endif %}
+				<div class="release-list">
+					<h4>Stable release</h4>
+					<ul>
+						<li>
+							<a href="{% static "appliance/stable/nav-virtual-appliance.tar.gz" %}">
+								<i class="fa fa-download"></i> <strong>{{ stable_releases.0.version }}</strong>, {{ stable_releases.0.release_date }}
+							</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+{% endblock %}

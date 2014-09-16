@@ -1,0 +1,58 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<section id="releases">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12">
+				<h1 class="super-heading">Release documentation</h1>
+				<p>Here you can find documentation for all avaliable releases. To download, head over to the <a href="{% url 'releases' %}">release archive</a>.</p>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-4">
+				<div class="release-list">
+					<h4 class="page-header">Stable releases</h4>
+					{% if stable_releases %}
+						<ul>
+							{% for release in stable_releases %}
+								<li><a href="/docs/{{ release.doc_version }}"><i class="fa fa-book"></i> <b>{{ release.version }}</b>, released {{ release.release_date }}</a></li>
+							{% endfor %}
+						</ul>
+					{% else %}
+						<p>There are no stable releases at the moment.</p>
+					{% endif %}
+				</div>
+			</div>
+			<div class="col-md-4">
+				<div class="release-list">
+					<h4 class="page-header">Beta releases</h4>
+					{% if beta_releases %}
+						<ul>
+							{% for release in beta_releases %}
+								<li><a href="/docs/{{ release.doc_version }}"><i class="fa fa-book"></i> <b>{{ release.version }}</b>, released {{ release.release_date }}</a></li>
+							{% endfor %}
+						</ul>
+					{% else %}
+						<p>There are no beta releases at the moment.</p>
+					{% endif %}
+				</div>
+			</div>
+			<div class="col-md-4">
+				<div class="release-list">
+					<h4 class="page-header">Development</h4>
+					{% if dev_releases %}
+						<ul>
+							{% for release in dev_releases %}
+								<li><a href="/docs/{{ release.doc_version }}"><i class="fa fa-book"></i> <b>{{ release.version }}</b>, released {{ release.release_date }}</a></li>
+							{% endfor %}
+						</ul>
+					{% else %}
+						<p>There are no development releases at the moment.</p>
+					{% endif %}
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+{% endblock %}

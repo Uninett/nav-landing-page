@@ -1,0 +1,24 @@
+{% extends 'base.html' %}
+{% load chunks %}
+{% load markdown_deux_tags %}
+
+
+
+{% block content %}
+<section id="install-instructions">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12">
+				<h1 id="debian" class="page-header">Installation instructions for Debian</h1>
+				{% markdown trusted %}{% chunk "debian_instructions"%}{% endmarkdown %}
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-12">
+				<h1 id="ovf" class="page-header">Installation instructions for Virtual Appliance</h1>
+				{% markdown trusted %}{% chunk "ovf_instructions"%}{% endmarkdown %}
+			</div>
+		</div>
+	</div>
+</section>
+{% endblock %}
