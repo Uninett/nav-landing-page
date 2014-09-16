@@ -1,32 +1,29 @@
 # -*- coding: utf-8 -*-
-from south.utils import datetime_utils as datetime
-from south.db import db
-from south.v2 import SchemaMigration
-from django.db import models
+from __future__ import unicode_literals
+
+from django.db import models, migrations
 
 
-class Migration(SchemaMigration):
+class Migration(migrations.Migration):
 
-    def forwards(self, orm):
-        # Adding model 'Release'
-        db.create_table(u'releases_release', (
-            (u'id', self.gf('django.db.models.fields.AutoField')(primary_key=True)),
-            ('version', self.gf('django.db.models.fields.CharField')(max_length=10)),
-        ))
-        db.send_create_signal(u'releases', ['Release'])
+    dependencies = [
+    ]
 
-
-    def backwards(self, orm):
-        # Deleting model 'Release'
-        db.delete_table(u'releases_release')
-
-
-    models = {
-        u'releases.release': {
-            'Meta': {'object_name': 'Release'},
-            u'id': ('django.db.models.fields.AutoField', [], {'primary_key': 'True'}),
-            'version': ('django.db.models.fields.CharField', [], {'max_length': '10'})
-        }
-    }
-
-    complete_apps = ['releases']
+    operations = [
+        migrations.CreateModel(
+            name='Release',
+            fields=[
+                ('id', models.AutoField(verbose_name='ID', serialize=False, auto_created=True, primary_key=True)),
+                ('version', models.CharField(help_text='This version number corresponds to for instance the doc folder name.', max_length=30)),
+                ('release_date', models.DateField()),
+                ('beta', models.BooleanField(default=False)),
+                ('development', models.BooleanField(default=False)),
+                ('beta_ovf_url', models.URLField(help_text='If this is a beta release, specify a direct download link to virtual appliance.')),
+                ('source_url', models.URLField(help_text='Direct download link to source code')),
+            ],
+            options={
+                'ordering': ['-release_date'],
+            },
+            bases=(models.Model,),
+        ),
+    ]
