@@ -5,5 +5,4 @@ from releases.models import Release
 class ReleasesAdmin(admin.ModelAdmin):
 	model = Release
 
-
 admin.site.register(Release, ReleasesAdmin)
