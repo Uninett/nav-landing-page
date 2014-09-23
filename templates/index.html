@@ -174,7 +174,7 @@
                 <div class="col-md-12">
                     <h1 class="super-heading">Download</h1>
                     <p>NAV is freely available under the GNU GPLv2 license and can run on any UNIX machine that supports Apache and Python*</p>
-                    <p class="bottom-space">The latest version is NAV {{ latest_stable_version }}. Choose between our installation alternatives.</p>
+                    <p class="bottom-space">The latest version is <span style="font-weight:400;">{{ latest_stable_release.version }}</span>. Choose between our installation alternatives.</p>
                     <div class="row">
                         <div class="col-md-4">
                             <div class="donwload-alt dl-left">
@@ -209,10 +209,10 @@
                                     <h3>Source code</h3>
                                     <p>Build NAV from source. If you want NAV for a production environment, this is the way to go.</p>
                                     <div class="btn-group">
-                                        <a href="{% url 'releases_latest_urls' 'docs_source' %}" class="btn btn-primary">
+                                        <a href="/docs/{{ latest_stable_release.series }}" class="btn btn-primary">
                                             <i class="fa fa-file-text-o"></i> Instructions
                                         </a>
-                                        <a href="{% url 'releases_latest_urls' 'dl_source' %}" class="btn btn-primary">
+                                        <a href="{{ latest_stable_release.source_url }}" class="btn btn-primary">
                                             <i class="glyphicon glyphicon-download-alt"></i> Download
                                         </a>
                                     </div>
