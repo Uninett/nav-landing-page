@@ -1,6 +1,6 @@
 {
-	"version" : "4.1.1",
+	"version" : "4.1.2",
 	"virtual_appliance" : "https://nav.uninett.no/static/appliance/stable/",
 	"debian_package" : "https://nav.uninett.no/wiki/nav_on_debian",
-	"source" : "https://launchpad.net/nav/4.1/4.1.1/+download/nav-4.1.1.tar.gz"
+	"source" : "https://launchpad.net/nav/4.1/4.1.2/+download/nav-4.1.2.tar.gz"
 }
