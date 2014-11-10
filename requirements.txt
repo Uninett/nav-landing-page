@@ -7,3 +7,4 @@ django-markdown-deux==1.0.4
 easy-thumbnails==2.1
 markdown2==2.2.3
 wsgiref==0.1.2
+psycopg2==2.5.4
