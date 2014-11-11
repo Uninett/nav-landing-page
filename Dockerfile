@@ -15,4 +15,4 @@ EXPOSE 8000
 VOLUME ["/app"]
 ENV DJANGO_SETTINGS_MODULE nav_landing_page.settings
 ENV PYTHONPATH /app
-CMD ["gunicorn", "-b", "0.0.0.0:8000", "wsgi"]
+CMD ["/app/docker-entrypoint.sh"]
