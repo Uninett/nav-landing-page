@@ -10,6 +10,8 @@ ADD requirements.txt /
 RUN pip install -r /requirements.txt
 
 ADD . /app
+RUN cd /app; /app/gen-secret-key.sh
+
 
 EXPOSE 8000
 VOLUME ["/app"]
