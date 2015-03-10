@@ -16,7 +16,7 @@
 					{% if series_stable %}
 						<ul>
 						{% for series, release_list in series_stable.items %}
-							<li><a href="/docs/{{ series }}"><i class="fa fa-book"></i> <b>Series {{ series }}</b></a></li>
+							<li><a href="/doc/{{ series }}"><i class="fa fa-book"></i> <b>Series {{ series }}</b></a></li>
 						{% endfor %}
 						</ul>
 					{% else %}
@@ -30,7 +30,7 @@
 					{% if series_beta %}
 						<ul>
 							{% for series, release_list in series_beta.items %}
-								<li><a href="/docs/{{ series }}"><i class="fa fa-book"></i> <b>Series {{ series }}</b></a></li>
+								<li><a href="/doc/{{ series }}"><i class="fa fa-book"></i> <b>Series {{ series }}</b></a></li>
 							{% endfor %}
 						</ul>
 					{% else %}
