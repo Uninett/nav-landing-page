@@ -101,7 +101,7 @@ STATICFILES_FINDERS = (
     'django.contrib.staticfiles.finders.AppDirectoriesFinder',
 )
 
-handler404 = 'nav_landing_page.views.handler_404'
+
 
 MARKDOWN_EXTENSIONS = ['extra', 'nl2br']
 
