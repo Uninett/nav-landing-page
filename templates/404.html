@@ -1,3 +1,4 @@
+{% extends 'base.html' %}
 {% comment %}
 
 This needs to explain that the URL was not found. but go on to suggest that
@@ -7,5 +8,22 @@ accompanied with a hyperlink to the same URL prefixed with /wiki/ - We no
 longer want automatic forwarding to the wiki.
 
 {% endcomment %}
-<h1>FOUR-OH-FOUR</h1>
-You stuff was not found.
+
+{% block content %}
+<section id="404" style="background:#FFF; padding-top:50px; padding-bottom:50px;">
+<div class="container">
+	<div class="row">
+		<div class="col-md-12">	
+			<h1 class="super-heading">404 Page not found <i class="fa fa-thumbs-down"></i></h1>
+			<p>We couldn't find the page you requested.</p>
+
+			<p>Maybe you were looking for a wiki page? Try 
+			<a href="https://nav.uninett.no/wiki{{ path|striptags }}">
+				https://nav.uninett.no/wiki{{ path|striptags }}
+			</a>
+			</p>
+		</div>
+	</div>
+</div>
+</section>
+{% endblock %}

@@ -7,3 +7,7 @@ def home(request):
 
 def install_instructions(request):
 	return render(request, 'install_instructions.html')
+
+
+def handler_404(request):
+	return render(request, '404.html', {'path': request.path}, status=404)
