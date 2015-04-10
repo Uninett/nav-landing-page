@@ -1,5 +1,7 @@
 syntax:glob
 .comments/*
+*.db
+*.sqlite3
 *.egg-info
 *.pot
 *.py[co]
