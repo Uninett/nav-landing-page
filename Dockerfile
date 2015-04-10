@@ -10,7 +10,7 @@ ADD requirements.txt /
 RUN pip install -r /requirements.txt
 
 ADD . /app
-RUN cd /app; /app/gen-secret-key.sh
+RUN cd /app; /app/set-production-settings.sh
 
 
 EXPOSE 8000
