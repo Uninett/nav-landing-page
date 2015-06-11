@@ -13,20 +13,6 @@
 		<div class="row" id="ovf">
 			<div class="col-md-6">
 				<h3 class="page-header">Source</h3>
-				{% if beta_releases %}
-					<div class="release-list">
-					<h4>Beta releases</h4>
-						<ul>
-							{% for release in beta_releases %}
-								<li>
-									<a href="{{ release.source_url }}">
-										<i class="fa fa-download"></i> <strong>{{ release.version }}</strong>, {{ release.release_date }}
-									</a>
-								</li>
-							{% endfor %}
-						</ul>
-					</div>
-				{% endif %}
 				{% if series_stable %}
 					<div class="release-list">
 						<h4>Stable releases</h4>
@@ -51,11 +37,39 @@
 						</ul>
 					</div>
 				{% else %}
-					<p>No releases found.</p>
+					<p>No stable releases found.</p>
+				{% endif %}
+				{% if beta_releases %}
+					<div class="release-list">
+					<h4>Beta releases</h4>
+						<ul>
+							{% for release in beta_releases %}
+								<li>
+									<a href="{{ release.source_url }}">
+										<i class="fa fa-download"></i> <strong>{{ release.version }}</strong>, {{ release.release_date }}
+									</a>
+								</li>
+							{% endfor %}
+						</ul>
+					</div>
 				{% endif %}
 			</div>
 			<div class="col-md-6">
 				<h3 class="page-header">Virtual Appliance <a href="/install-instructions/#ovf">(Instructions)</a></h3>
+				{% if latest_ovf_release %}
+					<div class="release-list">
+						<h4>Stable release</h4>
+						<ul>
+							<li>
+								<a href="{% static "appliance/stable/nav-virtual-appliance.tar.gz" %}">
+									<i class="fa fa-download"></i> <strong>{{ latest_ovf_release.version }}</strong>, {{ latest_ovf_release.release_date }}
+								</a>
+							</li>
+						</ul>
+					</div>
+				{% else %}
+					<p>No stable release found.</p>
+				{% endif %}
 				{% if beta_ovf %}
 					<div class="release-list">
 						<h4>Beta releases</h4>
@@ -69,20 +83,6 @@
 							{% endfor %}
 						</ul>
 					</div>
-				{% endif %}
-				{% if latest_ovf_release %}
-					<div class="release-list">
-						<h4>Stable release</h4>
-						<ul>
-							<li>
-								<a href="{% static "appliance/stable/nav-virtual-appliance.tar.gz" %}">
-									<i class="fa fa-download"></i> <strong>{{ latest_ovf_release.version }}</strong>, {{ latest_ovf_release.release_date }}
-								</a>
-							</li>
-						</ul>
-					</div>
-				{% else %}
-					<p>No release found.</p>
 				{% endif %}
 			</div>
 		</div>
