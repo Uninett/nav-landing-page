@@ -225,7 +225,7 @@ body {
 .download-alt-content {
     background:#D1DBE0;
     text-align:center;
-    padding:20px;
+    padding:15px;
     padding-bottom:30px;
 }
 
@@ -283,6 +283,42 @@ section#users {
 
 #who i {
     margin-bottom:10px;
+}
+
+/* RELEASES
+------------------------------------------------------------------ */
+
+section#releases, section#install-instructions {
+    background-color:white;
+    padding-top:40px;
+    min-height:600px;
+    padding-bottom:50px;
+}
+
+section#releases ul {
+    list-style-type:none;
+    padding-left:0;
+}
+
+section#releases li {
+    margin-bottom:10px;
+}
+
+.release-list {
+    margin-top:30px;
+    margin-bottom:30px;
+}
+
+.series-indent {
+    margin-left:10px;
+}
+
+/* RELEASES
+------------------------------------------------------------------ */
+
+section#install-instructions {
+    font-size:14px;
+    font-weight:400;
 }
 
 

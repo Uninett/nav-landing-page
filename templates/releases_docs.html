@@ -1,0 +1,48 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<section id="releases">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12">
+				<h1 class="super-heading">Release documentation</h1>
+				<p>Here you can find documentation for all availiable releases. To download, head over to the <a href="{% url 'releases' %}">release archive</a>.</p>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-6">
+				<div class="release-list">
+					<h3 class="page-header">Stable releases</h4>
+					{% if series_stable %}
+						<ul>
+						{% for series, release_list in series_stable.items %}
+							<li><a href="/doc/{{ series }}"><i class="fa fa-book"></i> <b>Series {{ series }}</b></a></li>
+						{% endfor %}
+						</ul>
+					{% else %}
+						<p>No stable releases found.</p>
+					{% endif %}
+				</div>
+			</div>
+			<div class="col-md-6">
+				<div class="release-list">
+					<h3 class="page-header">Beta releases</h4>
+					{% if series_beta %}
+						<ul>
+							{% for series, release_list in series_beta.items %}
+								<li><a href="/doc/{{ series }}"><i class="fa fa-book"></i> <b>Series {{ series }}</b></a></li>
+							{% endfor %}
+						</ul>
+					{% else %}
+						<p>No beta releases found.</p>
+					{% endif %}
+					<h3 class="page-header">Development</h3>
+					<ul>
+						<li><a href="/doc/dev"><i class="fa fa-book"></i> <b>Dev</b></a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+{% endblock %}
