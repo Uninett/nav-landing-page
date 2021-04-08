@@ -1,0 +1,107 @@
+<footer id="footer" class="clearfix">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-8">
+                <div class="page-header">
+                    <h2>Creators</h2>
+                </div>
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="author">
+                        <a href="http://uninett.no/en"><img src="/image/uninett.svg" width="150px" alt="" /></a><br />
+                            Uninett has worked on NAV since 2001 and has been in charge of the development since 2006.<br /><br />
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="author">
+                            <a href="http://ntnu.edu"><img src="/image/logos/ntnu_logo.png" width="150px" style="padding-top:6px; padding-bottom:6px;" alt="" /></a><br />
+                            NTNU, Norway’s largest science and technology university, created NAV in 1999.<br />
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="page-header">
+                    <h2>Community</h2>
+                </div>
+                <div class="channels">
+                    <i class="fa fa-envelope-o"></i> <a href="https://sympa.uninett.no/lists/uninett.no/subscribe/nav-users">NAV general user list</a>
+                    <a href="https://sympa.uninett.no/lists/uninett.no/arc/nav-users" class="pull-right">(archive)</a><br />
+                    <i class="fa fa-envelope-o"></i> <a href="https://sympa.uninett.no/lists/uninett.no/subscribe/nav-dev">NAV development list</a>
+                    <a href="https://sympa.uninett.no/lists/uninett.no/arc/nav-dev" class="pull-right">(archive)</a><br /><br />
+                    <i class="fa fa-users"></i> #nav @ Freenode
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-8">
+                <div class="page-header">
+                    <h2>Powered by</h2>
+                </div>
+            </div>
+        </div>
+        <div class="row bottom-space powered-by">
+            <div class="col-md-8">
+                <a href="http://python.org"><img src="/image/logos/32-powered-by-python.png" alt="" /></a>
+                <a href="http://djangoproject.com"><img src="/image/logos/32-powered-by-django.png" alt="" /></a>
+                <a href="http://postgresql.org"><img src="/image/logos/32-powered-by-postgresql.png" alt="" /></a>
+                <a href="http://jetbrains.com/pycharm/"><img src="/image/logos/32-powered-by-pycharm.png" alt="" /></a>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6">
+                <p class="photo-by">Original cover photo by <a href="http://www.flickr.com/photos/jneilson23/">Jeff Nielson</a>.
+                    License <a href="http://creativecommons.org/licenses/by/2.0/">CCA2.0G</a>.
+                </p>
+            </div>
+        </div>
+    </div>
+</footer>
+<script>
+    $(function() {
+
+
+        // Jump link configuration
+        var TOP_OFFSET_ADJUST = 100;
+
+        var hash = window.location.hash;
+        if(hash) {
+            $('html, body').animate({scrollTop: $(hash).offset().top - TOP_OFFSET_ADJUST}, 250, function () {
+                window.location.hash = hash;
+            });
+        }
+
+        $('.jump-link').on('click', function (event) {
+            var section = '#' + $(this).data('section');
+            $('html, body').animate({scrollTop: $(section).offset().top - TOP_OFFSET_ADJUST}, 250, function () {
+                window.location.hash = section;
+            });
+        });
+
+        // Fluid video
+        var $allVideos = $("iframe[src^='https://player.vimeo.com'], iframe[src^='https://www.youtube.com'], object, embed"),
+        $fluidEl = $("figure");
+
+        $allVideos.each(function() {
+
+          $(this)
+            // jQuery .data does not work on object/embed elements
+            .attr('data-aspectRatio', this.height / this.width)
+            .removeAttr('height')
+            .removeAttr('width');
+
+        });
+
+        $(window).resize(function() {
+
+          var newWidth = $fluidEl.width();
+          $allVideos.each(function() {
+
+            var $el = $(this);
+            $el
+                .width(newWidth)
+                .height(newWidth * $el.attr('data-aspectRatio'));
+          });
+        }).resize();
+    });
+</script>

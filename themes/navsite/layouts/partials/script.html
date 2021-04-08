@@ -1,0 +1,48 @@
+<script>
+    $(function() {
+
+
+        // Jump link configuration
+        var TOP_OFFSET_ADJUST = 100;
+
+        var hash = window.location.hash;
+        if(hash) {
+            $('html, body').animate({scrollTop: $(hash).offset().top - TOP_OFFSET_ADJUST}, 250, function () {
+                window.location.hash = hash;
+            });
+        }
+
+        $('.jump-link').on('click', function (event) {
+            var section = '#' + $(this).data('section');
+            $('html, body').animate({scrollTop: $(section).offset().top - TOP_OFFSET_ADJUST}, 250, function () {
+                window.location.hash = section;
+            });
+        });
+
+        // Fluid video
+        var $allVideos = $("iframe[src^='https://player.vimeo.com'], iframe[src^='https://www.youtube.com'], object, embed"),
+        $fluidEl = $("figure");
+
+        $allVideos.each(function() {
+
+          $(this)
+            // jQuery .data does not work on object/embed elements
+            .attr('data-aspectRatio', this.height / this.width)
+            .removeAttr('height')
+            .removeAttr('width');
+
+        });
+
+        $(window).resize(function() {
+
+          var newWidth = $fluidEl.width();
+          $allVideos.each(function() {
+
+            var $el = $(this);
+            $el
+                .width(newWidth)
+                .height(newWidth * $el.attr('data-aspectRatio'));
+          });
+        }).resize();
+    });
+</script>
