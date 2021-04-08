@@ -1,6 +1,4 @@
-{% extends 'base.html' %}
-{% load staticfiles %}
-{% block content %}
+{{ define "main" }}
         <div class="hero">
             <div class="hero-text">
                 <div class="container">
@@ -137,28 +135,28 @@
                                 <div class="item active">
                                     <div class="row">
                                         <div class="col-md-12">
-                                            <img class="" src="{% static "image/nav1.png" %}" alt="...">
+                                            <img class="" src="/image/nav1.png" alt="...">
                                         </div>
                                     </div>
                                 </div>
                                 <div class="item">
                                   <div class="row">
                                         <div class="col-md-12">
-                                            <img class="" src="{% static "image/nav4.png" %}" alt="...">
+                                            <img class="" src="/image/nav4.png" alt="...">
                                         </div>
                                     </div>
                                 </div>
                                 <div class="item">
                                   <div class="row">
                                         <div class="col-md-12">
-                                            <img class="" src="{% static "image/nav6.png" %}" alt="...">
+                                            <img class="" src="/image/nav6.png" alt="...">
                                         </div>
                                     </div>
                                 </div>
                                 <div class="item">
                                   <div class="row">
                                         <div class="col-md-12">
-                                            <img class="" src="{% static "image/nav5.png" %}" alt="...">
+                                            <img class="" src="/image/nav5.png" alt="...">
                                         </div>
                                     </div>
                                 </div>
@@ -172,9 +170,13 @@
         <div id="download" class="container content">
             <div class="row">
                 <div class="col-md-12">
+                  {{/* Fetch the highest stable series we can find */}}
+                  {{ range first 1 .Sections }}
+                  {{ $.Scratch.Set "stable_series" .CurrentSection.Title }}
+                  {{ end }}
                     <h1 class="super-heading">Download</h1>
                     <p>NAV is freely available under the GNU GPL license and can run on any UNIX machine that supports Apache and Python*</p>
-                    <p class="bottom-space">The latest version is <span style="font-weight:400;">{{ latest_stable_release.version }}</span>. Choose between our installation alternatives.</p>
+                    <p class="bottom-space">The latest version is <span style="font-weight:400;">VAR_LATEST_STABLE_RELEASE.VERSION</span>. Choose between our installation alternatives.</p>
                     <div class="row">
                         <div class="col-md-4">
                             <div class="donwload-alt dl-left">
@@ -185,7 +187,7 @@
                                         <a href="/install-instructions/#ovf" class="btn btn-primary">
                                             <i class="fa fa-file-text-o"></i> Instructions
                                         </a>
-                                        <a href="{% static "appliance/stable/navappliance.tar.gz" %}" class="btn btn-primary">
+                                        <a href="appliance/stable/navappliance.tar.gz" class="btn btn-primary">
                                             <i class="glyphicon glyphicon-download-alt"></i> Download
                                         </a>
                                     </div>
@@ -209,10 +211,10 @@
                                     <h3>Source code</h3>
                                     <p>Build NAV from source. If you want NAV for a production environment, this is the way to go.</p>
                                     <div class="btn-group">
-                                        <a href="https://nav.readthedocs.io/en/{{ latest_stable_release.series }}.x/intro/install.html" class="btn btn-primary">
+                                        <a href="https://nav.readthedocs.io/en/latest/intro/install.html" class="btn btn-primary">
                                             <i class="fa fa-file-text-o"></i> Instructions
                                         </a>
-                                        <a href="{{ latest_stable_release.source_url }}" class="btn btn-primary">
+                                        <a href="VAR_LATEST_STABLE_RELEASE_SOURCE_URL" class="btn btn-primary">
                                             <i class="glyphicon glyphicon-download-alt"></i> Download
                                         </a>
                                     </div>
@@ -222,7 +224,7 @@
                     </div>
                     <div class="row">
                         <div class="col-md-12 top-space">
-                            <p class="center-text">(*) Looking for older or beta releases? Have a look in our <a href="{% url 'releases' %}">release archive</a></p>
+                            <p class="center-text">(*) Looking for older or beta releases? Have a look in our <a href="/releases/">release archive</a></p>
                         </div>
                     </div>
                 </div>
@@ -279,4 +281,4 @@
             </div>
         </div>
     </section>
-{% endblock %}
+{{ end }}
