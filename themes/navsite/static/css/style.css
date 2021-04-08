@@ -47,7 +47,7 @@ body {
     -o-background-size: cover;
     background-size: cover;
     background-position: center center;
-    background-image:url('./image/hero/22.png');
+    background-image:url('/image/hero/22.png');
     color:white;
 }
 
