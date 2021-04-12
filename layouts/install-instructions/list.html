@@ -1,0 +1,16 @@
+{{ define "main" }}
+<section id="install-instructions">
+  <div class="container">
+
+    {{ range .Pages }}
+    <div class="row">
+      <div class="col-md-12">
+	<h1 id="{{ .File.TranslationBaseName }}" class="page-header">{{ .Title }}</h1>
+	{{ .Content }}
+      </div>
+    </div>
+    {{ end }}
+
+  </div>
+</section>
+{{ end }}
