@@ -26,4 +26,4 @@ Stable releases are found in the *stable/* directory, beta testing releases in t
   * OVF - [http://en.wikipedia.org/wiki/Open_Virtual_Machine_Format](http://en.wikipedia.org/wiki/Open_Virtual_Machine_Format)
   * VMWare OVFTool - [http://www.vmware.com/support/developer/ovf/](http://www.vmware.com/support/developer/ovf/)
   * Debian GNU/Linux - [http://www.debian.org/](http://www.debian.org/)
-  * [The appliance is built using Packer](https://github.com/UNINETT/navappliance), controlled by shell-based build scripts.
+  * [The appliance is built using Packer](https://github.com/Uninett/navappliance), controlled by shell-based build scripts.
