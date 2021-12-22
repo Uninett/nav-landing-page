@@ -29,8 +29,3 @@ If you need additional help in setting up and configuring Graphite on your NAV s
 ### Bugs
 
 If you have problems with the *package itself*, please report them at <https://github.com/uninett/nav-debian/issues>. If you want to report bugs in NAV, you can do so at <https://github.com/uninett/nav/issues>.
-
-### Footnotes
-
-The NAV Debian package used to be maintained by Morten Werner Forsbring at <http://pkg-nav.alioth.debian.org/> - the package currently maintained by Uninett is based on his work.
-
