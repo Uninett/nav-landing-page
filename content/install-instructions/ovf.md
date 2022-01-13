@@ -9,7 +9,7 @@ The appliance is regularly built through automated GitHub workflows, usually bas
 
 ### Downloading the appliance files
 
-[NAV virtual appliance releases](https://github.com/Uninett/navappliance/releases) are available at the `Uninett/navappliance` repo on GitHub.
+[NAV virtual appliance releases](https://github.com/Uninett/navappliance/releases) are available at GitHub.
 
 
 ### Configuration steps after booting the appliance
