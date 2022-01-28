@@ -16,7 +16,7 @@ Here's how to do it:
 
     sudo apt-get install -y curl apt-transport-https ca-certificates dirmngr software-properties-common
     curl -fsSL https://nav.uninett.no/debian/gpg | sudo apt-key add -
-    sudo add-apt-repository "deb https://nav.uninett.no/debian buster nav"
+    sudo add-apt-repository "deb [arch=all] https://nav.uninett.no/debian buster nav"
     sudo apt-get update
     sudo apt-get install nav
 
