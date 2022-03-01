@@ -17,7 +17,8 @@ Here's how to do it:
     sudo apt-get install -y curl apt-transport-https ca-certificates dirmngr software-properties-common
     sudo mkdir -p --mode=0755 /usr/local/share/keyrings
     curl -fsSL https://nav.uninett.no/debian/gpg | gpg --dearmor | sudo tee /usr/local/share/keyrings/nav.gpg >/dev/null
-    echo 'deb [arch=all signed-by=/usr/local/share/keyrings/nav.gpg] https://nav.uninett.no/debian bullseye nav' | sudo tee /etc/apt/sources.list.d/nav.list
+    echo 'deb [arch=all signed-by=/usr/local/share/keyrings/nav.gpg] https://nav.uninett.no/debian bullseye nav' \
+         | sudo tee /etc/apt/sources.list.d/nav.list
     sudo apt-get update
     sudo apt-get install nav
 
@@ -26,7 +27,8 @@ Here's how to do it:
     sudo apt-get install -y curl apt-transport-https ca-certificates dirmngr software-properties-common
     sudo mkdir -p --mode=0755 /usr/local/share/keyrings
     curl -fsSL https://nav.uninett.no/debian/gpg | gpg --dearmor | sudo tee /usr/local/share/keyrings/nav.gpg >/dev/null
-    sudo add-apt-repository "deb [arch=all signed-by=/usr/local/share/keyrings/nav.gpg] https://nav.uninett.no/debian buster nav"
+    echo 'deb [arch=all signed-by=/usr/local/share/keyrings/nav.gpg] https://nav.uninett.no/debian buster nav' \
+         | sudo tee /etc/apt/sources.list.d/nav.list
     sudo apt-get update
     sudo apt-get install nav
 
