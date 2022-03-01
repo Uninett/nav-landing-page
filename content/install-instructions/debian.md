@@ -24,8 +24,9 @@ Here's how to do it:
 #### Debian 10 (Buster)
 
     sudo apt-get install -y curl apt-transport-https ca-certificates dirmngr software-properties-common
-    curl -fsSL https://nav.uninett.no/debian/gpg | sudo apt-key add -
-    sudo add-apt-repository "deb [arch=all] https://nav.uninett.no/debian buster nav"
+    sudo mkdir -p --mode=0755 /usr/local/share/keyrings
+    curl -fsSL https://nav.uninett.no/debian/gpg | gpg --dearmor | sudo tee /usr/local/share/keyrings/nav.gpg >/dev/null
+    sudo add-apt-repository "deb [arch=all signed-by=/usr/local/share/keyrings/nav.gpg] https://nav.uninett.no/debian buster nav"
     sudo apt-get update
     sudo apt-get install nav
 
