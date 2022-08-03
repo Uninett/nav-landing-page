@@ -1,7 +1,7 @@
 ---
 title: 'NAV 4.0'
 date: 2014-04-08T06:18:00.000+02:00
-draft: false
+draft: true
 url: /2014/04/nav-40.html
 tags: 
 - regular

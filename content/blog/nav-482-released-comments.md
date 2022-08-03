@@ -1,7 +1,7 @@
 ---
 title: 'NAV 4.8.2 released'
 date: 2017-12-07T10:17:00.000+01:00
-draft: false
+draft: true
 url: /2017/12/nav-482-released.html
 ---
 
