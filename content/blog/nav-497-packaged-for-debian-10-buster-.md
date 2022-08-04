@@ -18,7 +18,7 @@ There is, however, one _caveat_ to using the NAV package on Debian 10: If you wa
   
 Debian 10 ships with a graphite-web package that runs on Python 3, while NAV 4.9 does not support Python 3 (we expect the next feature release to run on Python 3). mod\_wsgi cannot be made to serve both Python versions on the same Apache server - you will have to select a Python-version specific mod\_wsgi package.  
   
-For this reason, the virtual appliance has not yet been updated to Debian 10.  
+~~For this reason, the virtual appliance has not yet been updated to Debian 10.~~  
   
 For our production deployments, we serve up NAV and Graphite-web using a uWSGI application server, and use Apache + **mod\_uwsgi** as a front to provide TLS and serving of static file resources. This works fine on Debian 10, as each uWSGI application instance is an independent process.  
   
