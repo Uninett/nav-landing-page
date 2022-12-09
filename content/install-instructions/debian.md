@@ -34,9 +34,9 @@ Here's how to do it:
 
 ### Further instructions
 
-Please read the instructions in [/usr/share/doc/nav/README.Debian](https://raw.githubusercontent.com/Uninett/nav-debian/master/debian/README.Debian) to complete your configuration of NAV on Debian. You may then proceed to our [getting started-guide](https://nav.uninett.no/doc/latest/intro/getting-started.html).
+Please read the instructions in [/usr/share/doc/nav/README.Debian](https://raw.githubusercontent.com/Uninett/nav-debian/master/debian/README.Debian) to complete your configuration of NAV on Debian. You may then proceed to our [getting started-guide](https://nav.readthedocs.io/en/latest/intro/getting-started.html).
 
-If you need additional help in setting up and configuring Graphite on your NAV server, please refer to the how-to guide ["Installing Graphite for use with NAV on Debian"](https://nav.uninett.no/doc/dev/howto/installing-graphite-on-debian.html).
+If you need additional help in setting up and configuring Graphite on your NAV server, please refer to the how-to guide ["Installing Graphite for use with NAV on Debian"](https://nav.readthedocs.io/en/latest/howto/installing-graphite-on-debian.html).
 
 ### Bugs
 
