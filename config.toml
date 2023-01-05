@@ -2,3 +2,6 @@ baseURL = "https://nav.uninett.no/"
 languageCode = "en-us"
 title = "Network Administration Visualized"
 theme = "navsite"
+
+[markup.goldmark.parser]
+  autoHeadingID = false
