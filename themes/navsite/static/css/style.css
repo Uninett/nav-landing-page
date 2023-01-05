@@ -288,7 +288,7 @@ section#users {
 /* RELEASES
 ------------------------------------------------------------------ */
 
-section#releases, section#install-instructions {
+section#releases, section#install-instructions, section#blog {
     background-color:white;
     padding-top:40px;
     min-height:600px;
@@ -321,6 +321,32 @@ section#install-instructions {
     font-weight:400;
 }
 
+/* BLOG
+------------------------------------------------------------------ */
+
+section#blog {
+    font-size:16px;
+}
+
+article.blogpost header h1 {
+    padding-top: 0.5em;
+    margin-top: 0;
+    margin-bottom: 0;
+    color: #333;
+}
+
+article.blogpost {
+    border: 1px solid  #ddd;
+    margin-top: 1em;
+    background-color: #eee;
+}
+
+aside.pubdate {
+    padding-top: 0;
+    font-style: italic;
+    font-size: 0.7em;
+    color: #777;
+}
 
 /* FOOTER
 ------------------------------------------------------------------ */
