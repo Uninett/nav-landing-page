@@ -1,0 +1,13 @@
+    <div class="row">
+      <article class="col-md-12 blogpost">
+        <header>
+          <a href="{{ .Permalink }}"><h1 id="{{ .File.TranslationBaseName }}">{{ .Title }}</h1></a>
+          <aside class="pubdate">
+            <p>Posted on {{ .PublishDate.Format "Jan 2, 2006" }}</p>
+          </aside>
+        </header>
+
+        {{ .Content }}
+
+      </article>
+    </div>
