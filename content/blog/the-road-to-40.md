@@ -26,7 +26,8 @@ We did initially do some minor alterations to the status and the port admin tool
 
 We came to see the need to redo much of the design of the NAV web interface to achieve a consistent user experience. Many of the NAV tools, while all inheriting from the basic NAV web template, would often times “re-invent the wheel” when it came to user interface elements. This only serves to confuse users, and is also a maintenance nightmare.
 
-![](http://foundation.zurb.com/assets/img/homepage/hero-image.svg)We wanted a framework to help us achieve this. Although [Bootstrap](http://getbootstrap.com/) was considered at first, it’s license was deemed incompatible with our use of version 2 of the GPL. Eventually we landed on [Foundation](http://foundation.zurb.com/) as our framework. We also thought that while Bootstrap was nice for getting a new project up and running fast, we already had an old and big project, and it was in need of a framework that would help us structure and consolidate an already huge amount of design work.
+<img alt="[Foundation hero logo]" class="pull-right" src="https://get.foundation/assets/img/homepage/hero-image.svg" width="200"/>
+We wanted a framework to help us achieve this. Although [Bootstrap](http://getbootstrap.com/) was considered at first, it’s license was deemed incompatible with our use of version 2 of the GPL. Eventually we landed on [Foundation](http://foundation.zurb.com/) as our framework. We also thought that while Bootstrap was nice for getting a new project up and running fast, we already had an old and big project, and it was in need of a framework that would help us structure and consolidate an already huge amount of design work.
 
 We were fortunate enough to acquire the help of Christine Sætre from NTNU. She works as an expert in the field of interaction design, and has been an invaluable part of our redesign feedback loop for several months already.
 

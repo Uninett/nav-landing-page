@@ -8,3 +8,6 @@ theme = "navsite"
 
 [markup.goldmark.parser]
   autoHeadingID = false
+
+[markup.goldmark.renderer]
+  unsafe = true
