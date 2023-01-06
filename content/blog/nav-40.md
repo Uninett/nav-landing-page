@@ -7,7 +7,7 @@ tags:
 - regular
 ---
 
-![image](http://55.media.tumblr.com/935015da00fd090b8c984b8297d9691d/tumblr_inline_n3plreofEe1swzy6x.jpg)
+<img alt="[NAV Cake]" src="http://55.media.tumblr.com/935015da00fd090b8c984b8297d9691d/tumblr_inline_n3plreofEe1swzy6x.jpg" class="pull-right" />
 
 For those of you who have not already noticed, we released [the final NAV 4.0 version](https://postlister.uninett.no/sympa/arc/nav-users/2014-03/msg00036.html) less than two weeks ago. Due to a serious bug found on the 3.15 branch, [4.0.1 was also released last week](https://launchpad.net/nav/4.0/4.0.1).
 
