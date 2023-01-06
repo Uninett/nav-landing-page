@@ -26,7 +26,7 @@ We did initially do some minor alterations to the status and the port admin tool
 
 We came to see the need to redo much of the design of the NAV web interface to achieve a consistent user experience. Many of the NAV tools, while all inheriting from the basic NAV web template, would often times “re-invent the wheel” when it came to user interface elements. This only serves to confuse users, and is also a maintenance nightmare.
 
-<img alt="[Foundation hero logo]" class="pull-right" src="https://get.foundation/assets/img/homepage/hero-image.svg" width="200"/>
+<img alt="[Foundation hero logo]" class="pull-right" src="/image/blog/foundation-hero.svg" width="200" />
 We wanted a framework to help us achieve this. Although [Bootstrap](http://getbootstrap.com/) was considered at first, it’s license was deemed incompatible with our use of version 2 of the GPL. Eventually we landed on [Foundation](http://foundation.zurb.com/) as our framework. We also thought that while Bootstrap was nice for getting a new project up and running fast, we already had an old and big project, and it was in need of a framework that would help us structure and consolidate an already huge amount of design work.
 
 We were fortunate enough to acquire the help of Christine Sætre from NTNU. She works as an expert in the field of interaction design, and has been an invaluable part of our redesign feedback loop for several months already.
@@ -41,7 +41,7 @@ Being something a lot smaller than it is today, it initially provided a way to a
 
 The biggest selling point of Cricket was its hierarchical configuration trees, simplifying manual maintenance of configuration for monitoring massive numbers of devices. However, this point was really moot, all the while NAV would automatically produce and maintain this configuration for you.
 
-![image](http://55.media.tumblr.com/6c38ce8bdd483d8fa222cb971bc686e7/tumblr_inline_mzpfnuGIK71swzy6x.png)
+![image](/image/blog/tumblr_inline_mzpfnugik71swzy6x.png)
 
 Over the years, Cricket would prove massively inflexible whenever we wanted to collect new things while still keeping old data around, or when we simply want to organize information differently. Most of these things were possible, of course, but would require huge amounts of manual work on the part of the NAV user/administrator.
 
@@ -49,7 +49,7 @@ Cricket would also scale poorly when increasing the number of things to be monit
 
 To underscore our growing dissatisfaction with Cricket, maintenance of its codebase seems to have ceased in 2004. How could we replace Cricket with something better?
 
-![image](http://55.media.tumblr.com/aa3fd6a420d5f71d0b25ec48677de79a/tumblr_inline_mzpfb8WwF21swzy6x.png)
+<img alt="[RRDTool logo]" src="/image/blog/tumblr_inline_mzpfb8wwf21swzy6x.png" class="pull-right" />
 
 We knew we wanted to do the data collection in NAV code. We already had a daemon for collecting SNMP data; why should we outsource parts of this a third party tool? Although [RRDtool](http://oss.oetiker.ch/rrdtool/) still seemed like the best candidate for storing our time-series data, part of our gripes with Cricket were actually with RRDtool itself.
 
@@ -57,7 +57,7 @@ That’s when we found [Graphite](http://graphite.wikidot.com/).
 
 We established an experimental Graphite installation and started sending metrics from our customers’ NAV deployment servers to it. During testing, other groups within UNINETT caught on on and established Graphite installations for new projects they were working on.
 
-![image](http://55.media.tumblr.com/42d1dc2092c4fab50676c9e26a9ae3b4/tumblr_inline_mzpfqiM9sl1swzy6x.png)
+![image](/image/blog/tumblr_inline_mzpfqim9sl1swzy6x.png)
 
 Eventually, the flexibility and scalability of Graphite, coupled with it’s simple interface for sending metrics, won us over. We decided it was our replacement for RRDtool and the Cricket web interface, while data collection would be handled by NAV’s existing SNMP collection engine, _ipdevpoll_.
 

@@ -7,7 +7,7 @@ tags:
 - regular
 ---
 
-![NAV logo](http://55.media.tumblr.com/2f08d3ecb6543f2e8fb52616d55d9226/tumblr_inline_n0274rBeo81sww2qo.png)
+![NAV logo](/image/blog/tumblr_inline_n0274rbeo81sww2qo.png)
 
 As you can see, we have finally chosen the new NAV logo! It is simple, yet has some subtle nuances that we like.
 

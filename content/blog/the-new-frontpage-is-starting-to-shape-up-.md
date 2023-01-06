@@ -7,10 +7,10 @@ tags:
 - photo
 ---
 
-![](http://56.media.tumblr.com/bc5806599841ba467ad0a411a8320830/tumblr_n02cnu7vVq1tofzlco2_1280.png)
+![](/image/blog/tumblr_n02cnu7vvq1tofzlco2_1280.png)
 
 A megadropdown makes navigating NAV easy.
 
-![](http://56.media.tumblr.com/ca868c8d84f13de44be648c3a6f89ece/tumblr_n02cnu7vVq1tofzlco1_1280.png)
+![](/image/blog/tumblr_n02cnu7vvq1tofzlco1_1280.png)
 
 The frontpage of NAV is now a dashboard.

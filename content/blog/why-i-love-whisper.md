@@ -13,7 +13,7 @@ For NAV, we are brushing up its support for collecting sensor readings from UPSe
 
 This is when I happened upon NAV’s implementation of the UPS-MIB (RFC 1628), where the precision of a couple of objects is off by a factor of 10. **No way** our UPS is putting out _50 Amperes_ of electric current! [The fix for the NAV code was quick](https://github.com/Uninett/nav/commit/fb32bda5a81f1c6bab96d7516c58c1df1bb80928), but the graph doesn’t look very nice after the change:
 
-![image](http://55.media.tumblr.com/08a6292e6f9559b8029f0f35a171545d/tumblr_inline_n1yuefrgtU1swzy6x.png)
+![image](/image/blog/tumblr_inline_n1yuefrgtu1swzy6x.png)
 
 This is where Whisper, the storage format used by Graphite, shines, compared to RRD, in my humble opinion. This was all fixable with some one-line command trickery:
 
@@ -30,6 +30,6 @@ whisper-fetch.py upsOutputCurrent.wsp \
 
 The result:
 
-![image](http://55.media.tumblr.com/08870905e9b4a41d21cdfcadfb668e55/tumblr_inline_n1yuvf0BoH1swzy6x.png)
+![image](/image/blog/tumblr_inline_n1yuvf0boh1swzy6x.png)
 
 Brilliantly simple :-)
