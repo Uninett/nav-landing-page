@@ -2,9 +2,13 @@
 <section id="blog">
   <div class="container">
 
-    {{ range .Pages }}
+    {{ template "_internal/pagination.html" . }}
+
+    {{ range .Paginator.Pages.ByPublishDate.Reverse }}
     {{ partial "full-blog-body.html" . }}
     {{ end }}
+
+    {{ template "_internal/pagination.html" . }}
 
   </div>
 </section>
