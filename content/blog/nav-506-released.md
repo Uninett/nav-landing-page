@@ -25,7 +25,7 @@ Most of NAV will still run on Python 2 as of the 5.0 release, but from this poin
 
 *   [#2144](https://github.com/Uninett/nav/pull/2144) (Prevent ipdevinfo from crashing on weird device names)
 *   [#2149](https://github.com/Uninett/nav/issues/2149) (Inventory failing on DLink DGS-1100 : 'TypeError: argument of type 'int' is not iterable')
-*   [#2150](https://github.com/Uninett/nav/issues/2150) (\[BUG\] Interface down is causing widget 'status' to display 'Could not load widget' due to HTTP 500)
+*   [#2150](https://github.com/Uninett/nav/issues/2150) (\[BUG\] Interface down is causing widget 'status' to display 'Could not load widget' due to HTTP 500)
 *   [#2165](https://github.com/Uninett/nav/issues/2165) (\[BUG\] Delayed delivery alert subscriptions in single time period alert profiles are never sent)
 *   [#2167](https://github.com/Uninett/nav/pull/2167) (Fix potential typecast issue with SQL migration to NAV 5.0)
 *   [#2169](https://github.com/Uninett/nav/issues/2169) (\[BUG\] macwatch.py crashes when logging notifications about found MAC addresses)

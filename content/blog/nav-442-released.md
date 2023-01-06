@@ -13,8 +13,8 @@ The source code is available for download at [Launchpad](https://launchpad.net/n
 
 The following reported bugs have been fixed:
 
-*   [LP#1538029](https://bugs.launchpad.net/nav/+bug/1538029/) (Rickshaw color palette is bad for color blind users)
-*   [LP#1538113](https://bugs.launchpad.net/nav/+bug/1538113/) (report widget crashes with 500)
+*   [LP#1538029](https://bugs.launchpad.net/nav/+bug/1538029/) (Rickshaw color palette is bad for color blind users)
+*   [LP#1538113](https://bugs.launchpad.net/nav/+bug/1538113/) (report widget crashes with 500)
 *   [LP#1538270](https://bugs.launchpad.net/nav/+bug/1538270/) (PortAdmin crashes when non admin try to remove a vlan from the trunk)
 *   [LP#1540839](https://bugs.launchpad.net/nav/+bug/1540839/) (ipdevpoll inventory job fails when deleting old router addresses)
 *   [LP#1541246](https://bugs.launchpad.net/nav/+bug/1541246/) (alertprofiles: adding subscription fails (when form is not valid?))

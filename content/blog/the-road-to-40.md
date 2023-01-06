@@ -37,7 +37,7 @@ Not only are we cleaning up things on a large scale here, but in the process we 
 
 NAV already has a long history, dating back to the nineties, having first acquired its current name in 1999.
 
-Being something a lot smaller than it is today, it initially provided a way to automatically configure [MRTG](http://oss.oetiker.ch/mrtg/) to collect and graph time-series data from monitored devices. Fairly quickly, it replaced MRTG with [Cricket](http://cricket.sourceforge.net/), and has been using that ever since.
+Being something a lot smaller than it is today, it initially provided a way to automatically configure [MRTG](http://oss.oetiker.ch/mrtg/) to collect and graph time-series data from monitored devices. Fairly quickly, it replaced MRTG with [Cricket](http://cricket.sourceforge.net/), and has been using that ever since.
 
 The biggest selling point of Cricket was its hierarchical configuration trees, simplifying manual maintenance of configuration for monitoring massive numbers of devices. However, this point was really moot, all the while NAV would automatically produce and maintain this configuration for you.
 
@@ -45,13 +45,13 @@ The biggest selling point of Cricket was its hierarchical configuration trees, s
 
 Over the years, Cricket would prove massively inflexible whenever we wanted to collect new things while still keeping old data around, or when we simply want to organize information differently. Most of these things were possible, of course, but would require huge amounts of manual work on the part of the NAV user/administrator.
 
-Cricket would also scale poorly when increasing the number of things to be monitored. In fact, the entire reason the _EDGE_ device category exists in NAV was NTNU’s wish to exclude statistics from access ports, as they simply could not get Cricket to scale to the massive amounts of edge switches in their network.
+Cricket would also scale poorly when increasing the number of things to be monitored. In fact, the entire reason the _EDGE_ device category exists in NAV was NTNU’s wish to exclude statistics from access ports, as they simply could not get Cricket to scale to the massive amounts of edge switches in their network.
 
 To underscore our growing dissatisfaction with Cricket, maintenance of its codebase seems to have ceased in 2004. How could we replace Cricket with something better?
 
 ![image](http://55.media.tumblr.com/aa3fd6a420d5f71d0b25ec48677de79a/tumblr_inline_mzpfb8WwF21swzy6x.png)
 
-We knew we wanted to do the data collection in NAV code. We already had a daemon for collecting SNMP data; why should we outsource parts of this a third party tool? Although [RRDtool](http://oss.oetiker.ch/rrdtool/) still seemed like the best candidate for storing our time-series data, part of our gripes with Cricket were actually with RRDtool itself.
+We knew we wanted to do the data collection in NAV code. We already had a daemon for collecting SNMP data; why should we outsource parts of this a third party tool? Although [RRDtool](http://oss.oetiker.ch/rrdtool/) still seemed like the best candidate for storing our time-series data, part of our gripes with Cricket were actually with RRDtool itself.
 
 That’s when we found [Graphite](http://graphite.wikidot.com/).
 
