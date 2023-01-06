@@ -2,7 +2,7 @@
 title: 'NAV 4.8.5 released'
 date: 2018-06-22T08:06:00.000+02:00
 draft: false
-url: /2018/06/nav-485-released.html
+url: /blog/2018/06/nav-485-released/
 ---
 
 The fifth maintenance release of the 4.8 series of NAV is now out!

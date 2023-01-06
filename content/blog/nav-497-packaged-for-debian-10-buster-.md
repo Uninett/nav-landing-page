@@ -2,7 +2,7 @@
 title: 'NAV 4.9.7 packaged for Debian 10 (Buster)'
 date: 2019-07-31T11:21:00.001+02:00
 draft: false
-url: /2019/07/nav-497-packaged-for-debian-10-buster.html
+url: /blog/2019/07/nav-497-packaged-for-debian-10-buster/
 ---
 
 Hi everyone,  

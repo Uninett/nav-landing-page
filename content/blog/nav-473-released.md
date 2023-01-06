@@ -2,7 +2,7 @@
 title: 'NAV 4.7.3 released'
 date: 2017-11-13T09:15:00.000+01:00
 draft: false
-url: /2017/11/nav-473-released.html
+url: /blog/2017/11/nav-473-released/
 ---
 
 The third maintenance release of the 4.7 series of NAV is now out!

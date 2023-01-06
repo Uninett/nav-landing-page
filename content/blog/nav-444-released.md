@@ -2,7 +2,7 @@
 title: 'NAV 4.4.4 released'
 date: 2016-06-09T13:01:00.000+02:00
 draft: false
-url: /2016/06/nav-444-released.html
+url: /blog/2016/06/nav-444-released/
 ---
 
 The fourth maintenance release of the NAV 4.4 series was released 02.06.

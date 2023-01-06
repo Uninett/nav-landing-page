@@ -2,7 +2,7 @@
 title: 'NAV 4.3.1 released'
 date: 2015-08-20T06:50:00.000+02:00
 draft: false
-url: /2015/08/nav-431-released.html
+url: /blog/2015/08/nav-431-released/
 tags: 
 - bugfix
 - 4.3

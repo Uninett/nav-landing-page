@@ -2,7 +2,7 @@
 title: 'NAV 4.3.0 released'
 date: 2015-06-12T01:23:00.000+02:00
 draft: false
-url: /2015/06/nav-430-released.html
+url: /blog/2015/06/nav-430-released/
 tags: 
 - 4.3
 - nav

@@ -2,7 +2,7 @@
 title: 'NAV 5.1.1 released'
 date: 2020-12-07T12:55:00.002+01:00
 draft: false
-url: /2020/12/nav-511-released.html
+url: /blog/2020/12/nav-511-released/
 ---
 
 The first maintenance release of the 5.1 series of NAV is now out!

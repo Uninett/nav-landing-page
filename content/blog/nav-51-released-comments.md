@@ -2,7 +2,7 @@
 title: 'NAV 5.1 released'
 date: 2020-11-26T15:48:00.000+01:00
 draft: true
-url: /2020/11/nav-51-released.html
+url: /blog/2020/11/nav-51-released/
 ---
 
 #### after the update from 5.0.8 servicemon and event...

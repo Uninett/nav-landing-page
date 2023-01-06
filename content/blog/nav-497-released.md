@@ -2,7 +2,7 @@
 title: 'NAV 4.9.7 released'
 date: 2019-06-07T10:42:00.000+02:00
 draft: false
-url: /2019/06/nav-497-released.html
+url: /blog/2019/06/nav-497-released/
 ---
 
 The seventh maintenance release of the 4.9 series of NAV is now out!

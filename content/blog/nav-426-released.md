@@ -2,7 +2,7 @@
 title: 'NAV 4.2.6 released'
 date: 2015-04-23T06:18:00.000+02:00
 draft: false
-url: /2015/04/nav-426-released.html
+url: /blog/2015/04/nav-426-released/
 tags: 
 - bugfix
 - nav

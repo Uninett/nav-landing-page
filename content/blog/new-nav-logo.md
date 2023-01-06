@@ -2,7 +2,7 @@
 title: 'New NAV logo'
 date: 2014-01-27T05:18:00.000+01:00
 draft: false
-url: /2014/01/new-nav-logo.html
+url: /blog/2014/01/new-nav-logo/
 tags: 
 - regular
 ---

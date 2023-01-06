@@ -2,7 +2,7 @@
 title: 'The NAV API'
 date: 2015-05-21T09:03:00.000+02:00
 draft: false
-url: /2015/05/the-nav-api.html
+url: /blog/2015/05/the-nav-api/
 tags: 
 - nav
 - regular

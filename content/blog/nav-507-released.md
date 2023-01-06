@@ -2,7 +2,7 @@
 title: 'NAV 5.0.7 released'
 date: 2020-10-15T14:46:00.000+02:00
 draft: false
-url: /2020/10/nav-507-released.html
+url: /blog/2020/10/nav-507-released/
 ---
 
 The seventh maintenance release of the 5.0 series of NAV is now out!

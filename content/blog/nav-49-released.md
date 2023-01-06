@@ -2,7 +2,7 @@
 title: 'NAV 4.9 released'
 date: 2019-02-14T12:02:00.000+01:00
 draft: false
-url: /2019/02/nav-49-released.html
+url: /blog/2019/02/nav-49-released/
 ---
 
 During a two-week whirlwind, three releases have been made in the new 4.9 series of NAV.

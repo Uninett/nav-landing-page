@@ -2,7 +2,7 @@
 title: 'NAV 4.3.2 released'
 date: 2015-11-19T05:52:00.000+01:00
 draft: false
-url: /2015/11/nav-432-released.html
+url: /blog/2015/11/nav-432-released/
 tags: 
 - bugfix
 - 4.3

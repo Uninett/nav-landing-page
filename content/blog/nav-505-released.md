@@ -2,7 +2,7 @@
 title: 'NAV 5.0.5 released'
 date: 2020-03-13T16:09:00.000+01:00
 draft: false
-url: /2020/03/nav-505-released.html
+url: /blog/2020/03/nav-505-released/
 ---
 
 It's Friday the 13th and a pandemic is upon us, so we thought: Why not release the fifth maintenance version of the 5.0 series of NAV!

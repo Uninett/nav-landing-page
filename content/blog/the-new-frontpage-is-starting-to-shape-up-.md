@@ -2,7 +2,7 @@
 title: 'The new frontpage is starting to shape up!'
 date: 2014-01-27T07:09:00.000+01:00
 draft: false
-url: /2014/01/the-frontpage-of-nav-is-now-dashboard.html
+url: /blog/2014/01/the-frontpage-of-nav-is-now-dashboard/
 tags: 
 - photo
 ---

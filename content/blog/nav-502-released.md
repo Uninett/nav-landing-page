@@ -2,7 +2,7 @@
 title: 'NAV 5.0.2 released'
 date: 2019-12-13T13:32:00.001+01:00
 draft: false
-url: /2019/12/nav-502-released.html
+url: /blog/2019/12/nav-502-released/
 ---
 
 The second maintenance release of the 5.0 series of NAV is now out!

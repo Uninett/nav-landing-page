@@ -2,7 +2,7 @@
 title: 'NAV 4.5.1 released'
 date: 2016-06-16T15:03:00.000+02:00
 draft: false
-url: /2016/06/nav-451-released.html
+url: /blog/2016/06/nav-451-released/
 ---
 
 The first maintenance release of the NAV 4.5 series is now out.

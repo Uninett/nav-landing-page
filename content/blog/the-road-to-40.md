@@ -2,7 +2,7 @@
 title: 'The road to 4.0'
 date: 2014-01-20T07:29:00.000+01:00
 draft: false
-url: /2014/01/the-road-to-40.html
+url: /blog/2014/01/the-road-to-40/
 tags: 
 - cricket
 - 4.0

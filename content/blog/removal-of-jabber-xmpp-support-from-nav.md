@@ -2,7 +2,7 @@
 title: 'Removal of Jabber (XMPP) support from NAV'
 date: 2019-06-19T11:41:00.000+02:00
 draft: false
-url: /2019/06/removal-of-jabber-xmpp-support-from-nav.html
+url: /blog/2019/06/removal-of-jabber-xmpp-support-from-nav/
 ---
 
   

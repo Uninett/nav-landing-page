@@ -2,7 +2,7 @@
 title: 'Gaps in Graphite graphs'
 date: 2015-05-05T07:24:00.000+02:00
 draft: false
-url: /2015/05/gaps-in-graphite-graphs.html
+url: /blog/2015/05/gaps-in-graphite-graphs/
 tags: 
 - regular
 - graphite

@@ -2,7 +2,7 @@
 title: 'NAV 4.3.3 released'
 date: 2016-01-15T00:38:00.000+01:00
 draft: false
-url: /2016/01/nav-433-released.html
+url: /blog/2016/01/nav-433-released/
 tags: 
 - bugfix
 - 4.3.3

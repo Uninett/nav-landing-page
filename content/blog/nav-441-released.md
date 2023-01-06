@@ -2,7 +2,7 @@
 title: 'NAV 4.4.1 released'
 date: 2016-01-21T06:46:00.000+01:00
 draft: false
-url: /2016/01/nav-441-released.html
+url: /blog/2016/01/nav-441-released/
 tags: 
 - bugfix
 - 4.4.1

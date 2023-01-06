@@ -2,7 +2,7 @@
 title: 'NAV 5.0.6 released'
 date: 2020-08-27T16:37:00.001+02:00
 draft: false
-url: /2020/08/nav-506-released.html
+url: /blog/2020/08/nav-506-released/
 ---
 
 The sixth maintenance release of the 5.0 series of NAV is now out!

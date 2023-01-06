@@ -2,7 +2,7 @@
 title: 'Statistics'
 date: 2014-02-26T03:53:00.000+01:00
 draft: false
-url: /2014/02/statistics.html
+url: /blog/2014/02/statistics/
 tags: 
 - regular
 ---

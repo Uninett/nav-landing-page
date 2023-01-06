@@ -2,7 +2,7 @@
 title: 'NAV 4.8.0 released'
 date: 2017-11-24T08:19:00.000+01:00
 draft: false
-url: /2017/11/the-initial-feature-release-of-4.html
+url: /blog/2017/11/the-initial-feature-release-of-4/
 ---
 
 The initial feature release of the 4.8 series of NAV is now out!

@@ -2,7 +2,7 @@
 title: 'New beta release'
 date: 2014-02-12T01:17:00.000+01:00
 draft: false
-url: /2014/02/new-beta-release.html
+url: /blog/2014/02/new-beta-release/
 tags: 
 - regular
 ---

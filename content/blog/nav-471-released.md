@@ -2,7 +2,7 @@
 title: 'NAV 4.7.1 released'
 date: 2017-06-09T16:14:00.002+02:00
 draft: false
-url: /2017/06/nav-471-released.html
+url: /blog/2017/06/nav-471-released/
 ---
 
 We apologize for the issues with yesterday's NAV release, which, apparently, our test suite was unable to detect.

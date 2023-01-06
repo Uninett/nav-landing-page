@@ -2,7 +2,7 @@
 title: 'Post 4.0 experiences and 4.1 plans'
 date: 2014-05-12T10:18:00.000+02:00
 draft: false
-url: /2014/05/post-40-experiences-and-41-plans.html
+url: /blog/2014/05/post-40-experiences-and-41-plans/
 tags: 
 - regular
 ---

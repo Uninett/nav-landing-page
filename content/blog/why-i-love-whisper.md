@@ -2,7 +2,7 @@
 title: 'Why I love Whisper'
 date: 2014-03-05T07:02:00.000+01:00
 draft: false
-url: /2014/03/why-i-love-whisper.html
+url: /blog/2014/03/why-i-love-whisper/
 tags: 
 - regular
 ---

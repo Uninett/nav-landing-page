@@ -2,7 +2,7 @@
 title: 'NAV 4.2.3 released'
 date: 2015-02-13T07:52:00.000+01:00
 draft: false
-url: /2015/02/nav-423-released.html
+url: /blog/2015/02/nav-423-released/
 tags: 
 - bugfix
 - nav
