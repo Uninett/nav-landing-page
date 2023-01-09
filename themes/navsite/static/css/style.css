@@ -421,3 +421,12 @@ footer#footer .photo-by {
 .center-text {
     text-align:center;
 }
+
+.link-text {
+    color: #2A6293;
+}
+
+/* Overrides Bootstrap's primary button color */
+.btn-primary {
+    background-color: #3277B3 !important;
+}
