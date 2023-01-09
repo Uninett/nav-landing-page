@@ -14,7 +14,7 @@ body {
 ------------------------------------------------------------------ */
 
 .nav-wrapper {
-    background:#ee3243; /* unired */
+    background:#E71324; /* unired */
     border-bottom:1px solid #1D2730 !important;
 }
 
@@ -197,11 +197,11 @@ body {
 
 /* Carousel overrides */
 .carousel-indicators li {
-    border:1px solid #ee3243;
+    border:1px solid #E71324;
 }
 
 .carousel-indicators .active {
-    background-color:#ee3243;
+    background-color:#E71324;
 }
 
 .item img {
