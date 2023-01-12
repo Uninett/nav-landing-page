@@ -233,6 +233,7 @@ body {
     text-align:center;
     padding:15px;
     padding-bottom:30px;
+    height: fit-content;
 }
 
 @media (min-width: 990px) {
