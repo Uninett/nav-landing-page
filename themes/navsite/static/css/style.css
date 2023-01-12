@@ -106,8 +106,9 @@ body {
     color:#EE8786;
 }
 
+/* Overrider Bootstrap's default for container */
 .hero .container {
-    display: block;
+    display: block !important;
 }
 
 /* Modifications on hero text */
