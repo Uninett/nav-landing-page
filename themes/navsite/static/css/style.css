@@ -240,8 +240,12 @@ body {
 }
 
 .download-alt-content p {
-    height:110px;
+    height:fit-content;
     display:block;
+}
+
+.download-alt-content .btn-group {
+    margin-top: 1.8em !important;
 }
 
 /* TOUR SECTION
