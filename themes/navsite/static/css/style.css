@@ -39,7 +39,7 @@ body {
 
 /* Background image */
 .hero {
-    height:455px;
+    height:fit-content;
     background-size: 100%;
     background-size: cover;
     -webkit-background-size: cover;
@@ -66,10 +66,11 @@ body {
     height:100%;
     border-bottom:1px solid #1D2730;
     position:relative;
+    padding-top: 6.9em;
+    padding-bottom: 8.3em;
 }
 
 .hero-typo {
-    position:absolute;
     top:120px;
     left:0;
 }
@@ -79,7 +80,7 @@ body {
     position:absolute;
     bottom:0;
     left:0;
-    z-index:999;
+    z-index:2;
 }
 
 .quick-link-wrapper > ul {
@@ -103,6 +104,10 @@ body {
 .quick-link-wrapper > ul > li > a:hover {
     text-decoration:none;
     color:#EE8786;
+}
+
+.hero .container {
+    display: block;
 }
 
 /* Modifications on hero text */
