@@ -179,6 +179,22 @@ body {
     margin-top:20px;
 }
 
+#features {
+    margin-top: 4em;
+    margin-bottom: 4em;
+}
+
+.feature-icon {
+    margin-right: 2em;
+}
+
+@media (max-width: 990px){
+
+    .feature-icon {
+        margin-right: 0;
+    }
+}
+
 
 /* ABOUT SECTION
 ------------------------------------------------------------------ */
