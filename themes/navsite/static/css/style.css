@@ -244,6 +244,13 @@ body {
     display:block;
 }
 
+.button-border-inside:focus-visible,
+.button-border-inside:focus,
+.button-border-inside:focus-within {
+    box-shadow: 0 0 2px 2px #3277B3, inset 0 0 0 2px white;
+    -webkit-border-radius: 5px;
+}
+
 /* TOUR SECTION
 ------------------------------------------------------------------ */
 
