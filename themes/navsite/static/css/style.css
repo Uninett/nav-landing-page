@@ -31,21 +31,27 @@ body {
 }
 
 /* Set white border on collapsed nav icon */
-.navbar-inverse .navbar-toggle, .navbar-inverse .navbar-toggle:hover, .navbar-inverse .navbar-toggle:focus { border-color:white; }
+.navbar-inverse .navbar-toggle, .navbar-inverse .navbar-toggle:focus { border-color:white; }
 
-.navbar-header:hover {
-    padding: 2px;
-    box-shadow: 0 0 5px 2px white, inset 0 0 0 2px white;
-    -webkit-border-radius: 5px;
+.navbar-header a {
+    display: inline-block;
+    height: 50px;
+    width: 100px;
 }
 
-.navbar-header:focus,
-.navbar-header:focus-within,
-.navbar-header:focus-visible,
+.navbar-header a:hover,
+.navbar-toggle:hover,
+.navbar-header a:focus,
+.navbar-header a:focus-within,
+.navbar-header a:focus-visible,
+.navbar-toggle:focus,
+.navbar-toggle:focus-within,
+.navbar-toggle:focus-visible,
 .navbar-nav > li > a:focus-visible,
 .navbar-nav > li > a:focus,
 .navbar-nav > li > a:focus-within {
-    box-shadow: 0 0 2px 2px white, inset 0 0 0 2px white;
+    width: fit-content;
+    box-shadow: 0 0 2px 1px white, inset 0 0 0 2px white !important;
     -webkit-border-radius: 5px;
 }
 
