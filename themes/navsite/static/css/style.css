@@ -229,6 +229,20 @@ body {
     border:1px solid #E71324;
 }
 
+/* Carousel controls on hover overrides */
+.carousel li:hover {
+    box-shadow: 0 0 2px 1px orange, inset 0 0 0 2px orange !important;
+    -webkit-border-radius: 5px;
+}
+
+/* Carousel on controls focus overrides */
+.carousel li:focus-visible,
+.carousel li:focus,
+.carousel li:focus-within {
+    box-shadow: 0 0 2px 3px orangered, inset 0 0 0 3px orange !important;
+    -webkit-border-radius: 5px;
+}
+
 .carousel-indicators .active {
     background-color:#E71324;
 }
