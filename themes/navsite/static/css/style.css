@@ -33,6 +33,11 @@ body {
 /* Set white border on collapsed nav icon */
 .navbar-inverse .navbar-toggle, .navbar-inverse .navbar-toggle:hover, .navbar-inverse .navbar-toggle:focus { border-color:white; }
 
+.navbar-header:hover {
+    padding: 2px;
+    box-shadow: 0 0 5px 2px white, inset 0 0 0 2px white;
+    -webkit-border-radius: 5px;
+}
 
 /* HERO PICTURE
 ------------------------------------------------------------------ */
