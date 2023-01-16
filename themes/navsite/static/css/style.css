@@ -445,6 +445,16 @@ footer#footer .photo-by {
     -webkit-border-radius: 5px;
 }
 
+.author a:focus-visible,
+.author a:focus,
+.author a:focus-within,
+.powered-by a:focus-visible,
+.powered-by a:focus,
+.powered-by a:focus-within {
+    box-shadow: 0 0 2px 1px #2A6293, inset 0 0 0 1px #2A6293;
+    -webkit-border-radius: 5px;
+}
+
 
 /* GLOBALS
 ------------------------------------------------------------------ */
