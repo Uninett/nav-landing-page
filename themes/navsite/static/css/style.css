@@ -39,6 +39,16 @@ body {
     -webkit-border-radius: 5px;
 }
 
+.navbar-header:focus,
+.navbar-header:focus-within,
+.navbar-header:focus-visible,
+.navbar-nav > li > a:focus-visible,
+.navbar-nav > li > a:focus,
+.navbar-nav > li > a:focus-within {
+    box-shadow: 0 0 2px 2px white, inset 0 0 0 2px white;
+    -webkit-border-radius: 5px;
+}
+
 /* HERO PICTURE
 ------------------------------------------------------------------ */
 
