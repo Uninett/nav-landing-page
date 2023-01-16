@@ -120,6 +120,14 @@ body {
     color:#F3A8A5;
 }
 
+.quick-link-wrapper > ul > li > a:focus,
+.quick-link-wrapper > ul > li > a:focus-within,
+.quick-link-wrapper > ul > li > a:focus-visible {
+    padding: 0.3em 0.4em;
+    box-shadow: 0 0 2px 1px white, inset 0 0 0 2px white;
+    -webkit-border-radius: 5px;
+}
+
 /* Modifications on hero text */
 @media (max-width: 1200px) and (min-width: 990px) {
 
