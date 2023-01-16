@@ -403,6 +403,29 @@ footer#footer .photo-by {
     font-size:14px;
 }
 
+.author a {
+    display: block;
+    width: 155px;
+    height: 42px;
+}
+
+.powered-by > div {
+    display: flex;
+    flex-direction: row;
+}
+
+.powered-by a {
+    width: fit-content;
+    height: 35px;
+    margin: 0 0.1em;
+    padding: 0 0.1em;
+}
+
+.author a:hover,
+.powered-by a:hover {
+    box-shadow: 0 0 2px 0.05em #2A6293, inset 0 0 0 0.01em #2A6293;
+    -webkit-border-radius: 5px;
+}
 
 
 /* GLOBALS
