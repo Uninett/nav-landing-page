@@ -442,3 +442,8 @@ a {
 .btn-primary {
     background-color: #3277B3 !important;
 }
+
+/* Overrides Bootstrap's primary button on hover effect */
+.btn-primary:hover {
+    text-decoration: underline;
+}
