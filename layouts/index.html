@@ -286,4 +286,19 @@
             </div>
         </div>
     </section>
+<script>
+
+    $(function() {
+
+        $('.carousel-indicators li').on('keydown', function (event) {
+            // If Enter was pressed
+            if(event.which === 13) {
+                const index = parseInt(event.target.getAttribute('data-slide-to'))
+                $('.carousel').carousel(index)
+            }
+        });
+
+    });
+
+</script>
 {{ end }}
