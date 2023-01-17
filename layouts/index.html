@@ -302,4 +302,22 @@
             </div>
         </div>
     </section>
+<script>
+    $(function() {
+
+        $('.screenshots-caption-container button').on('click', function (event) {
+
+            if (event.currentTarget.getAttribute('id') === 'slideshow-pause-btn') {
+                event.currentTarget.setAttribute('hidden', 'true');
+                document.getElementById('slideshow-play-btn').removeAttribute('hidden');
+                $('.carousel').carousel('pause');
+            } else if (event.currentTarget.getAttribute('id') === 'slideshow-play-btn') {
+                event.currentTarget.setAttribute('hidden', 'true');
+                document.getElementById('slideshow-pause-btn').removeAttribute('hidden');
+                $('.carousel').carousel('cycle');
+            }
+        });
+
+    });
+</script>
 {{ end }}
