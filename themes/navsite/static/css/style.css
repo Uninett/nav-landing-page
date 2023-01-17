@@ -232,6 +232,10 @@ body {
     text-align: center;
     line-height: 30px;
 }
+
+.screenshots-caption-container button:hover {
+    color: orange;
+}
 /* DOWNLOAD SECTION
 ------------------------------------------------------------------ */
 
