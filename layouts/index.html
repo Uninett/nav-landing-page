@@ -23,14 +23,14 @@
                 </div>
             </div>
         </div>
-        <div id="features" class="container content">
+        <div id="features" class="container content d-flex">
             <div class="row">
                 <div class="col-md-12">
                     <h2 hidden class="super-heading">Features</h2>
                 </div>
+            </div>
                 <div class="card col-md-6">
-                    <div class="row">
-                        <div class="col-md-2 col-sm-2 col-xs-3">
+                        <div class="col-md-1 col-sm-2 col-xs-3 feature-icon">
                             <span class="fa-stack fa-3x hidden-xs">
                                 <i class="fa fa-square-o fa-stack-2x"></i>
                                 <i class="fa fa-bell-o fa-stack-1x"></i>
@@ -45,11 +45,9 @@
                             <h3>Alerts</h3>
                             <p>If something in the network goes down, NAV alerts you via your dashboard, email or SMS.</p>
                         </div>
-                    </div>
                 </div>
                 <div class="card col-md-6">
-                    <div class="row">
-                        <div class="col-md-2 col-sm-2 col-xs-3">
+                        <div class="col-md-1 col-sm-2 col-xs-3 feature-icon">
                             <span class="fa-stack fa-3x hidden-xs">
                                 <i class="fa fa-square-o fa-stack-2x"></i>
                                 <i class="fa fa-sitemap fa-stack-1x"></i>
@@ -63,13 +61,9 @@
                             <h3>Topology</h3>
                             <p>Devices added to the NAV database can be visualized in several interactive network maps.</p>
                         </div>
-                    </div>
                 </div>
-            </div>
-            <div class="row">
                 <div class="card col-md-6">
-                    <div class="row">
-                        <div class="col-md-2 col-sm-2 col-xs-3">
+                        <div class="col-md-1 col-sm-2 col-xs-3 feature-icon">
                             <span class="fa-stack fa-3x hidden-xs">
                                 <i class="fa fa-square-o fa-stack-2x"></i>
                                 <i class="fa fa-dashboard fa-stack-1x"></i>
@@ -83,11 +77,9 @@
                             <h3>Statistics</h3>
                             <p>NAV gives you VLAN graphs, link loads and customizable reports for your equipment.</p>
                         </div>
-                    </div>
                 </div>
                 <div class="card col-md-6">
-                    <div class="row">
-                        <div class="col-md-2 col-sm-2 col-xs-3">
+                        <div class="col-md-1 col-sm-2 col-xs-3 feature-icon">
                             <span class="fa-stack fa-3x hidden-xs">
                                 <i class="fa fa-square-o fa-stack-2x"></i>
                                 <i class="fa fa-cogs fa-stack-1x"></i>
@@ -101,9 +93,8 @@
                             <h3>Management</h3>
                             <p>Use NAV to monitor your inventory and configure network equipment, such as switches.</p>
                         </div>
-                    </div>
                 </div>
-            </div>
+
         </div>
         <div class="about">
             <div class="container">
@@ -124,7 +115,7 @@
                         </div>
                     </div>
                      <div class="col-md-6">
-                        <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+                        <div id="carousel-example-generic" class="carousel slide" data-ride="carousel" data-pause="hover">
                             <!-- Indicators -->
                             <ol class="carousel-indicators">
                             <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
@@ -138,34 +129,83 @@
                                 <div class="item active">
                                     <div class="row">
                                         <div class="col-md-12">
-                                            <img class="" src="/image/nav1.png" alt="...">
+                                            <span hidden id="nav1-description">
+                                                Front page of NAV.
+                                                On the left side there is the 'Getting started with NAV'-section and a top portion of a graph.
+                                                On the right side there are the following sections: NAV blog, Status, Action map
+                                            </span>
+                                            <img class="" src="/image/nav1.png"
+                                                 alt="Screenshot of NAV's front page."
+                                                 aria-describedby="nav1-description"
+                                            >
                                         </div>
                                     </div>
                                 </div>
                                 <div class="item">
                                   <div class="row">
                                         <div class="col-md-12">
-                                            <img class="" src="/image/nav4.png" alt="...">
+                                            <span hidden id="nav4-description">
+                                                NAV's Geomap page.
+                                                Most of the picture is a map of a street. There is line from one building to another.
+                                                The line is half grey and half green.
+                                                Below the map the following metrics are displayed: CPU load, netboxes, Link load, Link capacity.
+                                            </span>
+                                            <img class="" src="/image/nav4.png"
+                                                 alt="Screenshot of NAV's Geomap page."
+                                                 aria-describedby="nav4-description"
+                                            >
                                         </div>
                                     </div>
                                 </div>
                                 <div class="item">
                                   <div class="row">
                                         <div class="col-md-12">
-                                            <img class="" src="/image/nav6.png" alt="...">
+                                            <span hidden id="nav6-description">
+                                                Part of the page showing temperature graphs of the sensors of some device.
+                                                The IP address of the device is blurred out.
+                                                There are 3 graphs, each shows a current temperature of the sensor and a graph of temperature change below.
+                                                The graphs are called 'Friluftsinntak', 'Over aggregat', 'Over UPS'.
+                                            </span>
+                                            <img class="" src="/image/nav6.png"
+                                                 alt="Screenshot showing temperature graphs of the sensors of some device."
+                                                 aria-describedby="nav6-description"
+                                            >
                                         </div>
                                     </div>
                                 </div>
                                 <div class="item">
                                   <div class="row">
                                         <div class="col-md-12">
-                                            <img class="" src="/image/nav5.png" alt="...">
+                                            <span hidden id="nav5-description">
+                                                The graph is called 'Port details'.
+                                                It shows in- and out-going traffic on some port, measured in bits per second.
+                                            </span>
+                                            <img class="" src="/image/nav5.png"
+                                                 alt="Screenshot of graph of the traffic on some port."
+                                                 aria-describedby="nav5-description"
+                                            >
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        <p class="screenshots-caption">Screenshots of NAV</p>
+                         <div class="screenshots-caption-container">
+                             <div>
+                                 <button class="btn-md" id="slideshow-play-btn" hidden aria-label="play slideshow">
+                                     <i class="glyphicon glyphicon-play" aria-hidden="true"></i>
+                                 </button>
+                                 <button class="btn-md" id="slideshow-pause-btn" aria-label="pause slideshow">
+                                     <i class="glyphicon glyphicon-pause" aria-hidden="true"></i>
+                                 </button>
+                             </div>
+
+                             <div>
+                                 <p class="screenshots-caption">
+                                     Screenshots of NAV
+                                 </p>
+                             </div>
+                         </div>
+
                     </div>
                 </div>
             </div>
@@ -203,9 +243,11 @@
                                 <div class="download-alt-content">
                                     <h3>Debian package</h3>
                                     <p>Takes care of all dependencies and is currently the most comprehensive. Requires Debian.</p>
-                                    <a href="/install-instructions/#debian" class="btn btn-primary">
-                                        <i class="fa fa-file-text-o"></i> Instructions
-                                    </a>
+                                    <div class="btn-group">
+                                        <a href="/install-instructions/#debian" class="btn btn-primary">
+                                            <i class="fa fa-file-text-o"></i> Instructions
+                                        </a>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -289,4 +331,22 @@
             </div>
         </div>
     </section>
+<script>
+    $(function() {
+
+        $('.screenshots-caption-container button').on('click', function (event) {
+
+            if (event.currentTarget.getAttribute('id') === 'slideshow-pause-btn') {
+                event.currentTarget.setAttribute('hidden', 'true');
+                document.getElementById('slideshow-play-btn').removeAttribute('hidden');
+                $('.carousel').carousel('pause');
+            } else if (event.currentTarget.getAttribute('id') === 'slideshow-play-btn') {
+                event.currentTarget.setAttribute('hidden', 'true');
+                document.getElementById('slideshow-pause-btn').removeAttribute('hidden');
+                $('.carousel').carousel('cycle');
+            }
+        });
+
+    });
+</script>
 {{ end }}

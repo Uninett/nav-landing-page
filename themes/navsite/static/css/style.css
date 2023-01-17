@@ -14,7 +14,7 @@ body {
 ------------------------------------------------------------------ */
 
 .nav-wrapper {
-    background:#ee3243; /* unired */
+    background:#E71324; /* unired */
     border-bottom:1px solid #1D2730 !important;
 }
 
@@ -25,7 +25,7 @@ body {
 .menu .navbar-nav > li > a { color:white; }
 .menu .navbar-nav > li > a:hover { text-decoration:none; color:#1D2730; background:none; }
 .menu .navbar-nav > li {
-    font-size:18px;
+    font-size:1em;
     font-weight:400;
     padding-left:10px;
 }
@@ -39,7 +39,7 @@ body {
 
 /* Background image */
 .hero {
-    height:455px;
+    height:fit-content;
     background-size: 100%;
     background-size: cover;
     -webkit-background-size: cover;
@@ -66,10 +66,11 @@ body {
     height:100%;
     border-bottom:1px solid #1D2730;
     position:relative;
+    padding-top: 6.9em;
+    padding-bottom: 8.3em;
 }
 
 .hero-typo {
-    position:absolute;
     top:120px;
     left:0;
 }
@@ -79,7 +80,7 @@ body {
     position:absolute;
     bottom:0;
     left:0;
-    z-index:999;
+    z-index:2;
 }
 
 .quick-link-wrapper > ul {
@@ -93,7 +94,7 @@ body {
     display:inline-block;
     padding:10px;
     margin-right:30px;
-    font-size:23px;
+    font-size:1.28em;
 }
 
 .quick-link-wrapper > ul > li > a {
@@ -105,15 +106,20 @@ body {
     color:#EE8786;
 }
 
+/* Overrider Bootstrap's default for container */
+.hero .container {
+    display: block !important;
+}
+
 /* Modifications on hero text */
 @media (max-width: 1200px) and (min-width: 990px) {
 
     .lead {
-        font-size:64px !important;
+        font-size:3.56em !important;
     }
 
     .sub {
-        font-size:23px !important;
+        font-size:1.28em !important;
     }
 }
 
@@ -124,11 +130,11 @@ body {
     }
 
     .lead {
-        font-size:70px !important;
+        font-size:3.89em !important;
     }
 
     .sub {
-        font-size:20px !important;
+        font-size:1.111em !important;
     }
 }
 
@@ -140,12 +146,12 @@ body {
 
     .lead {
         text-align:center;
-        font-size:58px !important;
+        font-size:3.222em !important;
     }
 
     .sub {
         text-align: center;
-        font-size:19px !important;
+        font-size:1.05556em !important;
 
     }
 
@@ -155,14 +161,14 @@ body {
 }
 
 .lead {
-    font-size:78px;
+    font-size:4.3333em;
     font-weight:300;
 
 }
 
 .sub {
     font-weight:300;
-    font-size:27px;
+    font-size:1.5em;
 
 }
 
@@ -171,6 +177,22 @@ body {
 
  .card .fa {
     margin-top:20px;
+}
+
+#features {
+    margin-top: 4em;
+    margin-bottom: 4em;
+}
+
+.feature-icon {
+    margin-right: 2em;
+}
+
+@media (max-width: 990px){
+
+    .feature-icon {
+        margin-right: 0;
+    }
 }
 
 
@@ -192,16 +214,16 @@ body {
 .screenshots-caption {
     margin-top:10px;
     text-align:center;
-    font-size:16px;
+    font-size:0.88889em;
 }
 
 /* Carousel overrides */
 .carousel-indicators li {
-    border:1px solid #ee3243;
+    border:1px solid #E71324;
 }
 
 .carousel-indicators .active {
-    background-color:#ee3243;
+    background-color:#E71324;
 }
 
 .item img {
@@ -213,6 +235,37 @@ body {
         margin-bottom:40px
     }
 }
+
+.screenshots-caption-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: 0.3em 0 0 0;
+}
+.screenshots-caption-container button {
+    color: #E71324;
+    border: none;
+    background-color: transparent;
+    height: 1.5em;
+    width: 1.5em;
+    font-size: 1.4em;
+    margin: 0 0.2em;
+    text-align: center;
+    line-height: 30px;
+}
+
+.screenshots-caption-container button:hover {
+    color: orange;
+}
+
+.screenshots-caption-container button:focus-within,
+.screenshots-caption-container button:focus,
+.screenshots-caption-container button:focus-visible {
+    box-shadow: 0 0 2px 2px orange, inset 0 0 0 2px orange;
+    -webkit-border-radius: 5px;
+}
+
 
 /* DOWNLOAD SECTION
 ------------------------------------------------------------------ */
@@ -227,6 +280,7 @@ body {
     text-align:center;
     padding:15px;
     padding-bottom:30px;
+    height: fit-content;
 }
 
 @media (min-width: 990px) {
@@ -240,8 +294,12 @@ body {
 }
 
 .download-alt-content p {
-    height:110px;
+    height:fit-content;
     display:block;
+}
+
+.download-alt-content .btn-group {
+    margin-top: 1.8em !important;
 }
 
 /* TOUR SECTION
@@ -267,12 +325,12 @@ section#users {
 
 #who .title {
     font-weight:600;
-    font-size:25px;
+    font-size:1.38889em;
 }
 
 #who .location {
     font-weight:400;
-    font-size:14px;
+    font-size:0.7778em;
     margin-bottom:10px;
 }
 
@@ -317,7 +375,7 @@ section#releases li {
 ------------------------------------------------------------------ */
 
 section#install-instructions {
-    font-size:14px;
+    font-size:0.7778em;
     font-weight:400;
 }
 
@@ -325,7 +383,7 @@ section#install-instructions {
 ------------------------------------------------------------------ */
 
 section#blog {
-    font-size:16px;
+    font-size:0.88889em;
 }
 
 article.blogpost header h1 {
@@ -362,7 +420,7 @@ footer#footer img {
 
 footer#footer h2 {
     font-weight:300;
-    font-size:34px;
+    font-size:1.88889em;
 }
 
 footer#footer i {
@@ -376,7 +434,7 @@ footer#footer .channels {
 
 footer#footer .author {
     margin-bottom:20px;
-    font-size:16px;
+    font-size:0.88889em;
 }
 
 footer#footer .page-header {
@@ -388,7 +446,7 @@ footer#footer .powered-by img {
 }
 
 footer#footer .photo-by {
-    font-size:14px;
+    font-size:0.7778em;
 }
 
 
@@ -398,7 +456,7 @@ footer#footer .photo-by {
 
 /* Heading for sections */
 .super-heading {
-    font-size:50px;
+    font-size:2.7778em;
 }
 
 .content {
@@ -420,4 +478,13 @@ footer#footer .photo-by {
 
 .center-text {
     text-align:center;
+}
+
+a {
+    color: #2A6293;
+}
+
+/* Overrides Bootstrap's primary button color */
+.btn-primary {
+    background-color: #3277B3 !important;
 }
