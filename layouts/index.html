@@ -111,7 +111,7 @@
                         </div>
                     </div>
                      <div class="col-md-6">
-                        <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+                        <div id="carousel-example-generic" class="carousel slide" data-ride="carousel" data-pause="hover">
                             <!-- Indicators -->
                             <ol class="carousel-indicators">
                             <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
@@ -185,7 +185,23 @@
                                 </div>
                             </div>
                         </div>
-                        <p class="screenshots-caption">Screenshots of NAV</p>
+                         <div class="screenshots-caption-container">
+                             <div>
+                                 <button class="btn-md" id="slideshow-play-btn" hidden aria-label="play slideshow">
+                                     <i class="glyphicon glyphicon-play" aria-hidden="true"></i>
+                                 </button>
+                                 <button class="btn-md" id="slideshow-pause-btn" aria-label="pause slideshow">
+                                     <i class="glyphicon glyphicon-pause" aria-hidden="true"></i>
+                                 </button>
+                             </div>
+
+                             <div>
+                                 <p class="screenshots-caption">
+                                     Screenshots of NAV
+                                 </p>
+                             </div>
+                         </div>
+
                     </div>
                 </div>
             </div>
@@ -311,4 +327,22 @@
             </div>
         </div>
     </section>
+<script>
+    $(function() {
+
+        $('.screenshots-caption-container button').on('click', function (event) {
+
+            if (event.currentTarget.getAttribute('id') === 'slideshow-pause-btn') {
+                event.currentTarget.setAttribute('hidden', 'true');
+                document.getElementById('slideshow-play-btn').removeAttribute('hidden');
+                $('.carousel').carousel('pause');
+            } else if (event.currentTarget.getAttribute('id') === 'slideshow-play-btn') {
+                event.currentTarget.setAttribute('hidden', 'true');
+                document.getElementById('slideshow-pause-btn').removeAttribute('hidden');
+                $('.carousel').carousel('cycle');
+            }
+        });
+
+    });
+</script>
 {{ end }}
