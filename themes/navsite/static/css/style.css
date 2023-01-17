@@ -236,6 +236,15 @@ body {
 .screenshots-caption-container button:hover {
     color: orange;
 }
+
+.screenshots-caption-container button:focus-within,
+.screenshots-caption-container button:focus,
+.screenshots-caption-container button:focus-visible {
+    box-shadow: 0 0 2px 2px orange, inset 0 0 0 2px orange;
+    -webkit-border-radius: 5px;
+}
+
+
 /* DOWNLOAD SECTION
 ------------------------------------------------------------------ */
 
