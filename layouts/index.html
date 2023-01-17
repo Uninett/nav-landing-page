@@ -13,9 +13,9 @@
                     <div class="row hidden-xs">
                         <div class="col-lg-12 col-md-12 col-sm-12 quick-link-wrapper">
                             <ul>
-                                <li><a class="jump-link" href="#" data-section="features"><i class="fa fa-check"></i> Features</a></li>
-                                <li><a class="jump-link" href="#" data-section="download"><i class="fa fa-download"></i> Download</a></li>
-                                <li><a class="jump-link" href="#" data-section="tour"><i class="fa fa-play"></i> Tour</a></li>
+                                <li><a aria-label="Highlighted NAV features" class="jump-link" href="#" data-section="features"><i class="fa fa-check"></i> Features</a></li>
+                                <li><a aria-label="Download NAV" class="jump-link" href="#" data-section="download"><i class="fa fa-download"></i> Download</a></li>
+                                <li><a aria-label="NAV video tour" class="jump-link" href="#" data-section="tour"><i class="fa fa-play"></i> Tour</a></li>
                             </ul>
                             </div>
                         </div>
@@ -228,10 +228,10 @@
                                     <h3>Quick start</h3>
                                     <p>A pre-packaged Virtual Appliance in OVF format. Typically used for evaluation/testing.</p>
                                     <div class="btn-group">
-                                        <a href="/install-instructions/#ovf" class="btn btn-primary">
+                                        <a aria-label="Instructions for virtual appliance" href="/install-instructions/#ovf" class="btn btn-primary">
                                             <i class="fa fa-file-text-o"></i> Instructions
                                         </a>
-                                        <a href="https://github.com/Uninett/navappliance/releases/download/master/navappliance.zip" class="btn btn-primary">
+                                        <a aria-label="Download virtual appliance" href="https://github.com/Uninett/navappliance/releases/download/master/navappliance.zip" class="btn btn-primary">
                                             <i class="glyphicon glyphicon-download-alt"></i> Download
                                         </a>
                                     </div>
@@ -244,7 +244,7 @@
                                     <h3>Debian package</h3>
                                     <p>Takes care of all dependencies and is currently the most comprehensive. Requires Debian.</p>
                                     <div class="btn-group">
-                                        <a href="/install-instructions/#debian" class="btn btn-primary">
+                                        <a aria-label="Instructions for installing Debian package" href="/install-instructions/#debian" class="btn btn-primary">
                                             <i class="fa fa-file-text-o"></i> Instructions
                                         </a>
                                     </div>
@@ -257,10 +257,10 @@
                                     <h3>Source code</h3>
                                     <p>Build NAV from source. If you want NAV for a production environment, this is the way to go.</p>
                                     <div class="btn-group">
-                                        <a href="https://nav.readthedocs.io/en/latest/intro/install.html" class="btn btn-primary">
+                                        <a aria-label="Instructions for installing from source code" href="https://nav.readthedocs.io/en/latest/intro/install.html" class="btn btn-primary">
                                             <i class="fa fa-file-text-o"></i> Instructions
                                         </a>
-                                        <a href="{{ .Params.source_url }}" class="btn btn-primary">
+                                        <a aria-label="Download source code" href="{{ .Params.source_url }}" class="btn btn-primary">
                                             <i class="glyphicon glyphicon-download-alt"></i> Download
                                         </a>
                                     </div>
@@ -285,7 +285,7 @@
                 <div class="col-md-12">
                     <h2 class="super-heading">Take a tour</h2>
                     <figure>
-                        <iframe width="500" height="281" src="https://www.youtube.com/embed/eYYy1VLDm54?feature=oembed&amp;rel=0&amp;showinfo=0&amp;controls=1&amp;hd=1" frameborder="0" allowfullscreen=""></iframe>
+                        <iframe aria-label="Video demo of NAV on YouTube" width="500" height="281" src="https://www.youtube.com/embed/eYYy1VLDm54?feature=oembed&amp;rel=0&amp;showinfo=0&amp;controls=1&amp;hd=1" frameborder="0" allowfullscreen=""></iframe>
                     </figure>
                 </div>
             </div>
@@ -299,7 +299,7 @@
             </div>
             <div class="row bottom-space">
                 <div class="col-md-12">
-                    <p>Read about our selected users, or view the <a href="https://nav.uninett.no/wiki/navusers">list</a> of known NAV users.</p>
+                    <p>Read about our selected users, or view the <a aria-label="List of known NAV users" href="https://nav.uninett.no/wiki/navusers">list</a> of known NAV users.</p>
                 </div>
             </div>
             <div class="row bottom-space">
