@@ -115,18 +115,18 @@
                         </div>
                     </div>
                      <div class="col-md-6">
-                        <div id="carousel-example-generic" class="carousel slide" data-ride="carousel" data-pause="hover">
+                        <div id="carousel-example-generic" class="carousel slide" data-ride="carousel" role="complementary" data-pause="hover">
                             <!-- Indicators -->
-                            <ol class="carousel-indicators">
-                            <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
-                            <li data-target="#carousel-example-generic" data-slide-to="1"></li>
-                            <li data-target="#carousel-example-generic" data-slide-to="2"></li>
-                            <li data-target="#carousel-example-generic" data-slide-to="3"></li>
+                            <ol class="carousel-indicators" role="tablist">
+                            <li data-target="#carousel-example-generic" data-slide-to="0" class="active" aria-label="Slide 1" role="tab" tabindex="0"></li>
+                            <li data-target="#carousel-example-generic" data-slide-to="1" aria-label="Slide 2" role="tab" tabindex="0"></li>
+                            <li data-target="#carousel-example-generic" data-slide-to="2" aria-label="Slide 3" role="tab" tabindex="0"></li>
+                            <li data-target="#carousel-example-generic" data-slide-to="3" aria-label="Slide 4" role="tab" tabindex="0"></li>
                             </ol>
 
                             <!-- Wrapper for slides -->
                             <div class="carousel-inner">
-                                <div class="item active">
+                                <div class="item active" role="tabpanel">
                                     <div class="row">
                                         <div class="col-md-12">
                                             <span hidden id="nav1-description">
@@ -141,7 +141,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="item">
+                                <div class="item" role="tabpanel">
                                   <div class="row">
                                         <div class="col-md-12">
                                             <span hidden id="nav4-description">
@@ -157,7 +157,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="item">
+                                <div class="item" role="tabpanel">
                                   <div class="row">
                                         <div class="col-md-12">
                                             <span hidden id="nav6-description">
@@ -173,7 +173,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="item">
+                                <div class="item" role="tabpanel">
                                   <div class="row">
                                         <div class="col-md-12">
                                             <span hidden id="nav5-description">
@@ -228,10 +228,10 @@
                                     <h3>Quick start</h3>
                                     <p>A pre-packaged Virtual Appliance in OVF format. Typically used for evaluation/testing.</p>
                                     <div class="btn-group">
-                                        <a aria-label="Instructions for virtual appliance" href="/install-instructions/#ovf" class="btn btn-primary">
+                                        <a aria-label="Instructions for virtual appliance" href="/install-instructions/#ovf" class="btn btn-primary button-border-inside">
                                             <i class="fa fa-file-text-o"></i> Instructions
                                         </a>
-                                        <a aria-label="Download virtual appliance" href="https://github.com/Uninett/navappliance/releases/download/master/navappliance.zip" class="btn btn-primary">
+                                        <a aria-label="Download virtual appliance" href="https://github.com/Uninett/navappliance/releases/download/master/navappliance.zip" class="btn btn-primary button-border-inside">
                                             <i class="glyphicon glyphicon-download-alt"></i> Download
                                         </a>
                                     </div>
@@ -244,7 +244,7 @@
                                     <h3>Debian package</h3>
                                     <p>Takes care of all dependencies and is currently the most comprehensive. Requires Debian.</p>
                                     <div class="btn-group">
-                                        <a aria-label="Instructions for installing Debian package" href="/install-instructions/#debian" class="btn btn-primary">
+                                        <a aria-label="Instructions for installing Debian package" href="/install-instructions/#debian" class="btn btn-primary button-border-inside">
                                             <i class="fa fa-file-text-o"></i> Instructions
                                         </a>
                                     </div>
@@ -257,10 +257,10 @@
                                     <h3>Source code</h3>
                                     <p>Build NAV from source. If you want NAV for a production environment, this is the way to go.</p>
                                     <div class="btn-group">
-                                        <a aria-label="Instructions for installing from source code" href="https://nav.readthedocs.io/en/latest/intro/install.html" class="btn btn-primary">
+                                        <a aria-label="Instructions for installing from source code" href="https://nav.readthedocs.io/en/latest/intro/install.html" class="btn btn-primary button-border-inside">
                                             <i class="fa fa-file-text-o"></i> Instructions
                                         </a>
-                                        <a aria-label="Download source code" href="{{ .Params.source_url }}" class="btn btn-primary">
+                                        <a aria-label="Download source code" href="{{ .Params.source_url }}" class="btn btn-primary button-border-inside">
                                             <i class="glyphicon glyphicon-download-alt"></i> Download
                                         </a>
                                     </div>
@@ -332,8 +332,8 @@
         </div>
     </section>
 <script>
-    $(function() {
 
+    $(function() {
         $('.screenshots-caption-container button').on('click', function (event) {
 
             if (event.currentTarget.getAttribute('id') === 'slideshow-pause-btn') {
@@ -346,7 +346,17 @@
                 $('.carousel').carousel('cycle');
             }
         });
-
     });
+
+    $(function() {
+        $('.carousel-indicators li').on('keydown', function (event) {
+            // If Enter was pressed
+            if(event.which === 13) {
+                const index = parseInt(event.target.getAttribute('data-slide-to'))
+                $('.carousel').carousel(index)
+            }
+        });
+    });
+
 </script>
 {{ end }}

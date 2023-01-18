@@ -31,8 +31,29 @@ body {
 }
 
 /* Set white border on collapsed nav icon */
-.navbar-inverse .navbar-toggle, .navbar-inverse .navbar-toggle:hover, .navbar-inverse .navbar-toggle:focus { border-color:white; }
+.navbar-inverse .navbar-toggle, .navbar-inverse .navbar-toggle:focus { border-color:white; }
 
+.navbar-header a {
+    display: inline-block;
+    height: 50px;
+    width: 100px;
+}
+
+.navbar-header a:hover,
+.navbar-toggle:hover,
+.navbar-header a:focus,
+.navbar-header a:focus-within,
+.navbar-header a:focus-visible,
+.navbar-toggle:focus,
+.navbar-toggle:focus-within,
+.navbar-toggle:focus-visible,
+.navbar-nav > li > a:focus-visible,
+.navbar-nav > li > a:focus,
+.navbar-nav > li > a:focus-within {
+    width: fit-content;
+    box-shadow: 0 0 2px 1px white, inset 0 0 0 2px white !important;
+    -webkit-border-radius: 5px;
+}
 
 /* HERO PICTURE
 ------------------------------------------------------------------ */
@@ -103,7 +124,15 @@ body {
 
 .quick-link-wrapper > ul > li > a:hover {
     text-decoration:none;
-    color:#EE8786;
+    color:#F3A8A5;
+}
+
+.quick-link-wrapper > ul > li > a:focus,
+.quick-link-wrapper > ul > li > a:focus-within,
+.quick-link-wrapper > ul > li > a:focus-visible {
+    padding: 0.3em 0.4em;
+    box-shadow: 0 0 2px 1px white, inset 0 0 0 2px white;
+    -webkit-border-radius: 5px;
 }
 
 /* Overrider Bootstrap's default for container */
@@ -222,6 +251,20 @@ body {
     border:1px solid #E71324;
 }
 
+/* Carousel controls on hover overrides */
+.carousel li:hover {
+    box-shadow: 0 0 2px 1px orange, inset 0 0 0 2px orange !important;
+    -webkit-border-radius: 5px;
+}
+
+/* Carousel on controls focus overrides */
+.carousel li:focus-visible,
+.carousel li:focus,
+.carousel li:focus-within {
+    box-shadow: 0 0 2px 3px orangered, inset 0 0 0 3px orange !important;
+    -webkit-border-radius: 5px;
+}
+
 .carousel-indicators .active {
     background-color:#E71324;
 }
@@ -300,6 +343,13 @@ body {
 
 .download-alt-content .btn-group {
     margin-top: 1.8em !important;
+}
+
+.button-border-inside:focus-visible,
+.button-border-inside:focus,
+.button-border-inside:focus-within {
+    box-shadow: 0 0 2px 2px #3277B3, inset 0 0 0 2px white;
+    -webkit-border-radius: 5px;
 }
 
 /* TOUR SECTION
@@ -449,6 +499,39 @@ footer#footer .photo-by {
     font-size:0.7778em;
 }
 
+.author a {
+    display: block;
+    width: 155px;
+    height: 42px;
+}
+
+.powered-by > div {
+    display: flex;
+    flex-direction: row;
+}
+
+.powered-by a {
+    width: fit-content;
+    height: 35px;
+    margin: 0 0.1em;
+    padding: 0 0.1em;
+}
+
+.author a:hover,
+.powered-by a:hover {
+    box-shadow: 0 0 2px 0.05em #2A6293, inset 0 0 0 0.01em #2A6293;
+    -webkit-border-radius: 5px;
+}
+
+.author a:focus-visible,
+.author a:focus,
+.author a:focus-within,
+.powered-by a:focus-visible,
+.powered-by a:focus,
+.powered-by a:focus-within {
+    box-shadow: 0 0 2px 1px #2A6293, inset 0 0 0 1px #2A6293;
+    -webkit-border-radius: 5px;
+}
 
 
 /* GLOBALS
@@ -487,4 +570,18 @@ a {
 /* Overrides Bootstrap's primary button color */
 .btn-primary {
     background-color: #3277B3 !important;
+}
+
+/* Overrides Bootstrap's primary button on hover effect */
+.btn-primary:hover {
+    text-decoration: underline;
+}
+
+/* All links except the ones mentioned in :not() */
+a:not(.navbar-header a, .navbar-right a, .quick-link-wrapper a, .download-alt a, .author a, .powered-by a):focus,
+a:not(.navbar-header a, .navbar-right a, .quick-link-wrapper a, .download-alt a, .author a, .powered-by a):focus-within,
+a:not(.navbar-header a, .navbar-right a, .quick-link-wrapper a, .download-alt a, .author a, .powered-by a):focus-visible {
+    padding: 0 0.3em;
+    box-shadow: 0 0 2px 1px #2A6293, inset 0 0 0 1px #2A6293;
+    -webkit-border-radius: 5px;
 }
