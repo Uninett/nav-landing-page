@@ -508,6 +508,7 @@ footer#footer .photo-by {
 .powered-by > div {
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
 }
 
 .powered-by a {
