@@ -122,6 +122,10 @@ body {
     color:white;
 }
 
+.quick-link-wrapper > ul > li > a > i {
+    padding: 0 0.1em;
+}
+
 .quick-link-wrapper > ul > li > a:hover {
     text-decoration:none;
     color:#F3A8A5;
