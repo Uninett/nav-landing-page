@@ -530,7 +530,10 @@ footer#footer .photo-by {
 .author a:focus-within,
 .powered-by a:focus-visible,
 .powered-by a:focus,
-.powered-by a:focus-within {
+.powered-by a:focus-within,
+.sitemap a:focus-visible,
+.sitemap a:focus,
+.sitemap a:focus-within {
     box-shadow: 0 0 2px 1px #2A6293, inset 0 0 0 1px #2A6293;
     -webkit-border-radius: 5px;
 }
@@ -580,9 +583,9 @@ a {
 }
 
 /* All links except the ones mentioned in :not() */
-a:not(.navbar-header a, .navbar-right a, .quick-link-wrapper a, .download-alt a, .author a, .powered-by a):focus,
-a:not(.navbar-header a, .navbar-right a, .quick-link-wrapper a, .download-alt a, .author a, .powered-by a):focus-within,
-a:not(.navbar-header a, .navbar-right a, .quick-link-wrapper a, .download-alt a, .author a, .powered-by a):focus-visible {
+a:not(.navbar-header a, .navbar-right a, .quick-link-wrapper a, .download-alt a, .author a, .powered-by a, .sitemap a):focus,
+a:not(.navbar-header a, .navbar-right a, .quick-link-wrapper a, .download-alt a, .author a, .powered-by a, .sitemap a):focus-within,
+a:not(.navbar-header a, .navbar-right a, .quick-link-wrapper a, .download-alt a, .author a, .powered-by a, .sitemap a):focus-visible {
     padding: 0 0.3em;
     box-shadow: 0 0 2px 1px #2A6293, inset 0 0 0 1px #2A6293;
     -webkit-border-radius: 5px;
