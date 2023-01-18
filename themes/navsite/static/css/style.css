@@ -491,10 +491,6 @@ footer#footer .page-header {
     margin-bottom:30px;
 }
 
-footer#footer .powered-by img {
-    margin-right:20px;
-}
-
 footer#footer .photo-by {
     font-size:0.7778em;
 }
@@ -511,11 +507,8 @@ footer#footer .photo-by {
     flex-wrap: wrap;
 }
 
-.powered-by a {
-    width: fit-content;
-    height: 35px;
-    margin: 0 0.1em;
-    padding: 0 0.1em;
+.powered-by img {
+    margin: 0 !important;
 }
 
 .author a:hover,
