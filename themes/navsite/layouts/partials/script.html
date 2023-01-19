@@ -45,4 +45,47 @@
           });
         }).resize();
     });
+
+    $(function convertAllBlogpostsH1ToH2() {
+        const h1Headers = document.querySelectorAll('header h1');
+        console.log('h1 headers', h1Headers);
+
+        for (let i = 0; i < h1Headers.length; i++) {
+            // Add Bootstrap's h1 styling
+            h1Headers[i].classList.add('h1');
+
+            h1Headers[i].outerHTML = h1Headers[i].outerHTML.replace('h1', 'h2');
+        }
+    });
+
+
+    $(function convertAllBlogpostHeadersToH3() {
+        const h2BlogpostHeaders = document.querySelectorAll('.blogpost > h2');
+        console.log('h2 headers', h2BlogpostHeaders);
+        for (let i = 0; i < h2BlogpostHeaders.length; i++) {
+            // Add Bootstrap's h2 styling
+            h2BlogpostHeaders[i].classList.add('h2');
+
+            h2BlogpostHeaders[i].outerHTML = h2BlogpostHeaders[i].outerHTML.replace('h2', 'h3');
+        }
+
+        const h4BlogpostHeaders = document.querySelectorAll('.blogpost > h4');
+        console.log('h4 headers', h4BlogpostHeaders);
+        for (let i = 0; i < h4BlogpostHeaders.length; i++) {
+            // Add Bootstrap's h4 styling
+            h4BlogpostHeaders[i].classList.add('h4');
+
+            h4BlogpostHeaders[i].outerHTML = h4BlogpostHeaders[i].outerHTML.replace('h4', 'h3');
+        }
+    });
+
+    $(function convertSingleBlogpostH1ToH2() {
+        const h1Header = document.querySelector('header h1');
+
+        // Add Bootstrap's h1 styling
+        h1Header.classList.add('h1');
+
+        h1Header.outerHTML = h1Header.outerHTML.replace('h1', 'h2');
+    });
+
 </script>
