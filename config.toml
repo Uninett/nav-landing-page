@@ -6,9 +6,6 @@ theme = "navsite"
 [permalinks]
   blog = '/blog/:year/:month/:title/'
 
-[markup.goldmark.parser]
-  autoHeadingID = false
-
 [markup.goldmark.renderer]
   unsafe = true
 
