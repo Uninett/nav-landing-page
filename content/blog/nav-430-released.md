@@ -15,7 +15,7 @@ The source code is available for download at [Launchpad](https://launchpad.net/n
 
 The virtual appliance download has also been updated.
 
-### Changes
+## Changes
 
 This release makes some fundamental changes to NAV’s data model to improve support for non-physical devices (like Cisco VSS and Cisco VDC). Please read [the release notes](https://nav.uninett.no/doc/4.3/release-notes.html#nav-4-3) for further information.
 

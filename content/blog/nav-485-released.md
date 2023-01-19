@@ -11,7 +11,7 @@ The source code is available for download at [GitHub](https://github.com/UNINETT
 
 The virtual appliance will be updated shortly.
 
-### Changes
+## Changes
 
 Fixed GitHub issues in this release:
 
@@ -25,7 +25,7 @@ Fixed GitHub issues in this release:
 *   [#1734](https://github.com/UNINETT/nav/issues/1734/) (l2trace crashes when searching for invalid IP addresses)
 *   [#1735](https://github.com/UNINETT/nav/issues/1735/) (HTTP errors from Graphite shouldn't crash NAV's Graphite render proxy)
 
-### Copyright changes
+## Copyright changes
 
 Third party copyright owners of NAV code, like The Norwegian University of Science and Technology, and the University of Tromsø, have signed over their copyright for their code contributions to Uninett. NAV 4.8 is still licensed under GPLv2-only, but will be relicensed under GPLv3 in the upcoming 4.9 series. This should have no impact on end users; as a company with public ownership, Uninett will always strive to keep NAV under a free and open source license.
 

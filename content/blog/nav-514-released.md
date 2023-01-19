@@ -15,7 +15,7 @@ Please be extra aware of config file changes. Look out for `*.dpkg-dist` files i
 
 The virtual appliance will be updated shortly.
 
-#### Fixed GitHub issues in this release
+## Fixed GitHub issues in this release
 
 *   [#2281](https://github.com/Uninett/nav/issues/2281) (\[BUG\] Saving alert permissions crashes Alert Profiles)
 *   [#2282](https://github.com/Uninett/nav/pull/2282) (PortAdmin SNMP error handling is broken in several ways)
@@ -23,8 +23,7 @@ The virtual appliance will be updated shortly.
 *   [#2285](https://github.com/Uninett/nav/pull/2285) (Extract Cisco PoE port mapping method)
 *   [#2288](https://github.com/Uninett/nav/pull/2288) (Disable the PortAdmin "Enable" checkbox for interfaces that aren't editable)
 
-Release notes
--------------
+## Release notes
 
 We always advise you to have a look at [NAV's accompanying release notes](https://nav.uninett.no/doc/5.1/release-notes.html#nav-5-1) when upgrading.
 

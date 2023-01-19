@@ -17,7 +17,7 @@ Please be extra aware of config file changes. Look out for `*.dpkg-dist` files i
 
 The virtual appliance will be updated shortly.
 
-#### User-visible features and improvements
+## User-visible features and improvements
 
 The main reason for this new feature release is to ensure NAV is compatible with Python 3.9 (which is the default Python version on the current Debian stable distro, Bullseye). Features that were already lurking in the pipeline are:
 
@@ -27,7 +27,7 @@ The main reason for this new feature release is to ensure NAV is compatible with
 *   [#2309](https://github.com/Uninett/nav/issues/2309) (Support a report.conf.d/ style config directory for reports)
 *   [#2311](https://github.com/Uninett/nav/issues/2311) (Wishlist: Info about locations visible via /report/location)
 
-#### Other fixed GitHub issues in this release
+## Other fixed GitHub issues in this release
 
 *   [#2280](https://github.com/Uninett/nav/issues/2280) (Only ethernetCsmacd interfaces are shown in the room viewer)
 *   [#2310](https://github.com/Uninett/nav/issues/2310) (\[BUG\] snmptrapd plugins crash when posting events in NAV 5.2)
@@ -43,8 +43,7 @@ The main reason for this new feature release is to ensure NAV is compatible with
 *   [#2353](https://github.com/Uninett/nav/pull/2353) (Document the name change from Uninett to Sikt)
 *   [#2355](https://github.com/Uninett/nav/pull/2355) (Add Sikt to About page, copyrights and graphical profile)
 
-Release notes
--------------
+## Release notes
 
 We always advise you to have a look at [NAV's accompanying release notes](https://nav.readthedocs.io/en/5.3.x/release-notes.html#nav-5-3) before upgrading.
 

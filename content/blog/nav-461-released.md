@@ -11,7 +11,7 @@ The source code is available for download at [GitHub](https://github.com/UNINETT
 
 The virtual appliance will be updated shortly.
 
-### Changes
+## Changes
 
 NAV has moved to GitHub. Issues are now tracked at [GitHub](https://github.com/UNINETT/nav/issues). Due to the migration of bug data from Launchpad, reporter and subscriber information has been lost (all bugs appear to be reported by jmbredal).
 

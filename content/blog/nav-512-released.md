@@ -15,7 +15,7 @@ Please be extra aware of config file changes. Look out for `*.dpkg-dist` files i
 
 The virtual appliance will be updated shortly.
 
-#### Fixed GitHub issues in this release
+## Fixed GitHub issues in this release
 
 *   [#2210](https://github.com/Uninett/nav/issues/2210) (\[BUG\] Traffic graphs use the SI unit system rather than binary prefixes)
 *   [#2215](https://github.com/Uninett/nav/issues/2215) (\[BUG\] NAV will refuse to identify LLDP remote port names that contain trailing NUL bytes)
@@ -26,8 +26,7 @@ The virtual appliance will be updated shortly.
 *   [#2250](https://github.com/Uninett/nav/pull/2250) (Fix formatting of small and negative numbers in Rickshaw graphs)
 *   [#2252](https://github.com/Uninett/nav/pull/2252) (Fix broken serial numbers for Juniper, APC PowerNet and old HP devices)
 
-Release notes
--------------
+## Release notes
 
 We always advise you to have a look at [NAV's accompanying release notes](https://nav.uninett.no/doc/5.1/release-notes.html#nav-5-1) when upgrading.
 

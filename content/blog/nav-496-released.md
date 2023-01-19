@@ -17,7 +17,7 @@ Please also be extra aware of config file changes. Look out for `*.dpkg-dist` fi
 
 The virtual appliance has also been updated.
 
-#### Fixed GitHub issues in this release:
+## Fixed GitHub issues in this release:
 
 *   [#1782](https://github.com/Uninett/nav/pull/1782) (ipdevpoll snmpcheck algorithm no longer works as expected)
     *   [#1952](https://github.com/Uninett/nav/pull/1952) ((snmpcheck) Store up/down state in NetboxInfo, so we can properly sen…)
@@ -28,8 +28,7 @@ The virtual appliance has also been updated.
 *   [#1944](https://github.com/Uninett/nav/issues/1944) (Sensor links in Environment Rack navlet does not work)
 *   [#1948](https://github.com/Uninett/nav/pull/1948) (Verify LDAP entitlements)
 
-Release notes
--------------
+## Release notes
 
 We always advise you to have a look at [NAV's accompanying release notes](https://nav.uninett.no/doc/4.9/release-notes.html#nav-4-9) when upgrading.
 

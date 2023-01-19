@@ -7,7 +7,7 @@ url: /blog/2021/06/nav-irc-channel-moves-from-freenode-to/
 
 Due to the recent controversy/takeover at Freenode, the `#nav` IRC channel has been moved to the new [Libera.Chat IRC network](https://libera.chat/).
 
-### References
+## References
 
 *   [https://tech.slashdot.org/story/21/05/19/2044202/freenode-irc-staff-quit-after-new-owner-seizes-control-of-network](https://tech.slashdot.org/story/21/05/19/2044202/freenode-irc-staff-quit-after-new-owner-seizes-control-of-network )  
     

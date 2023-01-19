@@ -13,7 +13,7 @@ Packages for Debian Stretch are now also published, so the [install instructions
 
 The virtual appliance will be updated shortly.
 
-### Changes
+## Changes
 
 Fixed [issues](https://github.com/UNINETT/nav/issues) in this release:
 

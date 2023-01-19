@@ -11,7 +11,7 @@ The source code is available for download at [Launchpad](https://launchpad.net/n
 
 The virtual appliance will be updated shortly.
 
-### Changes
+## Changes
 
 As always, we recommend you read [the release notes](https://nav.uninett.no/doc/4.6/release-notes.html#nav-4-6) for a fuller description of the new features and significant changes.
 

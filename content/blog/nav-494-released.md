@@ -19,7 +19,7 @@ The virtual appliance has also been updated.
 
 **NB: This release introduces a new dependency to `py2-ipaddress==3.4.1`**
 
-#### Fixed GitHub issues in this release:
+## Fixed GitHub issues in this release:
 
 *   [#1639](https://github.com/Uninett/nav/issues/1639) (Not all NAV programs respect TIME\_ZONE from nav.conf)
 *   [#1762](https://github.com/Uninett/nav/issues/1762) (navdump drops function-data)
@@ -29,8 +29,7 @@ The virtual appliance has also been updated.
 *   [#1895](https://github.com/Uninett/nav/issues/1895) (Verify nav.conf values as part of nav start)
 *   [#1896](https://github.com/Uninett/nav/issues/1896) (UnicodeEncodeError when LDAP user with non-ASCII characters in DN logs in)
 
-Release notes
--------------
+## Release notes
 
 We always advise you to have a look at [NAV's accompanying release notes](https://nav.uninett.no/doc/4.9/release-notes.html#nav-4-9) when upgrading.
 

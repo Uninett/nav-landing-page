@@ -14,7 +14,7 @@ The third maintenance release of the NAV 4.2 series is now available.
 
 The source code is available for download at [Launchpad](https://launchpad.net/nav/4.2/4.2.3). A new package for Debian Wheezy has been published in our [APT repository](https://nav.uninett.no/wiki/nav_on_debian), as usual.
 
-### Bugfixes
+## Bugfixes
 
 *   [LP#392148](https://bugs.launchpad.net/nav/+bug/392148/) (Add microformats in maintenance module)
 *   [LP#1108736](https://bugs.launchpad.net/nav/+bug/1108736/) (seeddb vlan page have checkbox but no delete selected)

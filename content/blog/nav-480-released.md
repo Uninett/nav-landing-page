@@ -13,7 +13,7 @@ New packages for Debian 8/9 (Jessie/Stretch) have, unfortunately, NOT been built
 
 The virtual appliance will be updated once the Debian packages are ready.
 
-### Changes
+## Changes
 
 User-visible features and improvements:
 

@@ -15,7 +15,7 @@ Please be extra aware of config file changes. Look out for `*.dpkg-dist` files i
 
 The virtual appliance will be updated shortly.
 
-#### User-visible features and improvements
+## User-visible features and improvements
 
 *   [#2021](https://github.com/Uninett/nav/issues/2021) (Add SeedDB action to clone netboxes and rooms )
 *   [#2051](https://github.com/Uninett/nav/issues/2051) (Link to affected devices in Management profile)
@@ -29,7 +29,7 @@ The virtual appliance will be updated shortly.
     *   [#2121](https://github.com/Uninett/nav/pull/2121) (Use nav.config.NAVConfigParser for PortAdmin configuration)
     *   [#2205](https://github.com/Uninett/nav/pull/2205) (Adapt Portadmin UI workflow to meet needs of multiple backend protocols)
 
-#### Fixed GitHub issues in this release
+## Fixed GitHub issues in this release
 
 *   [#2078](https://github.com/Uninett/nav/issues/2078) (\[BUG\] NAV daemons are unnecessarily run as root)
 *   [#2103](https://github.com/Uninett/nav/pull/2103) (Support Django 2.2)
@@ -43,8 +43,7 @@ The virtual appliance will be updated shortly.
 *   [#2207](https://github.com/Uninett/nav/pull/2207) (Netbox reference is not passed to customization template for the ipdevinfo "What if" tab)
 *   [#2213](https://github.com/Uninett/nav/issues/2213) (\[BUG\] NAV does not import room position)
 
-Release notes
--------------
+## Release notes
 
 We always advise you to have a look at [NAV's accompanying release notes](https://nav.uninett.no/doc/5.1/release-notes.html#nav-5-1) when upgrading.
 

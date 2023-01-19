@@ -17,14 +17,13 @@ Please be extra aware of config file changes. Look out for `*.dpkg-dist` files i
 
 The virtual appliance will be updated shortly.
 
-#### Fixed GitHub issues in this release
+## Fixed GitHub issues in this release
 
 *   [#2304](https://github.com/Uninett/nav/issues/2304) (Display alert severity values in the event/alert details page)
 *   [#2306](https://github.com/Uninett/nav/issues/2306) (\[BUG\] pping is unable to report unreachable devices in NAV 5.2.0)
 *   [#2308](https://github.com/Uninett/nav/issues/2308) (\[BUG\] Alert Profile severity filters that ship with NAV are outdated)
 
-Release notes
--------------
+## Release notes
 
 We always advise you to have a look at [NAV's accompanying release notes](https://nav.readthedocs.io/en/5.2.x/release-notes.html#nav-5-2) when upgrading.
 

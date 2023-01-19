@@ -15,7 +15,7 @@ Please be extra aware of config file changes. Look out for `*.dpkg-dist` files i
 
 The virtual appliance will be updated shortly.
 
-#### Fixed GitHub issues in this release
+## Fixed GitHub issues in this release
 
 *   [#2159](https://github.com/Uninett/nav/issues/2159) (\[BUG\] UPS widget is inconsistent between showing minutes and seconds remaining time)
 *   [#2240](https://github.com/Uninett/nav/issues/2240) (\[BUG\] Workaround for wrong interface speed SNMP implementations)
@@ -31,8 +31,7 @@ The virtual appliance will be updated shortly.
 *   [#2270](https://github.com/Uninett/nav/issues/2270) (\[BUG\] Documentation search does not work)
 *   [#2275](https://github.com/Uninett/nav/issues/2275) (SshChecker not handling connections properly)
 
-Release notes
--------------
+## Release notes
 
 We always advise you to have a look at [NAV's accompanying release notes](https://nav.uninett.no/doc/5.1/release-notes.html#nav-5-1) when upgrading.
 

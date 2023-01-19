@@ -16,7 +16,7 @@ The source code is available for download at [Launchpad](https://launchpad.net/n
 
 Debian Jessie (the next stable release of Debian) is scheduled for release on Saturday 25th April, so we will start working on building a package for Jessie as well.
 
-### Changes
+## Changes
 
 The following 11 reported issues have been fixed:
 

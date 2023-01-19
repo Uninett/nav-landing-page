@@ -17,7 +17,7 @@ Please also be extra aware of config file changes. Look out for `*.dpkg-dist` fi
 
 The virtual appliance has also been updated.
 
-#### Fixed GitHub issues in this release:
+## Fixed GitHub issues in this release:
 
 *   [#1882](https://github.com/Uninett/nav/issues/1882) (Invalid VLANs are generated from Juniper switches)
 *   [#1920](https://github.com/Uninett/nav/issues/1920) (Provide a hook for adding extra information in the What-If tab in the IP Device Info page)
@@ -26,8 +26,7 @@ The virtual appliance has also been updated.
 *   [#1958](https://github.com/Uninett/nav/issues/1958) (NAV creates Graphite metrics with illegal characters in name)
 *   [#1960](https://github.com/Uninett/nav/pull/1960) (Add option to control user administrator privileges from LDAP)
 
-Release notes
--------------
+## Release notes
 
 We always advise you to have a look at [NAV's accompanying release notes](https://nav.uninett.no/doc/4.9/release-notes.html#nav-4-9) when upgrading.
 
