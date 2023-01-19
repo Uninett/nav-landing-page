@@ -45,4 +45,19 @@
           });
         }).resize();
     });
+
+
+    $(function addExhaustiveLabelsToBlogposts() {
+        const blogpostLinks = document.querySelectorAll('.blogpost li > a')
+
+        for (let i = 0; i < blogpostLinks.length; i++) {
+            const linkHref = blogpostLinks[i].href
+
+            if (linkHref.indexOf('github') !== -1 && linkHref.indexOf('issue') !== -1) {
+                blogpostLinks[i].setAttribute('aria-label', `GitHub issue ${blogpostLinks[i].textContent}`)
+            } else if (linkHref.indexOf('github') !== -1 && linkHref.indexOf('pull') !== -1) {
+                blogpostLinks[i].setAttribute('aria-label', `GitHub pull request ${blogpostLinks[i].textContent}`)
+            }
+        }
+    });
 </script>
