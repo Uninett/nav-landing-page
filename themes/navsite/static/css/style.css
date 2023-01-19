@@ -460,6 +460,14 @@ aside.pubdate {
     color: #777;
 }
 
+#blog code {
+    display: inline-block;
+    white-space: normal;
+    max-width:100%;
+    word-break:break-all;
+    word-wrap:break-word;
+}
+
 /* FOOTER
 ------------------------------------------------------------------ */
 
