@@ -468,6 +468,10 @@ aside.pubdate {
     word-wrap:break-word;
 }
 
+#blog img {
+    max-width: 100%;
+}
+
 /* FOOTER
 ------------------------------------------------------------------ */
 
