@@ -456,6 +456,15 @@ aside.pubdate {
     font-size: 0.7em;
 }
 
+aside.tags {
+    font-style: italic;
+    font-size: 0.85em;
+}
+
+aside.tags i {
+    padding: 0 0.2em;
+}
+
 #blog {
     word-break:break-all;
     word-wrap:break-word;
@@ -471,7 +480,7 @@ aside.pubdate {
     max-width: 100%;
 }
 
-aside .pubdate p {
+aside.pubdate, aside.tags {
     color: #6B6B6B;
 }
 
