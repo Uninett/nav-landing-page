@@ -3,6 +3,8 @@ title: 'NAV 4.7.2 released'
 date: 2017-09-29T08:20:00.000+02:00
 draft: false
 url: /blog/2017/09/nav-472-released/
+tags:
+- release
 ---
 
 The second maintenance release of the 4.7 series of NAV is now out!

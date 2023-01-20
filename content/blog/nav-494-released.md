@@ -3,6 +3,8 @@ title: 'NAV 4.9.4 released'
 date: 2019-03-28T08:53:00.000+01:00
 draft: false
 url: /blog/2019/03/nav-494-released/
+tags:
+- release
 ---
 
 The fourth maintenance release of the 4.9 series of NAV is now out!

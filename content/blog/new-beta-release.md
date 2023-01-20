@@ -4,6 +4,7 @@ date: 2014-02-12T01:17:00.000+01:00
 draft: false
 url: /blog/2014/02/new-beta-release/
 tags: 
+- release
 ---
 
 A new beta of NAV 4.0 is released. In addition to the new logo, you will also find interface improvements all over.

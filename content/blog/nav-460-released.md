@@ -3,6 +3,8 @@ title: 'NAV 4.6.0 released'
 date: 2016-12-01T15:27:00.001+01:00
 draft: false
 url: /blog/2016/12/nav-460-released/
+tags:
+- release
 ---
 
 The initial 4.6 series release of NAV is now out!

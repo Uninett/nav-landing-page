@@ -4,6 +4,7 @@ date: 2015-05-21T08:59:00.000+02:00
 draft: false
 url: /blog/2015/05/nav-430-release-candidate-1/
 tags: 
+- release
 - rc
 ---
 

@@ -4,6 +4,7 @@ date: 2015-08-20T06:50:00.000+02:00
 draft: false
 url: /blog/2015/08/nav-431-released/
 tags: 
+- release
 - bugfix
 - 4.3
 - 4.3.1

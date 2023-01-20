@@ -4,6 +4,7 @@ date: 2015-03-23T02:19:00.000+01:00
 draft: false
 url: /blog/2015/03/nav-425-released/
 tags: 
+- release
 - bugfix
 - 4.2
 ---

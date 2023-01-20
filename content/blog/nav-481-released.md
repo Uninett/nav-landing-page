@@ -3,6 +3,8 @@ title: 'NAV 4.8.1 released'
 date: 2017-11-30T15:07:00.000+01:00
 draft: false
 url: /blog/2017/11/nav-481-released/
+tags:
+- release
 ---
 
 The first maintenance release of the 4.8 series of NAV is now out!

@@ -3,6 +3,8 @@ title: 'NAV 4.5.0 released'
 date: 2016-06-09T13:05:00.000+02:00
 draft: false
 url: /blog/2016/06/nav-450-released/
+tags:
+- release
 ---
 
 The initial 4.5 series release of NAV is now out.
