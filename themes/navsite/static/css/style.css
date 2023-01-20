@@ -461,7 +461,7 @@ aside.pubdate {
     word-wrap:break-word;
 }
 
-#blog code, p, a {
+#blog code, #blog p, #blog a {
     display: inline-block;
     white-space: normal;
     max-width:100%;
