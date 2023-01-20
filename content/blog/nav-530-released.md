@@ -3,6 +3,8 @@ title: 'NAV 5.3.0 released'
 date: 2022-02-22T18:49:00.001+01:00
 draft: false
 url: /blog/2022/02/nav-530-released/
+tags:
+- release
 ---
 
 The initial maintenance release of the 5.3 series of NAV is now out!

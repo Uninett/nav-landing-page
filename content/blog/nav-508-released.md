@@ -3,6 +3,8 @@ title: 'NAV 5.0.8 released'
 date: 2020-10-23T13:26:00.001+02:00
 draft: false
 url: /blog/2020/10/nav-508-released/
+tags:
+- release
 ---
 
 The eighth maintenance release of the 5.0 series of NAV is now out!

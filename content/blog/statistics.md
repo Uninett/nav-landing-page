@@ -4,7 +4,6 @@ date: 2014-02-26T03:53:00.000+01:00
 draft: false
 url: /blog/2014/02/statistics/
 tags: 
-- regular
 ---
 
 One of the goals we had when we moved from Cricket to Graphite for statistics was to integrate the graphs more with NAV, instead of having to navigate to another webpage to get the information you wanted.

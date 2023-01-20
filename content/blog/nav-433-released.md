@@ -4,11 +4,10 @@ date: 2016-01-15T00:38:00.000+01:00
 draft: false
 url: /blog/2016/01/nav-433-released/
 tags: 
+- release
 - bugfix
 - 4.3.3
 - 4.3
-- nav
-- regular
 ---
 
 _This is posted a while after the actual release_

@@ -4,7 +4,6 @@ date: 2014-04-08T06:18:00.000+02:00
 draft: false
 url: /blog/2014/04/nav-40/
 tags: 
-- regular
 ---
 
 <img alt="Cake with NAV logo" src="http://55.media.tumblr.com/935015da00fd090b8c984b8297d9691d/tumblr_inline_n3plreofEe1swzy6x.jpg" class="pull-right" title="NAV cake"/>

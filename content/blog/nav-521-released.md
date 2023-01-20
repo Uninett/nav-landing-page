@@ -3,6 +3,8 @@ title: 'NAV 5.2.1 released'
 date: 2021-09-23T14:13:00.002+02:00
 draft: false
 url: /blog/2021/09/nav-521-released/
+tags:
+- release
 ---
 
 The first maintenance release of the 5.2 series of NAV is now out!

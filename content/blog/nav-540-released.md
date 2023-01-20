@@ -3,6 +3,8 @@ title: 'NAV 5.4.0 released'
 date: 2022-05-19T22:48:00.000+02:00
 draft: false
 url: /blog/2022/05/nav-540-released/
+tags:
+- release
 ---
 
 The initial feature release of the 5.4 series of NAV is now out!

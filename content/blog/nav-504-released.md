@@ -3,6 +3,8 @@ title: 'NAV 5.0.4 released'
 date: 2020-01-16T11:14:00.000+01:00
 draft: false
 url: /blog/2020/01/nav-504-released/
+tags:
+- release
 ---
 
 The fourth maintenance release of the 5.0 series of NAV is now out!

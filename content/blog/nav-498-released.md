@@ -3,6 +3,8 @@ title: 'NAV 4.9.8 released'
 date: 2019-08-22T14:54:00.000+02:00
 draft: false
 url: /blog/2019/08/nav-498-released/
+tags:
+- release
 ---
 
 The eighth maintenance release of the 4.9 series of NAV is now out!

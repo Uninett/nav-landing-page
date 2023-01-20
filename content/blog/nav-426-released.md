@@ -4,9 +4,8 @@ date: 2015-04-23T06:18:00.000+02:00
 draft: false
 url: /blog/2015/04/nav-426-released/
 tags: 
+- release
 - bugfix
-- nav
-- regular
 - 4.2
 ---
 

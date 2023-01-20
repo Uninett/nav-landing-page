@@ -3,6 +3,8 @@ title: 'NAV 4.7.0 released'
 date: 2017-06-09T16:13:00.001+02:00
 draft: false
 url: /blog/2017/06/nav-470-released/
+tags:
+- release
 ---
 
 The initial 4.7 series release of NAV is now out!

@@ -4,9 +4,8 @@ date: 2015-01-09T02:24:00.000+01:00
 draft: false
 url: /blog/2015/01/nav-422-released/
 tags: 
+- release
 - bugfix
-- nav
-- regular
 - 4.2
 ---
 

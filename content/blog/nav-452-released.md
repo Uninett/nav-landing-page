@@ -3,6 +3,8 @@ title: 'NAV 4.5.2 released'
 date: 2016-06-30T11:41:00.000+02:00
 draft: false
 url: /blog/2016/06/nav-452-released/
+tags:
+- release
 ---
 
 The second maintenance release of the NAV 4.5 series is now out.
