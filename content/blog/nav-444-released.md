@@ -9,7 +9,7 @@ The fourth maintenance release of the NAV 4.4 series was released 02.06.
 
 The source code is available for download at [Launchpad](https://launchpad.net/nav/4.4/4.4.4). New packages for Debian Wheezy and Jessie have been published in our [APT repository](https://nav.uninett.no/install-instructions/#debian) as usual (and the virtual appliance is being updated).
 
-### Changes
+## Changes
 
 The following reported bugs have been fixed:
 

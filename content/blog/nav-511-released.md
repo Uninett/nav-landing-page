@@ -15,7 +15,7 @@ Please be extra aware of config file changes. Look out for `*.dpkg-dist` files i
 
 The virtual appliance will be updated shortly.
 
-#### Fixed GitHub issues in this release
+## Fixed GitHub issues in this release
 
 *   [#2200](https://github.com/Uninett/nav/issues/2200) (\[BUG\] HttpChecker crashes when username/password combo is configured)
 *   [#2216](https://github.com/Uninett/nav/issues/2216) (\[BUG\] BGP sessions with AS numbers larger than 2147483647 cause ipdevpoll jobs to fail with psycopg2.errors.NumericValueOutOfRange)
@@ -27,8 +27,7 @@ The virtual appliance will be updated shortly.
 *   [#2230](https://github.com/Uninett/nav/issues/2230) (\[BUG\] Cannot enable dot1x mode in PortAdmin)
 *   [#2234](https://github.com/Uninett/nav/issues/2234) (\[BUG\] Bulk import, 'NoneType' object has no attribute 'split')
 
-Release notes
--------------
+## Release notes
 
 We always advise you to have a look at [NAV's accompanying release notes](https://nav.uninett.no/doc/5.1/release-notes.html#nav-5-1) when upgrading.
 

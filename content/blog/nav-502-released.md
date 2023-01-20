@@ -15,13 +15,13 @@ Please also be extra aware of config file changes. Look out for `*.dpkg-dist` fi
 
 The virtual appliance will be updated shortly.
 
-#### Deprecation warning
+## Deprecation warning
 
 Python 2 reaches its end-of-life on **January 1, 2020**. NAV 5.0 therefore moves to Python 3, and as such, you will need at least Python 3.5 to run NAV.
 
 Most of NAV will still run on Python 2 as of the 5.0 release, but from this point, Python 2 will be deprecated and we will start removing code that exists solely to keep compatibility with Python 2.
 
-#### Fixed GitHub issues in this release:
+## Fixed GitHub issues in this release:
 
 *   [#2035](https://github.com/Uninett/nav/pull/2035) (Enable room geo positions to be writeable in API)
 *   [#2036](https://github.com/Uninett/nav/issues/2036) (\[BUG\] logengine crash with AttributeError on every run on NAV 5.0.1)
@@ -40,8 +40,7 @@ Most of NAV will still run on Python 2 as of the 5.0 release, but from this poin
 *   [#2054](https://github.com/Uninett/nav/issues/2054) (\[BUG\] pping resolves all boxDown alerts on restart)
 *   [#2056](https://github.com/Uninett/nav/issues/2056) (\[BUG\] Cannot add activity graphs to dashboard)
 
-Release notes
--------------
+## Release notes
 
 We always advise you to have a look at [NAV's accompanying release notes](https://nav.uninett.no/doc/5.0/release-notes.html#nav-5-0) when upgrading.
 

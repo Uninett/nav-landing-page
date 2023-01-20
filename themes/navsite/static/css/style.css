@@ -457,7 +457,6 @@ aside.pubdate {
     padding-top: 0;
     font-style: italic;
     font-size: 0.7em;
-    color: #777;
 }
 
 #blog {
@@ -471,11 +470,26 @@ aside.pubdate {
     max-width:100%;
 }
 
-
-
 #blog img {
     max-width: 100%;
 }
+
+aside .pubdate p {
+    color: #6B6B6B;
+}
+
+#blog .page-item:not(.active, .disabled) a{
+    color: #347AB7;
+}
+
+#blog .page-item.active a{
+    background-color: #347AB7;
+}
+
+#blog .page-item.disabled a {
+    color: #757575;
+}
+
 
 /* FOOTER
 ------------------------------------------------------------------ */

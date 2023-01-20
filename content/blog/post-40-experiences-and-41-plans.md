@@ -9,13 +9,13 @@ tags:
 
 NAV 4.0 has now been widely deployed, and people are enjoying the fresh layout, improved interface and (not really enjoying) new bugs. The feedback has been very good, but some issues have been raised.
 
-### NAV 4.0 experiences
+## NAV 4.0 experiences
 
 Graphite and it’s data-accepting sidekick Carbon have been creating some trouble for new and old NAV users. We have tried to help those with problems, but still have some issues that have not been resolved. This is kind of expected when introducing a new element for such a critical part of NAV, but we are working hard to fix the remaining issues.
 
 We have seen an increased interest in NAV after the release of 4.0. That is something we are very happy about. We would like to remind you that to communicate with other NAV users and developers, you can use IRC (channel #nav on irc.freenode.net) or email [nav-users@uninett.no](mailto:nav-users@uninett.no).
 
-### NAV 4.1
+## NAV 4.1
 
 In addition to fixing bugs we have been working on new functionality for the NAV 4.1 release which is scheduled for release in late May.
 

@@ -11,7 +11,7 @@ The source code is available for download at [GitHub](https://github.com/UNINETT
 
 The virtual appliance will be updated shortly. The appliance is still based on Debian Jessie, but will hopefully migrate to Debian Stretch soon.
 
-### Changes
+## Changes
 
 Fixed [issues](https://github.com/UNINETT/nav/issues) in this release:
 

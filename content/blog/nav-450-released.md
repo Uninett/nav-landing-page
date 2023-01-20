@@ -13,7 +13,7 @@ With this release, we discontinue our packaging support for the old Debian Wheez
 
 The virtual appliance will be updated shortly.
 
-### Changes
+## Changes
 
 NAV 4.5 introduces the following user-visible features and improvements:
 

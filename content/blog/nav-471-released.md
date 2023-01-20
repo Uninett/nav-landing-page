@@ -13,7 +13,7 @@ The source code is available for download at [GitHub](https://github.com/UNINETT
 
 The virtual appliance will be updated shortly.
 
-### Changes
+## Changes
 
 As always, we recommend you read the [release notes](https://nav.uninett.no/doc/4.7/release-notes.html#nav-4-7) for a fuller description of the new features and significant changes.
 

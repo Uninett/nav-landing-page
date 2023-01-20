@@ -17,7 +17,7 @@ Please also be extra aware of config file changes. Look out for `*.dpkg-dist` fi
 
 The virtual appliance has also been updated.
 
-#### Fixed GitHub issues in this release:
+## Fixed GitHub issues in this release:
 
 *   [#1890](https://github.com/Uninett/nav/issues/1890) (Temperature gauges do not render if multiple threshold rules apply to it)
     *   [#1921](https://github.com/Uninett/nav/pull/1921) (Handle arbitrary number of thresholds for a given sensor)
@@ -30,8 +30,7 @@ The virtual appliance has also been updated.
 *   [#1923](https://github.com/Uninett/nav/issues/1923) (ENTITY-MIB implementation can no longer resolve physical device classes properly)
     *   [#1924](https://github.com/Uninett/nav/pull/1924) (Support cross-MIB type definitions in MibRetrievers)
 
-Release notes
--------------
+## Release notes
 
 We always advise you to have a look at [NAV's accompanying release notes](https://nav.uninett.no/doc/4.9/release-notes.html#nav-4-9) when upgrading.
 

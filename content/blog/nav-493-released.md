@@ -15,7 +15,7 @@ Please also be extra aware of config file changes. Look out for `*.dpkg-dist` fi
 
 The virtual appliance has also been updated.
 
-#### Fixed GitHub issues in this release:
+## Fixed GitHub issues in this release:
 
 *   [#757](https://github.com/Uninett/nav/issues/757) (devicehistory search by date ignores date)
 *   [#1792](https://github.com/Uninett/nav/issues/1792) (Precision of several Eaton/MGE UPS sensors are wrong)
@@ -28,8 +28,7 @@ The virtual appliance has also been updated.
 *   [#1865](https://github.com/Uninett/nav/issues/1865) (Servicemon resource leak causes all services to be reported as down)
 *   [#1871](https://github.com/Uninett/nav/issues/1871) (Alert detail headers are not present in e-mail notifications from AlertEngine)
 
-Release notes
--------------
+## Release notes
 
 We always advise you to have a look at [NAV's accompanying release notes](https://nav.uninett.no/doc/4.9/release-notes.html#nav-4-9) when upgrading.  
 Happy NAVing everyone!

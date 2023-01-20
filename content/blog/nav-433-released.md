@@ -17,7 +17,7 @@ Due to a critical bugfix in the NAV service monitor, we are releasing the third 
 
 The source code is available for download at [Launchpad](https://launchpad.net/nav/4.3/4.3.3). New packages for Debian Wheezy and Jessie have been published in our [APT repository](https://nav.uninett.no/install-instructions/#debian) as usual (and the virtual appliance has been updated).
 
-### Changes
+## Changes
 
 The following reported bugs have been fixed:
 

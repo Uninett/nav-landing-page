@@ -15,20 +15,19 @@ Please be extra aware of config file changes. Look out for `*.dpkg-dist` files i
 
 The virtual appliance will be updated shortly.
 
-#### User-visible features and improvements:
+## User-visible features and improvements:
 
 *   [#1928](https://github.com/Uninett/nav/issues/1928) (Document 802.1X support of PortAdmin for end users)
 *   [#2289](https://github.com/Uninett/nav/pull/2289) (Add config option to disallow editing of uplinks and downlinks in PortAdmin)
 *   [#2295](https://github.com/Uninett/nav/pull/2295) (Redefine alert severity levels and make them configurable)
 *   [#2297](https://github.com/Uninett/nav/pull/2297) (Document the event and alert type hierarchy)
 
-#### Fixed GitHub issues in this release
+## Fixed GitHub issues in this release
 
 *   [#2296](https://github.com/Uninett/nav/issues/2296) (\[BUG\] Portadmin save API incorrectly returns 500 error where 400 is appropriate)
 *   [#2298](https://github.com/Uninett/nav/issues/2298) (\[BUG\] PortAdmin RpcError on JunOS 20 and newer)
 
-Release notes
--------------
+## Release notes
 
 We always advise you to have a look at [NAV's accompanying release notes](https://nav.readthedocs.io/en/5.2.x/release-notes.html#nav-5-2) when upgrading.
 

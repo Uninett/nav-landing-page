@@ -14,7 +14,7 @@ The second maintenance release of the NAV 4.2 series is now available.
 
 The source code is available for download at [Launchpad](https://launchpad.net/nav/4.2/4.2.2). A new package for Debian Wheezy has been published in our [APT repository](https://nav.uninett.no/wiki/nav_on_debian), as usual.
 
-### Changes
+## Changes
 
 **Important note:**
 

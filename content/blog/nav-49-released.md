@@ -9,13 +9,11 @@ During a two-week whirlwind, three releases have been made in the new 4.9 series
 
 As the primary objective of the 4.9 release series was to move to some newer (non-outdated) versions of NAV's dependencies, especially Django (with which we still have a way to go), lots of little regressions snuck up on us in the 4.9.0 and 4.9.1 releases. Thankfully, our ever watchful users diligently reported their problems back to us.
 
-Copyright changes
------------------
+## Copyright changes
 
 NAV 4.9 introduced a previously announced license change. NAV is now licensed under the GNU General Public License v3. This change was primarily needed in order to be compatible with severale Apache 2.0-licensed libraries that we want to utilize in future NAV versions.
 
-Changes
--------
+## Changes
 
 Let's look at some of the functional changes introduced by these three releases:
 
@@ -103,8 +101,7 @@ Let's look at some of the functional changes introduced by these three releases:
 *   [#1814](https://github.com/UNINETT/nav/issues/1814/) (Change the NAV license from GPLv2 to GPLv3)
 *   [#1819](https://github.com/UNINETT/nav/issues/1819/) (/prefix/usage API endpoint crashes instead of returning 404 on non-existent prefixes)
 
-Release notes
--------------
+## Release notes
 
 We always advise you to have a look at [NAV's accompanying release notes](https://nav.uninett.no/doc/4.9/release-notes.html#nav-4-9) when upgrading.
 

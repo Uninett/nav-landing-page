@@ -17,7 +17,7 @@ The source code is available for download at [Launchpad](https://launchpad.net/n
 
 The virtual appliance will be updated shortly.
 
-### Changes
+## Changes
 
 NAV 4.4 now requires Django 1.7. Unfortunately, Django 1.7 was obsoleted in December, but since we mainly target Debian stable (Jessie), security fixes will be backported by Debian to Django 1.7 for a long time to come. (If you are still running Debian Wheezy, you can obtain python-django 1.7 from the official wheezy-backports repository).
 

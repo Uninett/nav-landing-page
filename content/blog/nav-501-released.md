@@ -15,13 +15,13 @@ Please also be extra aware of config file changes. Look out for `*.dpkg-dist` fi
 
 The virtual appliance will be updated shortly.
 
-#### Deprecation warning
+## Deprecation warning
 
 Python 2 reaches its end-of-life on **January 1, 2020**. NAV 5.0 therefore moves to Python 3, and as such, you will need at least Python 3.5 to run NAV.
 
 Most of NAV will still run on Python 2 as of the 5.0 release, but from this point, Python 2 will be deprecated and we will start removing code that exists solely to keep compatibility with Python 2.
 
-#### Fixed GitHub issues in this release:
+## Fixed GitHub issues in this release:
 
 *   [#2016](https://github.com/Uninett/nav/issues/2016) (ipdevpoll inventory job crashes when processing manufacturing dates from ENTITY-MIB under Python 3)
 *   [#2019](https://github.com/Uninett/nav/issues/2019) (IP Device info "Neighbor" tab is blank)
@@ -32,8 +32,7 @@ Most of NAV will still run on Python 2 as of the 5.0 release, but from this poin
 *   [#2032](https://github.com/Uninett/nav/pull/2032) (Replace SNMP community columns in SeedDB netbox listing with management profile lists)
 *   [#2033](https://github.com/Uninett/nav/pull/2033) (Don't crash when logging in users with old-style password hashes)
 
-Release notes
--------------
+## Release notes
 
 We always advise you to have a look at [NAV's accompanying release notes](https://nav.uninett.no/doc/5.0/release-notes.html#nav-5-0) when upgrading.
 

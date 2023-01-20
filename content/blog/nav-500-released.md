@@ -15,13 +15,13 @@ Please also be extra aware of config file changes. Look out for `*.dpkg-dist` fi
 
 The virtual appliance will be updated shortly
 
-#### Deprecation warning
+## Deprecation warning
 
 Python 2 reaches its end-of-life on **January 1, 2020**. NAV 5.0 therefore moves to Python 3, and as such, you will need at least Python 3.5 to run NAV.
 
 Most of NAV will still run on Python 2 as of the 5.0 release, but from this point, Python 2 will be deprecated and we will start removing code that exists solely to keep compatibility with Python 2.
 
-#### User-visible features and improvements:
+## User-visible features and improvements:
 
 *   [#1793](https://github.com/Uninett/nav/issues/1793) (Add maintenance filter option to netbox API endpoint)
     *   [#1995](https://github.com/Uninett/nav/pull/1995) (Add maintenance filter to Netbox API endpoint)
@@ -50,7 +50,7 @@ Most of NAV will still run on Python 2 as of the 5.0 release, but from this poin
 *   [#2007](https://github.com/Uninett/nav/pull/2007) (Support REMOTE\_USER header for web authentication)
 *   [#2008](https://github.com/Uninett/nav/pull/2008) (Add more database stats to Watchdog's "NAV by the numbers")
 
-#### Fixed GitHub issues in this release:
+## Fixed GitHub issues in this release:
 
 *   [#1978](https://github.com/Uninett/nav/pull/1978) (Netmap layer 2 traffic data requests to Graphite are too slow and too large)
 *   [#1979](https://github.com/Uninett/nav/issues/1979) (Location alerts widget crashes intermittently)
@@ -61,8 +61,7 @@ Most of NAV will still run on Python 2 as of the 5.0 release, but from this poin
 *   [#2004](https://github.com/Uninett/nav/issues/2004) (\[BUG\] Interface browser shows wrong "last used" date)
 *   [#2009](https://github.com/Uninett/nav/pull/2009) (Ensure rooms require a location attribute also in the SQL schema)
 
-Release notes
--------------
+## Release notes
 
 We always advise you to have a look at [NAV's accompanying release notes](https://nav.uninett.no/doc/5.0/release-notes.html#nav-5-0) when upgrading.
 

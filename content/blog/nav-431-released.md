@@ -15,7 +15,7 @@ The first maintenance release of the NAV 4.3 series is now out.
 
 The source code is available for download at [Launchpad](https://launchpad.net/nav/4.3/4.3.1). New packages for Debian Wheezy and Jessie have been published in our [APT repository](https://nav.uninett.no/wiki/nav_on_debian) as usual.
 
-### Changes
+## Changes
 
 The following reported bugs have been fixed:
 

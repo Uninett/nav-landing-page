@@ -15,13 +15,13 @@ Please also be extra aware of config file changes. Look out for `*.dpkg-dist` fi
 
 The virtual appliance will be updated shortly.
 
-#### Deprecation warning
+## Deprecation warning
 
 Python 2 reached its end-of-life on **January 1, 2020**. NAV 5.0 therefore moves to Python 3, and as such, you will need at least Python 3.5 to run NAV.
 
 Most of NAV will still run on Python 2 as of the 5.0 release, but from this point, Python 2 will be deprecated and we will start removing code that exists solely to keep compatibility with Python 2.
 
-#### Fixed GitHub issues in this release:
+## Fixed GitHub issues in this release:
 
 *   [#2074](https://github.com/Uninett/nav/issues/2074) (\[BUG\] ipdevpoll inventory job crashes for many devices with an AttributeError)
 *   [#2075](https://github.com/Uninett/nav/issues/2075) (\[BUG\] Editing existing API tokens shows no enabled endpoints)
@@ -36,8 +36,7 @@ Most of NAV will still run on Python 2 as of the 5.0 release, but from this poin
 *   [#2093](https://github.com/Uninett/nav/issues/2093) (\[BUG\] PortAdmin crashes when viewing a switch with non-ASCII port descriptions)
 *   [#2097](https://github.com/Uninett/nav/issues/2097) (\[BUG\] Adding a manual detention without a number of days until autoenable crashes Arnold)
 
-Release notes
--------------
+## Release notes
 
 We always advise you to have a look at [NAV's accompanying release notes](https://nav.uninett.no/doc/5.0/release-notes.html#nav-5-0) when upgrading.
 

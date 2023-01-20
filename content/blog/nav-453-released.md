@@ -9,7 +9,7 @@ The third maintenance release of the NAV 4.5 series is now out.
 
 The source code is available for download at [Launchpad](https://launchpad.net/nav/4.5/4.5.3). A new package for Debian Jessie has been published in our [APT repository](https://nav.uninett.no/install-instructions/#debian)as usual (and the virtual appliance is being updated).
 
-### Changes
+## Changes
 
 The following reported bugs have been fixed:
 

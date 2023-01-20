@@ -11,7 +11,7 @@ The source code is available for download at [GitHub](https://github.com/UNINETT
 
 The virtual appliance will be updated shortly.
 
-### Changes
+## Changes
 
 User-visible features and improvements:
 
