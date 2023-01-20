@@ -19,19 +19,19 @@ The main source of graphs for an ip device is now the IP Device Info tool. For a
 
 System metrics display graphs regarding cpu, memory and other system related metrics.
 
-![](/image/blog/tumblr_inline_n1lmbzvdrw1sww2qo.png)
+![Screenshot of tabs in NAV's system metrics. Ping tab is opened, and is showing a ping packet loss graph](/image/blog/tumblr_inline_n1lmbzvdrw1sww2qo.png "System metrics")
 
 ## Port metrics
 
 Port metrics display graphs regarding the interfaces of the IP device.
 
-![](/image/blog/tumblr_inline_n1llspazav1sww2qo.png)
+![Screenshot of port metrics. Displays the graph called 'Port details'. It shows in- and out-going traffic on some port, measured in bits per second.](/image/blog/tumblr_inline_n1llspazav1sww2qo.png "Port metrics")
 
-g## Detailed interface view
+## Detailed interface view
 
 The detailed interface view display all related graphs for that interface in addition to detailed information regarding the interface.
 
-![](/image/blog/tumblr_inline_n1llt023l51sww2qo.png)
+![Screenshot of detailed interface view. Displays 4 activity graphs.](/image/blog/tumblr_inline_n1llt023l51sww2qo.png "Detailed interface view")
 
 ## Graph controls
 
@@ -41,13 +41,13 @@ Each graph has individual controls for choosing timeframe. In addition there are
 
 If the graph you are looking at is of special importance you can easily put it on your dashboard by clicking the “Add to dashboard” button. When the graph is on the dashboard you can set a custom title and refresh interval for it.
 
-![](/image/blog/tumblr_inline_n1lmkclf2a1sww2qo.png)
+![Screenshot of a graph that was added to the user's dashboard. It shows a ping packet round trip time graph.](/image/blog/tumblr_inline_n1lmkclf2a1sww2qo.png "Graphs on the dashboard")
 
 ## Custom graphs
 
 If you want to dive deeper and get even more out of the integration, you have the ability to create your own graphs using the Graphite interface. These graphs may then be placed on your dashboard and will refresh themselves automatically.
 
-![](/image/blog/tumblr_inline_n1lmc9sgjx1sww2qo.png)
+![Screenshot of a custom made graph. The graph is called 'The 3 ip devices with highest max cpu'.](/image/blog/tumblr_inline_n1lmc9sgjx1sww2qo.png "Custom graphs")
 
 ## Test it yourself!
 
