@@ -459,6 +459,21 @@ aside.pubdate {
     font-size: 0.7em;
 }
 
+#blog {
+    word-break:break-all;
+    word-wrap:break-word;
+}
+
+#blog code, p, a {
+    display: inline-block;
+    white-space: normal;
+    max-width:100%;
+}
+
+#blog img {
+    max-width: 100%;
+}
+
 aside .pubdate p {
     color: #6B6B6B;
 }
