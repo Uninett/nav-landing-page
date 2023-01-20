@@ -27,7 +27,7 @@ Port metrics display graphs regarding the interfaces of the IP device.
 
 ![](/image/blog/tumblr_inline_n1llspazav1sww2qo.png)
 
-g## Detailed interface view
+## Detailed interface view
 
 The detailed interface view display all related graphs for that interface in addition to detailed information regarding the interface.
 
