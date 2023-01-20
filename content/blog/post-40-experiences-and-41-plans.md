@@ -19,7 +19,7 @@ We have seen an increased interest in NAV after the release of 4.0. That is some
 
 In addition to fixing bugs we have been working on new functionality for the NAV 4.1 release which is scheduled for release in late May.
 
-![](/image/blog/tumblr_inline_n5gve1payr1sww2qo.png)
+![Screenshot of WatchDog report in NAV](/image/blog/tumblr_inline_n5gve1payr1sww2qo.png "WatchDog screenshot")
 
 The most visible addition is WatchDog. WatchDog tries to give you an indication about the health of your NAV installation. It runs tests for known problems to see if everything is as it should be, and displays this information in a widget. WatchDog also has its own page displaying its status, as well as interesting general information about your NAV installation.
 

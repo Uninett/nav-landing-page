@@ -7,10 +7,10 @@ tags:
 - photo
 ---
 
-![](/image/blog/tumblr_n02cnu7vvq1tofzlco2_1280.png)
+![Screenshot of NAV's frontpage. Tools dropdown menu is open and shows all of NAV's available tools. There are 21 tools in the menu.](/image/blog/tumblr_n02cnu7vvq1tofzlco2_1280.png "NAV frontpage with dropdown")
 
 A megadropdown makes navigating NAV easy.
 
-![](/image/blog/tumblr_n02cnu7vvq1tofzlco1_1280.png)
+![Screenshot of NAV's frontpage. Sections on the left side: Messages, Vlan graph, Room map. Sections on the right side: NAV blog, Status, FeedReader, Machine tracker.](/image/blog/tumblr_n02cnu7vvq1tofzlco1_1280.png "NAV's frontpage view")
 
 The frontpage of NAV is now a dashboard.
