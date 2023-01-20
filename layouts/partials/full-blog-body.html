@@ -9,5 +9,17 @@
 
         {{ .Content }}
 
+          {{ if .Params.Tags }}
+          <aside class="tags">
+              <p>Tags <i class="fa fa-tag"></i></p>
+              <ul>
+                  {{ range .Params.Tags }}
+                  <li>{{ . }}</li>
+                  {{ end }}
+              </ul>
+          </aside>
+
+          {{ end }}
+
       </article>
     </div>
