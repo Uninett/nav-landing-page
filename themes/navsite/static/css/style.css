@@ -106,7 +106,7 @@ body {
 
 .quick-link-wrapper > ul {
     margin:0 auto;
-    width:547px;
+    width:31em;
     background:rgba(255,255,255,0.2);
     color:white;
 }
@@ -120,10 +120,7 @@ body {
 
 .quick-link-wrapper > ul > li > a {
     color:white;
-}
-
-.quick-link-wrapper > ul > li > a > i {
-    padding: 0 0.1em;
+    padding: 0.1em 0.2em;
 }
 
 .quick-link-wrapper > ul > li > a:hover {
@@ -134,9 +131,9 @@ body {
 .quick-link-wrapper > ul > li > a:focus,
 .quick-link-wrapper > ul > li > a:focus-within,
 .quick-link-wrapper > ul > li > a:focus-visible {
-    padding: 0.3em 0.4em;
     box-shadow: 0 0 2px 1px white, inset 0 0 0 2px white;
     -webkit-border-radius: 5px;
+    text-decoration: none;
 }
 
 /* Overrider Bootstrap's default for container */
