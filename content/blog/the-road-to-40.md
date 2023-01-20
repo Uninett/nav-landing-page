@@ -6,7 +6,6 @@ url: /blog/2014/01/the-road-to-40/
 tags: 
 - cricket
 - 4.0
-- regular
 - rrdtool
 - graphite
 - history101

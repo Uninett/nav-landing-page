@@ -6,8 +6,6 @@ url: /blog/2015/08/nav-431-released/
 tags: 
 - bugfix
 - 4.3
-- nav
-- regular
 - 4.3.1
 ---
 

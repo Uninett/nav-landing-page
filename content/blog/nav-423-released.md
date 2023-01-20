@@ -5,8 +5,6 @@ draft: false
 url: /blog/2015/02/nav-423-released/
 tags: 
 - bugfix
-- nav
-- regular
 - 4.2
 ---
 

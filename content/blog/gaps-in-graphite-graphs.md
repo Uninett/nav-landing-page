@@ -4,7 +4,6 @@ date: 2015-05-05T07:24:00.000+02:00
 draft: false
 url: /blog/2015/05/gaps-in-graphite-graphs/
 tags: 
-- regular
 - graphite
 ---
 

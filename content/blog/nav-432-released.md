@@ -6,8 +6,6 @@ url: /blog/2015/11/nav-432-released/
 tags: 
 - bugfix
 - 4.3
-- nav
-- regular
 ---
 
 The second maintenance release of the NAV 4.3 series is now out.

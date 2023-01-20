@@ -7,8 +7,6 @@ tags:
 - bugfix
 - 4.4.1
 - 4.4
-- nav
-- regular
 ---
 
 The first maintenance release of the NAV 4.4 series is now out.

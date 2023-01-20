@@ -5,8 +5,6 @@ draft: false
 url: /blog/2015/04/nav-426-released/
 tags: 
 - bugfix
-- nav
-- regular
 - 4.2
 ---
 

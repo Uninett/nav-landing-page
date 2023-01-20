@@ -6,8 +6,6 @@ url: /blog/2016/01/nav-440-released/
 tags: 
 - release
 - 4.4
-- nav
-- regular
 - 4.4.0
 ---
 

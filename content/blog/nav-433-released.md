@@ -7,8 +7,6 @@ tags:
 - bugfix
 - 4.3.3
 - 4.3
-- nav
-- regular
 ---
 
 _This is posted a while after the actual release_

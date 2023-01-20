@@ -4,8 +4,6 @@ date: 2015-05-21T09:03:00.000+02:00
 draft: false
 url: /blog/2015/05/the-nav-api/
 tags: 
-- nav
-- regular
 - api
 ---
 

@@ -4,7 +4,6 @@ date: 2014-01-27T05:18:00.000+01:00
 draft: false
 url: /blog/2014/01/new-nav-logo/
 tags: 
-- regular
 ---
 
 ![NAV logo](/image/blog/tumblr_inline_n0274rbeo81sww2qo.png)

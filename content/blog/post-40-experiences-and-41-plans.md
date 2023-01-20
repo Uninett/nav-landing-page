@@ -4,7 +4,6 @@ date: 2014-05-12T10:18:00.000+02:00
 draft: false
 url: /blog/2014/05/post-40-experiences-and-41-plans/
 tags: 
-- regular
 ---
 
 NAV 4.0 has now been widely deployed, and people are enjoying the fresh layout, improved interface and (not really enjoying) new bugs. The feedback has been very good, but some issues have been raised.
