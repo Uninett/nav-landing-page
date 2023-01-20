@@ -596,6 +596,7 @@ footer#footer .photo-by {
 
 a {
     color: #2A6293;
+    padding: 0 0.2em;
 }
 
 /* Overrides Bootstrap's primary button color */
@@ -612,7 +613,6 @@ a {
 a:not(.navbar-header a, .navbar-right a, .quick-link-wrapper a, .download-alt a, .author a, .powered-by a, .sitemap a):focus,
 a:not(.navbar-header a, .navbar-right a, .quick-link-wrapper a, .download-alt a, .author a, .powered-by a, .sitemap a):focus-within,
 a:not(.navbar-header a, .navbar-right a, .quick-link-wrapper a, .download-alt a, .author a, .powered-by a, .sitemap a):focus-visible {
-    padding: 0 0.3em;
     box-shadow: 0 0 2px 1px #2A6293, inset 0 0 0 1px #2A6293;
     -webkit-border-radius: 5px;
 }
