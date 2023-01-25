@@ -2,3 +2,13 @@ baseURL = "https://nav.uninett.no/"
 languageCode = "en-us"
 title = "Network Administration Visualized"
 theme = "navsite"
+
+[permalinks]
+  blog = '/blog/:year/:month/:title/'
+
+[markup.goldmark.renderer]
+  unsafe = true
+
+[outputs]
+home = [ "HTML" ]
+blog = [ "HTML", "RSS" ]

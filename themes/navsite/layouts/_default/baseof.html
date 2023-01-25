@@ -1,7 +1,9 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
     {{- partial "head.html" . -}}
     <body>
+    <a class="sr-only sr-only-focusable" href="#content">Skip to main content</a>
+        <h1 hidden>NAV</h1>
         {{- partial "header.html" . -}}
         <div id="content">
         {{- block "main" . }}{{- end }}

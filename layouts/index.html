@@ -13,21 +13,23 @@
                     <div class="row hidden-xs">
                         <div class="col-lg-12 col-md-12 col-sm-12 quick-link-wrapper">
                             <ul>
-                                <li><a class="jump-link" href="#" data-section="features"><i class="fa fa-check"></i> Features</a></li>
-                                <li><a class="jump-link" href="#" data-section="download"><i class="fa fa-download"></i> Download</a></li>
-                                <li><a class="jump-link" href="#" data-section="tour"><i class="fa fa-play"></i> Tour</a></li>
+                                <li><a aria-label="Highlighted NAV features" class="jump-link" href="#" data-section="features"><i class="fa fa-check"></i> Features</a></li>
+                                <li><a aria-label="Download NAV" class="jump-link" href="#" data-section="download"><i class="fa fa-download"></i> Download</a></li>
+                                <li><a aria-label="NAV video tour" class="jump-link" href="#" data-section="tour"><i class="fa fa-film"></i> Tour</a></li>
                             </ul>
-                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-        <div id="features" class="container content">
+        <div id="features" class="container content d-flex">
             <div class="row">
+                <div class="col-md-12">
+                    <h2 hidden class="super-heading">Features</h2>
+                </div>
+            </div>
                 <div class="card col-md-6">
-                    <div class="row">
-                        <div class="col-md-2 col-sm-2 col-xs-3">
+                        <div class="col-md-1 col-sm-2 col-xs-3 feature-icon">
                             <span class="fa-stack fa-3x hidden-xs">
                                 <i class="fa fa-square-o fa-stack-2x"></i>
                                 <i class="fa fa-bell-o fa-stack-1x"></i>
@@ -42,11 +44,9 @@
                             <h3>Alerts</h3>
                             <p>If something in the network goes down, NAV alerts you via your dashboard, email or SMS.</p>
                         </div>
-                    </div>
                 </div>
                 <div class="card col-md-6">
-                    <div class="row">
-                        <div class="col-md-2 col-sm-2 col-xs-3">
+                        <div class="col-md-1 col-sm-2 col-xs-3 feature-icon">
                             <span class="fa-stack fa-3x hidden-xs">
                                 <i class="fa fa-square-o fa-stack-2x"></i>
                                 <i class="fa fa-sitemap fa-stack-1x"></i>
@@ -60,13 +60,9 @@
                             <h3>Topology</h3>
                             <p>Devices added to the NAV database can be visualized in several interactive network maps.</p>
                         </div>
-                    </div>
                 </div>
-            </div>
-            <div class="row">
                 <div class="card col-md-6">
-                    <div class="row">
-                        <div class="col-md-2 col-sm-2 col-xs-3">
+                        <div class="col-md-1 col-sm-2 col-xs-3 feature-icon">
                             <span class="fa-stack fa-3x hidden-xs">
                                 <i class="fa fa-square-o fa-stack-2x"></i>
                                 <i class="fa fa-dashboard fa-stack-1x"></i>
@@ -80,11 +76,9 @@
                             <h3>Statistics</h3>
                             <p>NAV gives you VLAN graphs, link loads and customizable reports for your equipment.</p>
                         </div>
-                    </div>
                 </div>
                 <div class="card col-md-6">
-                    <div class="row">
-                        <div class="col-md-2 col-sm-2 col-xs-3">
+                        <div class="col-md-1 col-sm-2 col-xs-3 feature-icon">
                             <span class="fa-stack fa-3x hidden-xs">
                                 <i class="fa fa-square-o fa-stack-2x"></i>
                                 <i class="fa fa-cogs fa-stack-1x"></i>
@@ -98,15 +92,14 @@
                             <h3>Management</h3>
                             <p>Use NAV to monitor your inventory and configure network equipment, such as switches.</p>
                         </div>
-                    </div>
                 </div>
-            </div>
+
         </div>
         <div class="about">
             <div class="container">
                 <div class="row">
                     <div class="col-md-12">
-                        <h1 class="super-heading">About NAV</h1>
+                        <h2 class="super-heading">About NAV</h2>
                     </div>
                 </div>
                 <div class="row">
@@ -121,48 +114,97 @@
                         </div>
                     </div>
                      <div class="col-md-6">
-                        <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+                        <div id="carousel-example-generic" class="carousel slide" data-ride="carousel" role="complementary" data-pause="hover">
                             <!-- Indicators -->
-                            <ol class="carousel-indicators">
-                            <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
-                            <li data-target="#carousel-example-generic" data-slide-to="1"></li>
-                            <li data-target="#carousel-example-generic" data-slide-to="2"></li>
-                            <li data-target="#carousel-example-generic" data-slide-to="3"></li>
+                            <ol class="carousel-indicators" role="tablist">
+                            <li data-target="#carousel-example-generic" data-slide-to="0" class="active" aria-label="Slide 1" role="tab" tabindex="0"></li>
+                            <li data-target="#carousel-example-generic" data-slide-to="1" aria-label="Slide 2" role="tab" tabindex="0"></li>
+                            <li data-target="#carousel-example-generic" data-slide-to="2" aria-label="Slide 3" role="tab" tabindex="0"></li>
+                            <li data-target="#carousel-example-generic" data-slide-to="3" aria-label="Slide 4" role="tab" tabindex="0"></li>
                             </ol>
 
                             <!-- Wrapper for slides -->
                             <div class="carousel-inner">
-                                <div class="item active">
+                                <div class="item active" role="tabpanel">
                                     <div class="row">
                                         <div class="col-md-12">
-                                            <img class="" src="/image/nav1.png" alt="...">
+                                            <span hidden id="nav1-description">
+                                                Front page of NAV.
+                                                On the left side there is the 'Getting started with NAV'-section and a top portion of a graph.
+                                                On the right side there are the following sections: NAV blog, Status, Action map
+                                            </span>
+                                            <img class="" src="/image/nav1.png"
+                                                 alt="Screenshot of NAV's front page."
+                                                 aria-describedby="nav1-description"
+                                            >
                                         </div>
                                     </div>
                                 </div>
-                                <div class="item">
+                                <div class="item" role="tabpanel">
                                   <div class="row">
                                         <div class="col-md-12">
-                                            <img class="" src="/image/nav4.png" alt="...">
+                                            <span hidden id="nav4-description">
+                                                NAV's Geomap page.
+                                                Most of the picture is a map of a street. There is line from one building to another.
+                                                The line is half grey and half green.
+                                                Below the map the following metrics are displayed: CPU load, netboxes, Link load, Link capacity.
+                                            </span>
+                                            <img class="" src="/image/nav4.png"
+                                                 alt="Screenshot of NAV's Geomap page."
+                                                 aria-describedby="nav4-description"
+                                            >
                                         </div>
                                     </div>
                                 </div>
-                                <div class="item">
+                                <div class="item" role="tabpanel">
                                   <div class="row">
                                         <div class="col-md-12">
-                                            <img class="" src="/image/nav6.png" alt="...">
+                                            <span hidden id="nav6-description">
+                                                Part of the page showing temperature graphs of the sensors of some device.
+                                                The IP address of the device is blurred out.
+                                                There are 3 graphs, each shows a current temperature of the sensor and a graph of temperature change below.
+                                                The graphs are called 'Friluftsinntak', 'Over aggregat', 'Over UPS'.
+                                            </span>
+                                            <img class="" src="/image/nav6.png"
+                                                 alt="Screenshot showing temperature graphs of the sensors of some device."
+                                                 aria-describedby="nav6-description"
+                                            >
                                         </div>
                                     </div>
                                 </div>
-                                <div class="item">
+                                <div class="item" role="tabpanel">
                                   <div class="row">
                                         <div class="col-md-12">
-                                            <img class="" src="/image/nav5.png" alt="...">
+                                            <span hidden id="nav5-description">
+                                                The graph is called 'Port details'.
+                                                It shows in- and out-going traffic on some port, measured in bits per second.
+                                            </span>
+                                            <img class="" src="/image/nav5.png"
+                                                 alt="Screenshot of graph of the traffic on some port."
+                                                 aria-describedby="nav5-description"
+                                            >
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        <p class="screenshots-caption">Screenshots of NAV</p>
+                         <div class="screenshots-caption-container">
+                             <div>
+                                 <button class="btn-md" id="slideshow-play-btn" hidden aria-label="play slideshow">
+                                     <i class="glyphicon glyphicon-play" aria-hidden="true"></i>
+                                 </button>
+                                 <button class="btn-md" id="slideshow-pause-btn" aria-label="pause slideshow">
+                                     <i class="glyphicon glyphicon-pause" aria-hidden="true"></i>
+                                 </button>
+                             </div>
+
+                             <div>
+                                 <p class="screenshots-caption">
+                                     Screenshots of NAV
+                                 </p>
+                             </div>
+                         </div>
+
                     </div>
                 </div>
             </div>
@@ -175,7 +217,7 @@
                     {{ range first 1 .Sections }}
                     {{ range first 1 .CurrentSection.Pages }}
 
-                    <h1 class="super-heading">Download</h1>
+                    <h2 class="super-heading">Download NAV</h2>
                     <p>NAV is freely available under the GNU GPL license and can run on any UNIX machine that supports Apache and Python*</p>
                     <p class="bottom-space">The latest version is <span style="font-weight:400;">{{ .Title }}</span>. Choose between our installation alternatives.</p>
                     <div class="row">
@@ -185,10 +227,10 @@
                                     <h3>Quick start</h3>
                                     <p>A pre-packaged Virtual Appliance in OVF format. Typically used for evaluation/testing.</p>
                                     <div class="btn-group">
-                                        <a href="/install-instructions/#ovf" class="btn btn-primary">
+                                        <a aria-label="Instructions for virtual appliance" href="/install-instructions/#ovf" class="btn btn-primary button-border-inside">
                                             <i class="fa fa-file-text-o"></i> Instructions
                                         </a>
-                                        <a href="https://github.com/Uninett/navappliance/releases/download/master/navappliance.zip" class="btn btn-primary">
+                                        <a aria-label="Download virtual appliance" href="https://github.com/Uninett/navappliance/releases/download/master/navappliance.zip" class="btn btn-primary button-border-inside">
                                             <i class="glyphicon glyphicon-download-alt"></i> Download
                                         </a>
                                     </div>
@@ -200,9 +242,11 @@
                                 <div class="download-alt-content">
                                     <h3>Debian package</h3>
                                     <p>Takes care of all dependencies and is currently the most comprehensive. Requires Debian.</p>
-                                    <a href="/install-instructions/#debian" class="btn btn-primary">
-                                        <i class="fa fa-file-text-o"></i> Instructions
-                                    </a>
+                                    <div class="btn-group">
+                                        <a aria-label="Instructions for installing Debian package" href="/install-instructions/#debian" class="btn btn-primary button-border-inside">
+                                            <i class="fa fa-file-text-o"></i> Instructions
+                                        </a>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -212,10 +256,10 @@
                                     <h3>Source code</h3>
                                     <p>Build NAV from source. If you want NAV for a production environment, this is the way to go.</p>
                                     <div class="btn-group">
-                                        <a href="https://nav.readthedocs.io/en/latest/intro/install.html" class="btn btn-primary">
+                                        <a aria-label="Instructions for installing from source code" href="https://nav.readthedocs.io/en/latest/intro/install.html" class="btn btn-primary button-border-inside">
                                             <i class="fa fa-file-text-o"></i> Instructions
                                         </a>
-                                        <a href="{{ .Params.source_url }}" class="btn btn-primary">
+                                        <a aria-label="Download source code" href="{{ .Params.source_url }}" class="btn btn-primary button-border-inside">
                                             <i class="glyphicon glyphicon-download-alt"></i> Download
                                         </a>
                                     </div>
@@ -238,9 +282,9 @@
         <div id="tour" class="container content">
             <div class="row">
                 <div class="col-md-12">
-                    <h1 class="super-heading">Take a tour</h1>
+                    <h2 class="super-heading">Take a tour</h2>
                     <figure>
-                        <iframe width="500" height="281" src="https://www.youtube.com/embed/eYYy1VLDm54?feature=oembed&amp;rel=0&amp;showinfo=0&amp;controls=1&amp;hd=1" frameborder="0" allowfullscreen=""></iframe>
+                        <iframe aria-label="Video demo of NAV on YouTube" width="500" height="281" src="https://www.youtube.com/embed/eYYy1VLDm54?feature=oembed&amp;rel=0&amp;showinfo=0&amp;controls=1&amp;hd=1" frameborder="0" allowfullscreen=""></iframe>
                     </figure>
                 </div>
             </div>
@@ -249,12 +293,12 @@
         <div id="who" class="container content">
             <div class="row">
                 <div class="col-md-12">
-                    <h1 class="super-heading">Who uses NAV?</h1>
+                    <h2 class="super-heading">Who uses NAV?</h2>
                 </div>
             </div>
             <div class="row bottom-space">
                 <div class="col-md-12">
-                    <p>Read about our selected users, or view the <a href="https://nav.uninett.no/wiki/navusers">list</a> of known NAV users.</p>
+                    <p>Read about our selected users, or view the <a aria-label="List of known NAV users" href="https://nav.uninett.no/wiki/navusers">list</a> of known NAV users.</p>
                 </div>
             </div>
             <div class="row bottom-space">
@@ -266,9 +310,9 @@
                         institutions.
                     </p>
                     <ul>
-                        <li><a href="http://ntnu.edu">NTNU</a> <span class="location">Trondheim, Norway</span></li>
-                        <li><a href="http://www.msu.ru/en/">MSU</a> <span class="location">Moscow, Russia</span></li>
-                        <li><a href="http://met.no/English/">MET</a> <span class="location">Oslo, Norway</span></li>
+                        <li><a href="https://ntnu.edu">NTNU</a> <span class="location">Trondheim, Norway</span></li>
+                        <li><a href="https://www.msu.ru/en/">MSU</a> <span class="location">Moscow, Russia</span></li>
+                        <li><a href="https://met.no/English/">MET</a> <span class="location">Oslo, Norway</span></li>
                     </ul>
                 </div>
                 <div class="col-md-6">
@@ -279,11 +323,39 @@
                         care.
                     </p>
                     <ul>
-                        <li><a href="http://www.cah.cz/en/">Czech aeroholding</a> <span class="location">Prague, Czech</span></li>
-                        <li><a href="http://www.oilspace.com">OILspace Inc</a> <span class="location">United Kingdom</span></li>
+                        <li><a href="https://www.cah.cz/en/">Czech aeroholding</a> <span class="location">Prague, Czech</span></li>
+                        <li><a href="https://www.oilspace.com">OILspace Inc</a> <span class="location">United Kingdom</span></li>
                     </ul>
                 </div>
             </div>
         </div>
     </section>
+<script>
+
+    $(function() {
+        $('.screenshots-caption-container button').on('click', function (event) {
+
+            if (event.currentTarget.getAttribute('id') === 'slideshow-pause-btn') {
+                event.currentTarget.setAttribute('hidden', 'true');
+                document.getElementById('slideshow-play-btn').removeAttribute('hidden');
+                $('.carousel').carousel('pause');
+            } else if (event.currentTarget.getAttribute('id') === 'slideshow-play-btn') {
+                event.currentTarget.setAttribute('hidden', 'true');
+                document.getElementById('slideshow-pause-btn').removeAttribute('hidden');
+                $('.carousel').carousel('cycle');
+            }
+        });
+    });
+
+    $(function() {
+        $('.carousel-indicators li').on('keydown', function (event) {
+            // If Enter was pressed
+            if(event.which === 13) {
+                const index = parseInt(event.target.getAttribute('data-slide-to'))
+                $('.carousel').carousel(index)
+            }
+        });
+    });
+
+</script>
 {{ end }}

@@ -14,7 +14,7 @@ body {
 ------------------------------------------------------------------ */
 
 .nav-wrapper {
-    background:#ee3243; /* unired */
+    background:#E71324; /* unired */
     border-bottom:1px solid #1D2730 !important;
 }
 
@@ -25,21 +25,42 @@ body {
 .menu .navbar-nav > li > a { color:white; }
 .menu .navbar-nav > li > a:hover { text-decoration:none; color:#1D2730; background:none; }
 .menu .navbar-nav > li {
-    font-size:18px;
+    font-size:1em;
     font-weight:400;
     padding-left:10px;
 }
 
 /* Set white border on collapsed nav icon */
-.navbar-inverse .navbar-toggle, .navbar-inverse .navbar-toggle:hover, .navbar-inverse .navbar-toggle:focus { border-color:white; }
+.navbar-inverse .navbar-toggle, .navbar-inverse .navbar-toggle:focus { border-color:white; }
 
+.navbar-header a {
+    display: inline-block;
+    height: 50px;
+    width: 100px;
+}
+
+.navbar-header a:hover,
+.navbar-toggle:hover,
+.navbar-header a:focus,
+.navbar-header a:focus-within,
+.navbar-header a:focus-visible,
+.navbar-toggle:focus,
+.navbar-toggle:focus-within,
+.navbar-toggle:focus-visible,
+.navbar-nav > li > a:focus-visible,
+.navbar-nav > li > a:focus,
+.navbar-nav > li > a:focus-within {
+    width: fit-content;
+    box-shadow: 0 0 2px 1px white, inset 0 0 0 2px white !important;
+    -webkit-border-radius: 5px;
+}
 
 /* HERO PICTURE
 ------------------------------------------------------------------ */
 
 /* Background image */
 .hero {
-    height:455px;
+    height:fit-content;
     background-size: 100%;
     background-size: cover;
     -webkit-background-size: cover;
@@ -66,10 +87,11 @@ body {
     height:100%;
     border-bottom:1px solid #1D2730;
     position:relative;
+    padding-top: 6.9em;
+    padding-bottom: 8.3em;
 }
 
 .hero-typo {
-    position:absolute;
     top:120px;
     left:0;
 }
@@ -79,12 +101,12 @@ body {
     position:absolute;
     bottom:0;
     left:0;
-    z-index:999;
+    z-index:2;
 }
 
 .quick-link-wrapper > ul {
     margin:0 auto;
-    width:547px;
+    width:31em;
     background:rgba(255,255,255,0.2);
     color:white;
 }
@@ -93,27 +115,41 @@ body {
     display:inline-block;
     padding:10px;
     margin-right:30px;
-    font-size:23px;
+    font-size:1.28em;
 }
 
 .quick-link-wrapper > ul > li > a {
     color:white;
+    padding: 0.1em 0.2em;
 }
 
 .quick-link-wrapper > ul > li > a:hover {
     text-decoration:none;
-    color:#EE8786;
+    color:#F3A8A5;
+}
+
+.quick-link-wrapper > ul > li > a:focus,
+.quick-link-wrapper > ul > li > a:focus-within,
+.quick-link-wrapper > ul > li > a:focus-visible {
+    box-shadow: 0 0 2px 1px white, inset 0 0 0 2px white;
+    -webkit-border-radius: 5px;
+    text-decoration: none;
+}
+
+/* Overrider Bootstrap's default for container */
+.hero .container {
+    display: block !important;
 }
 
 /* Modifications on hero text */
 @media (max-width: 1200px) and (min-width: 990px) {
 
     .lead {
-        font-size:64px !important;
+        font-size:3.56em !important;
     }
 
     .sub {
-        font-size:23px !important;
+        font-size:1.28em !important;
     }
 }
 
@@ -124,11 +160,11 @@ body {
     }
 
     .lead {
-        font-size:70px !important;
+        font-size:3.89em !important;
     }
 
     .sub {
-        font-size:20px !important;
+        font-size:1.111em !important;
     }
 }
 
@@ -140,12 +176,12 @@ body {
 
     .lead {
         text-align:center;
-        font-size:58px !important;
+        font-size:3.222em !important;
     }
 
     .sub {
         text-align: center;
-        font-size:19px !important;
+        font-size:1.05556em !important;
 
     }
 
@@ -155,14 +191,14 @@ body {
 }
 
 .lead {
-    font-size:78px;
+    font-size:4.3333em;
     font-weight:300;
 
 }
 
 .sub {
     font-weight:300;
-    font-size:27px;
+    font-size:1.5em;
 
 }
 
@@ -171,6 +207,22 @@ body {
 
  .card .fa {
     margin-top:20px;
+}
+
+#features {
+    margin-top: 4em;
+    margin-bottom: 4em;
+}
+
+.feature-icon {
+    margin-right: 2em;
+}
+
+@media (max-width: 990px){
+
+    .feature-icon {
+        margin-right: 0;
+    }
 }
 
 
@@ -192,16 +244,30 @@ body {
 .screenshots-caption {
     margin-top:10px;
     text-align:center;
-    font-size:16px;
+    font-size:0.88889em;
 }
 
 /* Carousel overrides */
 .carousel-indicators li {
-    border:1px solid #ee3243;
+    border:1px solid #E71324;
+}
+
+/* Carousel controls on hover overrides */
+.carousel li:hover {
+    box-shadow: 0 0 2px 1px orange, inset 0 0 0 2px orange !important;
+    -webkit-border-radius: 5px;
+}
+
+/* Carousel on controls focus overrides */
+.carousel li:focus-visible,
+.carousel li:focus,
+.carousel li:focus-within {
+    box-shadow: 0 0 2px 3px orangered, inset 0 0 0 3px orange !important;
+    -webkit-border-radius: 5px;
 }
 
 .carousel-indicators .active {
-    background-color:#ee3243;
+    background-color:#E71324;
 }
 
 .item img {
@@ -213,6 +279,37 @@ body {
         margin-bottom:40px
     }
 }
+
+.screenshots-caption-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: 0.3em 0 0 0;
+}
+.screenshots-caption-container button {
+    color: #E71324;
+    border: none;
+    background-color: transparent;
+    height: 1.5em;
+    width: 1.5em;
+    font-size: 1.4em;
+    margin: 0 0.2em;
+    text-align: center;
+    line-height: 30px;
+}
+
+.screenshots-caption-container button:hover {
+    color: orange;
+}
+
+.screenshots-caption-container button:focus-within,
+.screenshots-caption-container button:focus,
+.screenshots-caption-container button:focus-visible {
+    box-shadow: 0 0 2px 2px orange, inset 0 0 0 2px orange;
+    -webkit-border-radius: 5px;
+}
+
 
 /* DOWNLOAD SECTION
 ------------------------------------------------------------------ */
@@ -227,6 +324,7 @@ body {
     text-align:center;
     padding:15px;
     padding-bottom:30px;
+    height: fit-content;
 }
 
 @media (min-width: 990px) {
@@ -240,8 +338,19 @@ body {
 }
 
 .download-alt-content p {
-    height:110px;
+    height:fit-content;
     display:block;
+}
+
+.download-alt-content .btn-group {
+    margin-top: 1.8em !important;
+}
+
+.button-border-inside:focus-visible,
+.button-border-inside:focus,
+.button-border-inside:focus-within {
+    box-shadow: 0 0 2px 2px #3277B3, inset 0 0 0 2px white;
+    -webkit-border-radius: 5px;
 }
 
 /* TOUR SECTION
@@ -267,12 +376,12 @@ section#users {
 
 #who .title {
     font-weight:600;
-    font-size:25px;
+    font-size:1.38889em;
 }
 
 #who .location {
     font-weight:400;
-    font-size:14px;
+    font-size:0.7778em;
     margin-bottom:10px;
 }
 
@@ -288,7 +397,7 @@ section#users {
 /* RELEASES
 ------------------------------------------------------------------ */
 
-section#releases, section#install-instructions {
+section#releases, section#install-instructions, section#blog {
     background-color:white;
     padding-top:40px;
     min-height:600px;
@@ -317,8 +426,65 @@ section#releases li {
 ------------------------------------------------------------------ */
 
 section#install-instructions {
-    font-size:14px;
+    font-size:0.7778em;
     font-weight:400;
+}
+
+/* BLOG
+------------------------------------------------------------------ */
+
+section#blog {
+    font-size:0.88889em;
+}
+
+article.blogpost header h1 {
+    padding-top: 0.5em;
+    margin-top: 0;
+    margin-bottom: 0;
+    color: #333;
+}
+
+article.blogpost {
+    border: 1px solid  #ddd;
+    margin-top: 1em;
+    background-color: #eee;
+}
+
+aside.pubdate {
+    padding-top: 0;
+    font-style: italic;
+    font-size: 0.7em;
+}
+
+#blog {
+    word-break:break-all;
+    word-wrap:break-word;
+}
+
+#blog code, #blog p, #blog a {
+    display: inline-block;
+    white-space: normal;
+    max-width:100%;
+}
+
+#blog img {
+    max-width: 100%;
+}
+
+aside .pubdate p {
+    color: #6B6B6B;
+}
+
+#blog .page-item:not(.active, .disabled) a{
+    color: #347AB7;
+}
+
+#blog .page-item.active a{
+    background-color: #347AB7;
+}
+
+#blog .page-item.disabled a {
+    color: #757575;
 }
 
 
@@ -336,7 +502,7 @@ footer#footer img {
 
 footer#footer h2 {
     font-weight:300;
-    font-size:34px;
+    font-size:1.88889em;
 }
 
 footer#footer i {
@@ -350,21 +516,53 @@ footer#footer .channels {
 
 footer#footer .author {
     margin-bottom:20px;
-    font-size:16px;
+    font-size:0.88889em;
 }
 
 footer#footer .page-header {
     margin-bottom:30px;
 }
 
-footer#footer .powered-by img {
-    margin-right:20px;
-}
-
 footer#footer .photo-by {
-    font-size:14px;
+    font-size:0.7778em;
+    margin-top: 1em;
 }
 
+.author a {
+    display: block;
+    width: 155px;
+    height: 42px;
+}
+
+.powered-by > div {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.powered-by img {
+    margin: 0 !important;
+}
+
+.author a:hover,
+.powered-by a:hover,
+.sitemap a:hover {
+    box-shadow: 0 0 2px 0.05em #2A6293, inset 0 0 0 0.01em #2A6293;
+    -webkit-border-radius: 5px;
+}
+
+.author a:focus-visible,
+.author a:focus,
+.author a:focus-within,
+.powered-by a:focus-visible,
+.powered-by a:focus,
+.powered-by a:focus-within,
+.sitemap a:focus-visible,
+.sitemap a:focus,
+.sitemap a:focus-within {
+    box-shadow: 0 0 2px 1px #2A6293, inset 0 0 0 1px #2A6293;
+    -webkit-border-radius: 5px;
+}
 
 
 /* GLOBALS
@@ -372,7 +570,7 @@ footer#footer .photo-by {
 
 /* Heading for sections */
 .super-heading {
-    font-size:50px;
+    font-size:2.7778em;
 }
 
 .content {
@@ -394,4 +592,27 @@ footer#footer .photo-by {
 
 .center-text {
     text-align:center;
+}
+
+a {
+    color: #2A6293;
+    padding: 0 0.2em;
+}
+
+/* Overrides Bootstrap's primary button color */
+.btn-primary {
+    background-color: #3277B3 !important;
+}
+
+/* Overrides Bootstrap's primary button on hover effect */
+.btn-primary:hover {
+    text-decoration: underline;
+}
+
+/* All links except the ones mentioned in :not() */
+a:not(.navbar-header a, .navbar-right a, .quick-link-wrapper a, .download-alt a, .author a, .powered-by a, .sitemap a):focus,
+a:not(.navbar-header a, .navbar-right a, .quick-link-wrapper a, .download-alt a, .author a, .powered-by a, .sitemap a):focus-within,
+a:not(.navbar-header a, .navbar-right a, .quick-link-wrapper a, .download-alt a, .author a, .powered-by a, .sitemap a):focus-visible {
+    box-shadow: 0 0 2px 1px #2A6293, inset 0 0 0 1px #2A6293;
+    -webkit-border-radius: 5px;
 }
