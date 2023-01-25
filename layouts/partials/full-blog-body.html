@@ -11,10 +11,10 @@
 
           {{ if .Params.Tags }}
           <aside class="tags">
-              <p>Tags <i class="fa fa-tag"></i></p>
+              <p><span hidden>Tags:</span> <i class="fa fa-tag"></i></p>
               <ul>
                   {{ range .Params.Tags }}
-                  <li>{{ . }}</li>
+                  <li class="label label-default">{{ . }}</li>
                   {{ end }}
               </ul>
           </aside>

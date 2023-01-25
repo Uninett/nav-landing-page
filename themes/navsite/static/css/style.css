@@ -461,6 +461,14 @@ aside.tags {
     font-size: 0.85em;
 }
 
+aside.tags p {
+    float: left;
+}
+
+aside.tags ul {
+    padding-left: 1.5em;
+}
+
 aside.tags i {
     padding: 0 0.2em;
 }
