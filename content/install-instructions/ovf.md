@@ -16,7 +16,7 @@ The appliance is regularly built through automated GitHub workflows, usually bas
 
   * Log in as **root** and change the root password from ```navrocks``` to something else (using the `passwd` command)
   * Edit ```/etc/aliases``` to add a decent email address to forward *root*'s email to. Then run the `newaliases` command.
-  * Fix the network configuration (```/etc/network/interfaces```) and restart the networking service using ```/etc/init.d/networking restart```
+  * Fix the network configuration (```/etc/network/interfaces```) and restart the networking service using ```systemctl restart networking```
   * Add networks that shall be allowed to talk to the appliance in ```/etc/hosts.allow``` (both clients to the NAV web interface and network equipment that send SNMP traps)
   * Set a proper hostname/domain name in the following files: ```/etc/hosts```, ```/etc/resolv.conf```, ```/etc/mailname``` and ```/etc/exim4/update-exim4.conf.conf```
 
