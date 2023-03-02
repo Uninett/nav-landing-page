@@ -457,8 +457,7 @@ aside.pubdate {
 }
 
 aside.tags {
-    font-style: italic;
-    font-size: 0.85em;
+    font-size: 1em;
 }
 
 aside.tags p {
