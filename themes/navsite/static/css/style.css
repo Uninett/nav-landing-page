@@ -456,6 +456,22 @@ aside.pubdate {
     font-size: 0.7em;
 }
 
+aside.tags {
+    font-size: 1em;
+}
+
+aside.tags p {
+    float: left;
+}
+
+aside.tags ul {
+    padding-left: 1.5em;
+}
+
+aside.tags i {
+    padding: 0 0.2em;
+}
+
 #blog {
     word-break:break-all;
     word-wrap:break-word;
@@ -471,7 +487,7 @@ aside.pubdate {
     max-width: 100%;
 }
 
-aside .pubdate p {
+aside.pubdate, aside.tags {
     color: #6B6B6B;
 }
 
@@ -615,4 +631,9 @@ a:not(.navbar-header a, .navbar-right a, .quick-link-wrapper a, .download-alt a,
 a:not(.navbar-header a, .navbar-right a, .quick-link-wrapper a, .download-alt a, .author a, .powered-by a, .sitemap a):focus-visible {
     box-shadow: 0 0 2px 1px #2A6293, inset 0 0 0 1px #2A6293;
     -webkit-border-radius: 5px;
+}
+
+/* Overrides Bootstrap's label color */
+.label-default {
+    background-color: #757575 !important;
 }
