@@ -5,6 +5,7 @@
 *.egg-info
 *.pot
 *.py[co]
+.hugo_build.lock
 __pycache__
 MANIFEST
 dist/
