@@ -212,14 +212,12 @@
         <div id="download" class="container content">
             <div class="row">
                 <div class="col-md-12">
-                  {{ with .GetPage "/releases" }}
-                    {{/* Fetch the highest stable series we can find */}}
-                    {{ range first 1 .Sections }}
-                    {{ range first 1 .CurrentSection.Pages }}
-
+                {{ $url := "https://api.github.com/repos/Uninett/nav/releases/latest" }}
+                {{ $latest_release := getJSON $url }}
+                {{ $latest_version := $latest_release.tag_name }}
                     <h2 class="super-heading">Download NAV</h2>
                     <p>NAV is freely available under the GNU GPL license and can run on any UNIX machine that supports Apache and Python*</p>
-                    <p class="bottom-space">The latest version is <span style="font-weight:400;">{{ .Title }}</span>. Choose between our installation alternatives.</p>
+                    <p class="bottom-space">The latest version is <span style="font-weight:400;">{{ $latest_version }}</span>. Choose between our installation alternatives.</p>
                     <div class="row">
                         <div class="col-md-4">
                             <div class="download-alt dl-left">
@@ -272,9 +270,6 @@
                             <p class="center-text">(*) Looking for older releases? Have a look in our <a href="https://github.com/Uninett/nav/releases">release archive</a></p>
                         </div>
                     </div>
-                    {{ end }}
-                    {{ end }}
-                  {{ end }}
 
                 </div>
             </div>
