@@ -5,94 +5,11 @@
 
       <div class="col-md-12">
         <h1 class="super-heading">NAV release archive</h1>
-        <p>Browse through downloads for all available releases.</p>
+        <p><a href="https://github.com/Uninett/nav/releases">Please refer to our GitHub repository for release archives</a></p>
       </div>
 
     </div>
 
-    <div class="row" id="ovf">
-
-      <div class="col-md-6">
-        <h3 class="page-header">Source</h3>
-
-        {{/* Fetch the highest stable series we can find */}}
-        {{ range first 1 .Sections }}
-        {{ $.Scratch.Set "stable_series" .CurrentSection.Title }}
-        {{ end }}
-
-        <div class="release-list">
-          <h4>Stable releases</h4>
-            <ul>
-              {{ range .Sections }}
-                <p><em>Series {{ .CurrentSection.Title }}</em></p>
-                {{ range where .Pages "Params.beta" "eq" false }}
-                    <li class="series-indent">
-                      <a href="{{ .Params.source_url }}">
-                        <i class="fa fa-download"></i> <strong>{{ .Title }}</strong>, {{ .Date.Format "Jan. 2, 2006" }}
-                      </a>
-                    </li>
-                {{ end }}
-              {{ end }}
-            </ul>
-        </div>
-
-        {{ $beta_releases := (where .RegularPagesRecursive "Params.beta" true) }}
-        {{ if gt (len $beta_releases) 0 }}
-          <div class="release-list">
-          <h4>Beta releases</h4>
-            <ul>
-              {{ range $beta_releases }}
-                <li>
-                  <a href="{{ .Params.source_url }}">
-                    <i class="fa fa-download"></i> <strong>{{ .Title }}</strong>, {{ .Date.Format "Jan. 2, 2006" }}
-                  </a>
-                </li>
-              {{ end }}
-            </ul>
-          </div>
-        {{ end }}
-      </div>
-
-
-      <div class="col-md-6">
-        <h3 class="page-header">Virtual Appliance <a href="/install-instructions/#ovf">(Instructions)</a></h3>
-
-        {{ $ovf_releases := (where .RegularPagesRecursive "Params.has_ovf_package" true ) }}
-        {{ if gt (len $ovf_releases) 0 }}
-          <div class="release-list">
-            <h4>Stable release</h4>
-            <ul>
-              {{ range first 1 $ovf_releases }}
-              <li>
-                <a href="https://github.com/Uninett/navappliance/releases/download/master/navappliance.zip">
-                  <i class="fa fa-download"></i> <strong>{{ .Title }}</strong>, {{ .Date.Format "Jan. 2, 2006" }}
-                </a>
-              </li>
-              {{ end }}
-            </ul>
-          </div>
-        {{ else }}
-          <p>No stable release found.</p>
-        {{ end }}
-
-        {{ $beta_ovfs := (where $beta_releases "Params.beta_ovf_url" "!=" nil) }}
-        {{ if gt (len $beta_ovfs) 0 }}
-          <div class="release-list">
-            <h4>Beta releases</h4>
-            <ul>
-              {{ range $beta_ovfs }}
-                <li>
-                  <a href="{{ .Params.beta_ovf_url }}">
-                    <i class="fa fa-download"></i> <strong>{{ .Title }}</strong>, {{ .Date.Format "Jan. 2, 2006" }}
-                  </a>
-                </li>
-              {{ end }}
-            </ul>
-          </div>
-        {{ end }}
-      </div>
-
-    </div>
   </div>
 </section>
 {{ end }}
