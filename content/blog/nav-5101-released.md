@@ -15,7 +15,7 @@ repository](https://nav.uninett.no/install-instructions/#debian) as usual.  We
 haven't started building packages for Debian 12 (Bookworm) yet, as NAV does not
 yet support running under Python 3.11.
 
-Do note that 5.10 is the **last series we will package for Debian 11**, as NAV
+Do note that 5.10 is the **last series we will package for Debian 10**, as NAV
 5.11 will drop support for Python versions older than 3.9
 
 Please be extra aware of config file changes. Look out for `*.dpkg-dist` files
