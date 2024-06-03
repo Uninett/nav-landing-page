@@ -1,6 +1,6 @@
 ---
 title: 'NAV 5.10.2 released'
-date: 2024-06-03T10:23:00.000+01:00
+date: 2024-06-03T10:23:00.000+02:00
 draft: false
 tags:
 - release
