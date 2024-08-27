@@ -637,3 +637,8 @@ a:not(.navbar-header a, .navbar-right a, .quick-link-wrapper a, .download-alt a,
 .label-default {
     background-color: #757575 !important;
 }
+
+/* Links surrounded by text */
+p a, #who a {
+  text-decoration: underline;
+}
