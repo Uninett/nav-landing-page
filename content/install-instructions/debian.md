@@ -22,16 +22,6 @@ Here's how to do it:
     sudo apt-get update
     sudo apt-get install nav
 
-#### Debian 10 (Buster)
-
-    sudo apt-get install -y curl apt-transport-https ca-certificates dirmngr software-properties-common
-    sudo mkdir -p --mode=0755 /usr/local/share/keyrings
-    curl -fsSL https://nav.uninett.no/debian/gpg | gpg --dearmor | sudo tee /usr/local/share/keyrings/nav.gpg >/dev/null
-    echo 'deb [signed-by=/usr/local/share/keyrings/nav.gpg] https://nav.uninett.no/debian buster nav' \
-         | sudo tee /etc/apt/sources.list.d/nav.list
-    sudo apt-get update
-    sudo apt-get install nav
-
 ### Further instructions
 
 Please read the instructions in [/usr/share/doc/nav/README.Debian](https://raw.githubusercontent.com/Uninett/nav-debian/master/debian/README.Debian) to complete your configuration of NAV on Debian. You may then proceed to our [getting started-guide](https://nav.readthedocs.io/en/latest/intro/getting-started.html).
