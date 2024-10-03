@@ -14,11 +14,14 @@ Here's how to do it:
 
 #### Debian 11 (Bullseye)
 
+Debian 11 lost some packages that NAV was dependent on. These were reintroduced in the official backports repository (and are present again in the regular archives Debian 12).  These instructions therefore include adding the backports package repository to your package lists:
+
     sudo apt-get install -y curl apt-transport-https ca-certificates dirmngr software-properties-common
     sudo mkdir -p --mode=0755 /usr/local/share/keyrings
     curl -fsSL https://nav.uninett.no/debian/gpg | gpg --dearmor | sudo tee /usr/local/share/keyrings/nav.gpg >/dev/null
     echo 'deb [signed-by=/usr/local/share/keyrings/nav.gpg] https://nav.uninett.no/debian bullseye nav' \
          | sudo tee /etc/apt/sources.list.d/nav.list
+    echo 'deb http://deb.debian.org/debian bullseye-backports main' | sudo tee /etc/apt/sources.list.d/backports.list
     sudo apt-get update
     sudo apt-get install nav
 
