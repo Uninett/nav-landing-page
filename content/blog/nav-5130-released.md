@@ -1,6 +1,6 @@
 ---
 title: 'NAV 5.13.0 released'
-date: 2025-03-07T10:29+01:00
+date: 2025-03-07T10:29:00+01:00
 draft: false
 tags:
 - release
