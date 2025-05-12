@@ -1,6 +1,6 @@
 ---
 title: 'NAV 5.13.1 (SECURITY FIX) released'
-date: 2025-05-12T14:45:00+01:00
+date: 2025-05-12T14:45:00+02:00
 draft: false
 tags:
 - release
