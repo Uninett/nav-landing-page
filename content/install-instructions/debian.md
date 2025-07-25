@@ -31,7 +31,7 @@ Debian 11 lost some packages that NAV was dependent on. These were reintroduced 
     curl -fsSL https://nav.uninett.no/debian/gpg | gpg --dearmor | sudo tee /usr/local/share/keyrings/nav.gpg >/dev/null
     echo 'deb [signed-by=/usr/local/share/keyrings/nav.gpg] https://nav.uninett.no/debian bullseye nav' \
          | sudo tee /etc/apt/sources.list.d/nav.list
-    echo 'deb http://deb.debian.org/debian bullseye-backports main' | sudo tee /etc/apt/sources.list.d/backports.list
+    echo 'deb https://archive.debian.org/debian bullseye-backports main' | sudo tee /etc/apt/sources.list.d/backports.list
     sudo apt-get update
     sudo apt-get install nav
 
