@@ -1,5 +1,5 @@
 ---
-title: 'NAV 5.15.1 released'
+title: 'NAV 5.15.0 released'
 date: 2025-10-30T15:09:28+0100
 draft: false
 tags:
