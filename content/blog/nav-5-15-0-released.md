@@ -6,7 +6,7 @@ tags:
 - release
 ---
 
-The first feature of the 5.15 series of NAV is now out!
+The first feature release of the 5.15 series of NAV is now out!
 
 The source code is available for download at [GitHub](https://github.com/UNINETT/nav/releases).
 
