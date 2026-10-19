@@ -473,8 +473,7 @@ aside.tags i {
 }
 
 #blog {
-    word-break:break-all;
-    word-wrap:break-word;
+    overflow-wrap: anywhere;
 }
 
 #blog code, #blog p, #blog a {
