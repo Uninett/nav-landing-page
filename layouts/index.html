@@ -213,8 +213,15 @@
             <div class="row">
                 <div class="col-md-12">
                 {{ $url := "https://api.github.com/repos/Uninett/nav/releases/latest" }}
-                {{ $latest_release := getJSON $url }}
-                {{ $latest_version := $latest_release.tag_name }}
+                {{ $latest_version := "" }}
+                {{ with try (resources.GetRemote $url) }}
+                  {{ with .Err }}
+                    {{/* Fail the build rather than publish a blank version number */}}
+                    {{ errorf "Could not fetch latest NAV release from %s: %s" $url . }}
+                  {{ else with .Value }}
+                    {{ $latest_version = (. | transform.Unmarshal).tag_name }}
+                  {{ end }}
+                {{ end }}
                     <h2 class="super-heading">Download NAV</h2>
                     <p>NAV is freely available under the GNU GPL license and can run on any UNIX machine that supports Apache and Python*</p>
                     <p class="bottom-space">The latest version is <span style="font-weight:400;">{{ $latest_version }}</span>. Choose between our installation alternatives.</p>
